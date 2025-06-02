@@ -1,0 +1,27 @@
+# ログ関連
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# エディタ関連
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 開発ツール
+node_modules
+assets
+dist
+dist-ssr
+*.local
+dev-tools/config.js

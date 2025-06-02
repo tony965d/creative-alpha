@@ -1,0 +1,29 @@
+@use '../_global' as *;
+
+.u-hover {
+  transition: opacity 0.3s;
+}
+
+.u-hover:focus-visible {
+  opacity: var(--opacity__hover);
+}
+
+@media (any-hover: hover) {
+  .u-hover:hover {
+    opacity: var(--opacity__hover);
+  }
+}
+
+.u-hover--drop-shadow {
+  transition: filter 0.3s;
+}
+
+.u-hover--drop-shadow:focus-visible {
+  filter: drop-shadow(var(--drop-shadow__hover));
+}
+
+@media (any-hover: hover) {
+  .u-hover--drop-shadow:hover {
+    filter: drop-shadow(var(--drop-shadow__hover));
+  }
+}

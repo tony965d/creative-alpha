@@ -1,0 +1,41 @@
+@use '../_global' as *;
+
+.l-inner {
+  --_max-width: var(--width__contents); // 最大の横幅（余白を除く）
+  --_padding-inline: var(--space-inline__base); // 左右の余白
+  --_padding-right: var(--_padding-inline); // 右の余白
+  --_padding-left: var(--_padding-inline); // 左の余白
+
+  max-width: calc(
+    (var(--_max-width) * 1px) +
+      (
+        (var(--_padding-right) + var(--_padding-left)) * 1rem /
+          var(--font-size__base)
+      )
+  );
+  margin-inline: auto;
+  padding-right: calc(var(--_padding-right) * 1rem / var(--font-size__base));
+  padding-left: calc(var(--_padding-left) * 1rem / var(--font-size__base));
+
+  @include mq('md') {
+    --_max-width: var(--max-width__base);
+  }
+}
+
+.l-inner--fluid {
+  max-width: calc(
+    (var(--_max-width) * 1rem / var(--font-size__base)) +
+      (
+        (var(--_padding-right) + var(--_padding-left)) * 1rem /
+          var(--font-size__base)
+      )
+  );
+}
+
+.l-inner--vertical {
+  margin-bottom: calc(64 * 1rem / var(--font-size__base));
+
+  @include mq('md') {
+    margin-bottom: calc(32 * 1rem / var(--font-size__base));
+  }
+}

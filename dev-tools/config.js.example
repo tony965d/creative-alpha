@@ -1,0 +1,79 @@
+/**
+ * プロジェクトの設定を管理するコンフィグオブジェクト
+ *
+ * @property {Object} paths - アセットの入出力パス設定
+ * @property {Object} dev - 開発環境の設定
+ * @property {Object} build - 本番環境の設定
+ */
+export const config = {
+  // パス設定（ソースとビルド後のディレクトリを定義）
+  paths: {
+    images: {
+      src: 'src/images',
+      dist: 'assets/images',
+    },
+    js: {
+      src: 'src/js',
+      dist: 'assets/js',
+    },
+    css: {
+      src: 'src/scss',
+      dist: 'assets/css',
+    },
+  },
+
+  // 開発環境設定
+  dev: {
+    mode: 'proxy',
+    server: { baseDir: './htdocs' },
+    proxy: { target: 'localhost:8015' },
+    watchFiles: ['./assets/**/*', './**/*.php'],
+    options: {
+      images: {
+        convertToWebp: true,
+        imageQuality: 80,
+        maxWidth: 3840,
+      },
+      js: {
+        minify: false,
+      },
+      css: {
+        minify: false,
+        sourceMap: true,
+      },
+      logLevel: 'info',
+    },
+  },
+
+  // 本番環境設定
+  build: {
+    options: {
+      images: {
+        convertToWebp: true,
+        imageQuality: 80,
+        maxWidth: 3840,
+      },
+      js: {
+        minify: false,
+      },
+      css: {
+        minify: false,
+        sourceMap: false,
+      },
+      logLevel: 'info',
+    },
+  },
+
+  /**
+   * 指定された環境の設定を取得
+   * @param {string} env - 環境名（dev or build）
+   * @returns {Object} 環境設定
+   */
+  get(env = process.env.NODE_ENV || 'dev') {
+    const conf = this[env] || this.dev;
+    return {
+      ...conf,
+      paths: this.paths,
+    };
+  },
+};
