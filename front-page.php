@@ -154,7 +154,6 @@
           <?php if ($trainingService_query->have_posts()) : ?>
             <?php while ($trainingService_query->have_posts()) : ?>
               <?php $trainingService_query->the_post(); ?>
-
               <a href="<?php the_permalink(); ?>" class="m-card">
                 <figure class="m-card__thumbnail">
                   <?php if (has_post_thumbnail()) { ?>

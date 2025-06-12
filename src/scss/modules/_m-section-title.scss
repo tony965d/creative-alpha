@@ -1,0 +1,22 @@
+@use '../_global' as *;
+
+.m-section-title {
+  display: flex;
+  align-items: center;
+  gap: rem(6);
+}
+
+.m-section-title__icon {
+  width: rem(57);
+  height: rem(50);
+}
+
+.m-section-title__text {
+  font-size: rem(35);
+  font-weight: 700;
+  background: var(--color__gradient-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: calc(44 / 35);
+}
