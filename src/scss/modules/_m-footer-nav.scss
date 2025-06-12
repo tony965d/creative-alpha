@@ -1,0 +1,54 @@
+@use '../_global' as *;
+
+.m-footer-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.m-footer-nav {
+}
+
+.m-footer-nav__block {
+}
+
+.m-footer-nav__block.m-footer-nav__block---right {
+  margin-right: rem(-10);
+}
+
+.m-footer-nav__items {
+  display: grid;
+  justify-items: start;
+  gap: rem(16);
+}
+
+.m-footer-nav__item {
+}
+
+.m-footer-nav__menu {
+  font-size: rem(18);
+  font-weight: 700;
+  line-height: calc(26 / 18);
+  letter-spacing: 0.04em;
+}
+
+.m-footer-nav__sub-items {
+  display: grid;
+  justify-items: start;
+  gap: rem(12);
+  margin-top: rem(16);
+}
+
+.m-footer-nav__sub-item {
+}
+
+.m-footer-nav__sub-menu {
+  font-size: rem(14);
+  font-weight: 500;
+  line-height: calc(20 / 14);
+  letter-spacing: 0.04em;
+}
+
+.m-footer-nav__block-button {
+  margin-top: rem(16);
+}

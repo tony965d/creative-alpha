@@ -1,0 +1,119 @@
+@use '../_global' as *;
+
+// =========================================
+// フォントの定義
+// =========================================
+
+// Inter
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter/Inter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter/Inter-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+// /Inter
+
+// Noto Sans JP
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('../fonts/font-face/Noto Sans JP/Noto Sans JP-Regular.woff2')
+    format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('../fonts/font-face/Noto Sans JP/Noto Sans JP-Medium.woff2')
+    format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('../fonts/font-face/Noto Sans JP/Noto Sans JP-Bold.woff2')
+    format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('../fonts/font-face/Noto Sans JP/Noto Sans JP-Black.woff2')
+    format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+// /Noto Sans JP
+
+// Roboto
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/font-face/Roboto/Roboto-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/font-face/Roboto/Roboto-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/font-face/Roboto/Roboto-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+// /Roboto
+
+// Montserrat
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/font-face/Montserrat/Montserrat-SemiBold.woff2')
+    format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+// /Montserrat
+
+// Outfit
+@font-face {
+  font-family: 'Outfit';
+  src: url('../fonts/font-face/Outfit/Outfit-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+// /Outfit
+
+// sawarabi gothic
+@font-face {
+  font-family: 'Sawarabi Gothic';
+  src: url('../fonts/font-face/Sawarabi Gothic/Sawarabi Gothic-Regular.woff2')
+    format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+// /sawarabi gothic
+
+// noto rashi hebrew
+@font-face {
+  font-family: 'Noto Rashi Hebrew';
+  src: url('../fonts/font-face/Noto Rashi Hebrew/Noto Rashi Hebrew-SemiBold.woff2')
+    format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+// /noto rashi hebrew

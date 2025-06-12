@@ -1,0 +1,104 @@
+@use '../_global' as *;
+
+.m-square-button {
+  --_color__main-default: var(--color__white);
+  --_color__sub-default: var(--color__blue);
+  --_color__main: var(--_color__main-default);
+  --_color__sub: var(--_color__sub-default);
+  --_max-width: 428;
+  --_duration: 0.3s;
+
+  position: relative;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // gap: rem(10);
+  width: 100%;
+  max-width: calc(var(--_max-width) * 1rem / var(--font-size__base));
+  color: var(--_color__sub);
+  background-color: var(--_color__main);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--_color__sub);
+  border-radius: 20px;
+  // border-radius: calc(infinity * 1px);
+  // filter: drop-shadow(0 3px 6px rgb(0, 0, 0, 0.2));
+  transition:
+    color var(--_duration),
+    background-color var(--_duration),
+    border-color var(--_duration),
+    filter var(--_duration);
+  touch-action: manipulation;
+  padding-top: rem(37);
+  padding-bottom: rem(31);
+  padding-right: rem(20);
+}
+
+.m-square-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: rem(20);
+  transform: translateY(-50%);
+  width: rem(16);
+  height: rem(17);
+  background: var(--color__gradient-blue);
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+}
+
+.m-square-button--training-service {
+  padding-left: rem(162);
+}
+
+.m-square-button--mystery-shopper {
+  padding-left: rem(96);
+}
+
+.m-square-button__text {
+  position: relative;
+  display: flex;
+  font-size: rem(24);
+  font-weight: 700;
+  line-height: calc(35 / 24);
+}
+
+.m-square-button__text-sub {
+  font-size: rem(15);
+  font-weight: 700;
+  line-height: calc(35 / 15);
+  color: transparent;
+  background: var(--color__gradient-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.m-square-button__icon.m-square-button__icon--training-service,
+.m-square-button__icon.m-square-button__icon--mystery-shopper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.m-square-button__icon.m-square-button__icon--training-service {
+  left: rem(25);
+}
+
+.m-square-button__icon.m-square-button__icon--mystery-shopper {
+  left: rem(29);
+}
+
+.m-square-button__icon.m-square-button__icon--training-service img,
+.m-square-button__icon.m-square-button__icon--mystery-shopper img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.m-square-button__icon.m-square-button__icon--training-service img {
+  aspect-ratio: 109 / 61;
+  width: rem(109);
+}
+
+.m-square-button__icon.m-square-button__icon--mystery-shopper img {
+  aspect-ratio: 42 / 63;
+  width: rem(42);
+}

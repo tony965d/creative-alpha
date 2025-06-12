@@ -1,0 +1,44 @@
+@use '../_global' as *;
+
+.m-definition-list__item {
+  display: flex;
+
+  @include mq('md') {
+    flex-direction: column;
+  }
+}
+
+.m-definition-list__term {
+  display: inline-flex;
+  align-items: center;
+  width: 25%;
+  padding-block: rem(40);
+  padding-left: rem(60);
+  border-bottom: 1px solid var(--color__black);
+
+  @include mq('md') {
+    padding-left: rem(20);
+  }
+}
+
+.m-definition-list__term--first {
+  border-top: 1px solid var(--color__black);
+}
+
+.m-definition-list__description {
+  width: 75%;
+  padding-block: rem(40);
+  border-bottom: 1px solid var(--color__black);
+
+  @include mq('md') {
+    padding-left: rem(20);
+  }
+}
+
+.m-definition-list__description--first {
+  border-top: 1px solid var(--color__black);
+
+  @include mq('md') {
+    border-top: none;
+  }
+}

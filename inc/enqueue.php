@@ -7,10 +7,19 @@
  * get_theme_url_with_version関数を使用して、ファイルのURLを生成します。
  */
 
-function mytheme_enqueue_assets() {
+function mytheme_enqueue_assets()
+{
   /**
    * フォント
    */
+  // Font Awesomeを読み込む
+  wp_enqueue_script(
+    'font-awesome',
+    'https://kit.fontawesome.com/bf12c6538e.js',
+    array(),
+    null,
+    true
+  );
 
   /**
    * ライブラリ
@@ -28,11 +37,46 @@ function mytheme_enqueue_assets() {
     'all'
   );
 
+  // Swiperのスタイルも読み込む
+  wp_enqueue_style(
+    'swiper-style',
+    get_theme_url_with_version('lib/swiper-bundle.min.css'),
+    array(),
+    null
+  );
+
+  // Swiperライブラリを読み込む
+  wp_enqueue_script(
+    'swiper',
+    get_theme_url_with_version('lib/swiper-bundle.min.js'),
+    array(),
+    null,
+    true
+  );
+
+  // GSAPを読み込む
+  wp_enqueue_script(
+    'gsap',
+    'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js',
+    array(),
+    null,
+    true
+  );
+
+  // ScrollTriggerプラグインを読み込む
+  wp_enqueue_script(
+    'scrolltrigger',
+    'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js',
+    array('gsap'),
+    null,
+    true
+  );
+
   // 基本のJavaScript
   wp_enqueue_script(
     'mytheme-script',
     get_theme_url_with_version('assets/js/main.js'),
-    array('jquery'),
+    array('jquery', 'swiper', 'gsap', 'scrolltrigger'),
     null,
     true
   );
@@ -42,7 +86,8 @@ add_action('wp_enqueue_scripts', 'mytheme_enqueue_assets');
 /**
  * 管理画面用のアセットを読み込む関数
  */
-function mytheme_admin_enqueue_assets() {
+function mytheme_admin_enqueue_assets()
+{
   // 管理画面用のCSS
   wp_enqueue_style(
     'mytheme-admin-style',

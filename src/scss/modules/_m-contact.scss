@@ -1,0 +1,51 @@
+@use '../_global' as *;
+
+.m-contact {
+  position: relative;
+  padding-block: rem(100);
+}
+
+.m-contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color__gradient-blue);
+  border-radius: 30px;
+  z-index: -1;
+}
+
+.m-contact__inner.l-inner {
+  --_max-width: 983;
+
+  @include mq('md') {
+    --_max-width: var(--max-width__base);
+  }
+}
+
+.m-contact__wrapper {
+}
+
+.m-contact__block {
+  border-radius: 10px;
+  background-color: var(--color__white);
+  padding-top: rem(60);
+  padding-bottom: rem(40);
+  margin-top: rem(39);
+}
+
+.m-contact__block-text {
+  text-align: center;
+}
+
+.m-contact__block-body {
+  display: flex;
+  justify-content: center;
+  gap: rem(69);
+  margin-top: rem(28);
+}
+
+.m-contact-button {
+}

@@ -17,7 +17,13 @@
   --font-size__base: 16;
 
   // フォントファミリー
-  --font-family__base: 'Zen Maru Gothic', sans-serif;
+  --font-family__base: 'Noto Sans JP', sans-serif;
+  --font-family__roboto: 'Roboto', sans-serif;
+  --font-family__inter: 'Inter', sans-serif;
+  --font-family__montserrat: 'Montserrat', sans-serif;
+  --font-family__outfit: 'Outfit', sans-serif;
+  --font-family__sawarabi-gothic: 'Sawarabi Gothic', sans-serif;
+  --font-family__noto-rashi-hebrew: 'Noto Rashi Hebrew', sans-serif;
 
   // =========================================
   // レイアウト関連
@@ -44,7 +50,6 @@
   // =========================================
   // テーマカラー
   --color__brown: #754c24;
-  --color__orange: #e2a864;
   --color__green: #c6d9ab;
   --color__beige: #f2eecd;
   --color__light-beige: #fcfaf5;
@@ -68,6 +73,13 @@
   --color__gray-200: #e3e3e3;
   --color__gray-100: #f5f5f5;
 
+  --color__primary: #000;
+  --color__white: #fff;
+  --color__black: #1c1f27;
+  --color__orange: #e9b628;
+  --color__blue: #4e64ad;
+  --color__bg: #f6f8ff;
+  --color__gradient-blue: linear-gradient(to right, #4e64ad, #2f4db1);
   // =========================================
   // スタイル関連
   // =========================================

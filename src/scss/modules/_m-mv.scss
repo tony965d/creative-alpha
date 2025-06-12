@@ -1,0 +1,53 @@
+@use '../_global' as *;
+
+.m-mv__wrapper {
+  position: relative;
+}
+
+.m-mv__image img {
+  object-fit: cover;
+  aspect-ratio: 1440 / 700;
+  height: 100%;
+}
+
+.m-mv__body {
+  position: absolute;
+  top: 26.6%;
+  left: rem(158);
+  z-index: 1;
+}
+
+.m-mv__title {
+}
+
+.m-mv__title-main {
+  display: flex;
+  flex-direction: column;
+  gap: rem(6);
+  font-size: rem(50);
+  font-weight: 500;
+  line-height: calc(79 / 50);
+  background: var(--color__gradient-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.m-mv__title-main-accent {
+  font-weight: 700;
+  border: 1px solid #1e3379;
+  padding-inline: rem(12);
+}
+
+.m-mv__title-sub {
+  font-size: rem(18);
+  font-weight: 700;
+  line-height: calc(29 / 18);
+  margin-top: rem(30);
+}
+
+.m-mv__body-button {
+  display: flex;
+  justify-content: center;
+  margin-top: rem(40);
+}

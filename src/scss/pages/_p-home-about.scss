@@ -1,0 +1,63 @@
+@use '../_global' as *;
+
+.p-home-about {
+  position: relative;
+  padding-top: rem(106);
+  padding-bottom: rem(107);
+}
+
+.p-home-about::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/front-page/home-about-bg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1440 / 1101;
+  z-index: -1;
+}
+
+.p-home-about__top.l-two-columns {
+  --_width__left: 551;
+  --_width__right: 520;
+  --_column-gap: 53;
+  --_row-gap__grid: 40;
+}
+
+.p-home-about__top-left.l-two-columns__left {
+  padding-top: rem(140);
+}
+
+.p-home-about__top-image img {
+  object-fit: cover;
+  aspect-ratio: 520 / 376;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.p-home-about__content {
+  margin-top: rem(40);
+}
+
+.p-home-about__content.l-two-columns {
+  --_width__left: 423;
+  --_width__right: 626;
+  --_column-gap: 75;
+}
+
+.p-home-about__content-body {
+  padding-top: rem(36);
+}
+
+.p-home-about__content-body-button {
+  display: flex;
+  margin-top: rem(40);
+}
+
+.p-home-about__button-unit {
+  margin-top: rem(80);
+}

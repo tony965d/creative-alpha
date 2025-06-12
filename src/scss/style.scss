@@ -11,6 +11,12 @@
 @use './bases/destyle' as reset;
 
 /*
+ * フォントについて
+ * フォントの定義を行います。
+ */
+@use './bases/font-face' as font-face;
+
+/*
  * 変数について
  * プロジェクト全体で使用される変数を定義します。
  */

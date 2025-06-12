@@ -1,10 +1,10 @@
 @use '../_global' as *;
 
 .l-grid {
-  --_max-width: 1280; // 最大の横幅
-  --_min-width__column: 300; // 最小の横幅
-  --_column-gap: 40; // 列間
-  --_row-gap: 30; // 行間
+  --_max-width: 1124; // 最大の横幅
+  --_min-width__column: 524; // 最小の横幅
+  --_column-gap: 76; // 列間
+  --_row-gap: 36; // 行間
 
   display: grid;
   grid-template-columns: repeat(

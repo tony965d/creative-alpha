@@ -1,0 +1,7 @@
+@use '../_global' as *;
+
+.m-base-text {
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: calc(29 / 16);
+}

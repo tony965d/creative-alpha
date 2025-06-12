@@ -31,8 +31,8 @@ html {
 
 // フォントの指定
 body {
-  font-family: var(--font-family--main);
-  color: var(--color--gray-900);
+  font-family: var(--font-family__base);
+  color: var(--color__black);
   font-size: calc(16rem / var(--font-size__base));
   font-weight: 400;
 }
