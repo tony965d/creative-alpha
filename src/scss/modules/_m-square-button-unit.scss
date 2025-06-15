@@ -11,7 +11,7 @@
   max-width: calc(var(--_max-width) * 1rem / var(--font-size__base));
   margin-inline: auto;
 
-  @include mq('md') {
+  @include mq('lg') {
     grid-template-columns: auto;
   }
 }

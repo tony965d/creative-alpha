@@ -2,8 +2,19 @@
 
 .m-footer-nav {
   display: flex;
-  justify-content: space-between;
   align-items: flex-start;
+  justify-content: space-between;
+  gap: rem(20);
+
+  @include mq('lg') {
+    justify-content: flex-start;
+    gap: rem(60);
+  }
+
+  @include mq('md') {
+    flex-direction: column;
+    gap: rem(24);
+  }
 }
 
 .m-footer-nav {
@@ -28,8 +39,12 @@
 .m-footer-nav__menu {
   font-size: rem(18);
   font-weight: 700;
-  line-height: calc(26 / 18);
+  line-height: calc(22 / 18);
   letter-spacing: 0.04em;
+}
+
+.m-footer-nav__menu:hover {
+  opacity: var(--opacity__hover);
 }
 
 .m-footer-nav__sub-items {
@@ -43,10 +58,15 @@
 }
 
 .m-footer-nav__sub-menu {
+  display: flex;
   font-size: rem(14);
   font-weight: 500;
-  line-height: calc(20 / 14);
+  line-height: calc(17 / 14);
   letter-spacing: 0.04em;
+}
+
+.m-footer-nav__sub-menu:hover {
+  opacity: var(--opacity__hover);
 }
 
 .m-footer-nav__block-button {

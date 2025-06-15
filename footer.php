@@ -4,7 +4,7 @@
         <footer class="m-footer">
           <div class="m-footer__inner l-inner">
             <div class="m-footer__wrapper l-two-columns">
-              <div class="l-two-columns__item">
+              <div class="m-footer__item l-two-columns__item">
                 <div class="m-footer__left l-two-columns__left">
                   <a href="<?php echo get_esc_home_url('/'); ?>" class="m-footer__logo u-hover">
                     <picture class="m-footer__logo-image">

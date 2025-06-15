@@ -28,7 +28,7 @@ $breakpoints: (
   // PCのデザインカンプの横幅
   'xl': 1920,
   // PCで１番多いコンテンツの横幅 + 左右の余白
-  'lg': $width__base--pc + ($space-inline__base--pc * 2),
+  'lg': 1024,
   // タブレットの横幅
   'md': 767,
   // SPのデザインカンプの横幅

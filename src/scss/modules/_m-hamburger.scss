@@ -1,7 +1,7 @@
 @use '../_global' as *;
 
 .m-hamburger {
-  @include mq('md') {
+  @include mq('lg') {
     position: relative;
     width: rem(32);
     height: rem(24);
@@ -21,7 +21,7 @@
 .m-hamburger span {
   display: none;
 
-  @include mq('md') {
+  @include mq('lg') {
     display: inline-block;
     transition: all 0.5s;
     box-sizing: border-box;

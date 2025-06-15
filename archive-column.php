@@ -5,7 +5,7 @@
   <section class="m-sub-mv">
     <div class="m-sub-mv__inner l-inner">
       <div class="m-sub-mv__wrapper">
-        <h1 class="m-page-title">研修サービス</h1>
+        <h1 class="m-page-title">コラム</h1>
       </div>
     </div>
   </section>
@@ -42,7 +42,7 @@
           <?php
           $trainingService_query = new WP_Query(
             array(
-              'post_type'      => 'post',
+              'post_type'      => 'column',
               'posts_per_page' => -1,
             )
           );
@@ -65,25 +65,10 @@
                   <h3 class="m-card__title"><?php the_title(); ?></h3>
                 </div>
                 <div class="m-card__body">
-                  <ul class="m-card__items">
-                    <?php
-                    $blocks = parse_blocks(get_the_content());
-                    foreach ($blocks as $block) {
-                      if ($block['blockName'] === 'lazyblock/training-service') {
-                        $trainingService_loop_json = urldecode($block['attrs']['training-service__loop']);
-                        $trainingService_loop = json_decode($trainingService_loop_json, true);
-
-                        if (!empty($trainingService_loop)) {
-                          foreach ($trainingService_loop as $trainingService_item) {
-                            $trainingService_title = isset($trainingService_item['training-service__title']) ? esc_html($trainingService_item['training-service__title']) : '';
-                            if (!empty($trainingService_title)) {
-                              echo '<li class="m-card__item">' . $trainingService_title . '</li>';
-                            }
-                          }
-                        }
-                      }
-                    }
-                    ?>
+                  <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
                   </ul>
                 </div>
               </a>

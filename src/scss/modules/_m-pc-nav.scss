@@ -1,16 +1,10 @@
 @use '../_global' as *;
 
 .m-pc-nav {
-  display: block;
-
-  @include mq('md') {
-    display: none;
-  }
 }
 
 .m-pc-nav__items {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-end;
   gap: rem(40);
@@ -24,10 +18,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: rem(8);
-  font-size: rem(14);
+  gap: rem(9);
+  font-size: clamp(0.75rem, 0.442rem + 0.48vw, 14px);
   font-weight: 500;
-  line-height: calc(21 / 14);
+  line-height: calc(22 / 14);
 }
 
 .m-pc-nav__link:hover {
@@ -36,8 +30,8 @@
 
 .m-pc-nav__link-arrow {
   position: relative;
-  width: 6px;
-  height: 6px;
+  width: rem(7);
+  height: rem(7);
 }
 
 .m-pc-nav__link-arrow::before {

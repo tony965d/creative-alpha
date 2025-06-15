@@ -62,15 +62,20 @@ function custom_post_type_labels()
 }
 add_action('init', 'custom_post_type_labels', 999);
 
+
 /**
- * 投稿タグを無効化する
+ * カテゴリーとタグを非表示にする
  */
-function disable_post_tags()
+function hide_categories_and_tags()
 {
-  // 投稿タグのタクソノミーを無効化
+  // カテゴリーを非表示
+  unregister_taxonomy_for_object_type('category', 'post');
+
+  // タグを非表示
   unregister_taxonomy_for_object_type('post_tag', 'post');
 }
-add_action('init', 'disable_post_tags', 999);
+add_action('init', 'hide_categories_and_tags', 999);
+
 
 /**
  * スラッグの日本語を自動変換
@@ -86,3 +91,26 @@ function auto_post_slug($slug, $post_ID, $post_status, $post_type)
   return $slug;
 }
 add_filter('wp_unique_post_slug', 'auto_post_slug', 10, 4);
+
+
+// 投稿のパーマリンク構造を変更
+function custom_post_type_rewrite_rules()
+{
+  // パーマリンク構造を変更
+  add_rewrite_rule(
+    'post/([^/]+)/?$',
+    'index.php?post_type=post&name=$matches[1]',
+    'top'
+  );
+}
+add_action('init', 'custom_post_type_rewrite_rules');
+
+function custom_post_type_link($permalink, $post)
+{
+  if ($post->post_type === 'post') {
+    // カテゴリーを含まないURLに変更
+    return home_url('post/' . $post->post_name . '/');
+  }
+  return $permalink;
+}
+add_filter('post_link', 'custom_post_type_link', 10, 2);

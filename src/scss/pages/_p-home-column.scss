@@ -11,12 +11,13 @@
 }
 
 .p-home-column__cards {
-  margin-top: rem(39);
-}
-
-.p-home-column__cards.l-grid {
   --_min-width__column: 360;
   --_column-gap: 22;
+  margin-top: rem(39);
+
+  @include mq('md') {
+    --_min-width__column: 300;
+  }
 }
 
 .p-home-column__button {

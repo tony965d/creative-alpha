@@ -20,9 +20,25 @@
 .m-voice-block__content {
   display: flex;
   align-items: center;
-  gap: rem(132);
-  padding-block: rem(77);
-  padding-left: rem(174);
+  gap: clamp(40px, -4.071rem + 13.69vw, 132px);
+  padding-top: rem(77);
+  padding-bottom: rem(76);
+  padding-left: clamp(40px, -7.071rem + 19.94vw, 174px);
+
+  @include mq('lg') {
+    flex-direction: column;
+    gap: rem(40);
+    padding-inline: rem(20);
+  }
+}
+
+.m-voice-block__content--mystery-shopper {
+  gap: clamp(150px, 6.304rem + 6.4vw, 193px);
+  padding-top: rem(47);
+
+  @include mq('lg') {
+    gap: rem(40);
+  }
 }
 
 .m-voice-block__body {
@@ -56,7 +72,7 @@
 }
 
 .m-voice-block__button {
-  margin-top: rem(10);
+  margin-top: rem(7);
 }
 
 .m-voice-block__button--mystery-shopper {

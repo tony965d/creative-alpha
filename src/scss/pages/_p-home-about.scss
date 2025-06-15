@@ -21,15 +21,15 @@
   z-index: -1;
 }
 
-.p-home-about__top.l-two-columns {
+.p-home-about__top {
   --_width__left: 551;
   --_width__right: 520;
   --_column-gap: 53;
   --_row-gap__grid: 40;
 }
 
-.p-home-about__top-left.l-two-columns__left {
-  padding-top: rem(140);
+.p-home-about__top-item {
+  align-items: center;
 }
 
 .p-home-about__top-image img {
@@ -56,6 +56,10 @@
 .p-home-about__content-body-button {
   display: flex;
   margin-top: rem(40);
+
+  @include mq('md') {
+    justify-content: center;
+  }
 }
 
 .p-home-about__button-unit {

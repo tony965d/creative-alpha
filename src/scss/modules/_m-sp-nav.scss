@@ -3,7 +3,7 @@
 .m-sp-nav {
   display: none;
 
-  @include mq('md') {
+  @include mq('lg') {
     position: fixed;
     top: 0;
     left: 0;

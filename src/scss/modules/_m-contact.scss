@@ -29,11 +29,34 @@
 }
 
 .m-contact__block {
+  position: relative;
   border-radius: 10px;
   background-color: var(--color__white);
-  padding-top: rem(60);
-  padding-bottom: rem(40);
+  padding-top: rem(54);
+  padding-bottom: rem(60);
+  padding-inline: rem(20);
   margin-top: rem(39);
+}
+
+.m-contact__block::before {
+  content: '';
+  position: absolute;
+  top: rem(-98);
+  right: rem(16);
+  background-image: url(../images/common/contact-block-icon.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: rem(180);
+  height: rem(180);
+  z-index: 0;
+
+  @include mq('md') {
+    top: rem(-60);
+    right: 0;
+    width: rem(120);
+    height: rem(120);
+  }
 }
 
 .m-contact__block-text {
@@ -44,8 +67,11 @@
   display: flex;
   justify-content: center;
   gap: rem(69);
-  margin-top: rem(28);
-}
+  margin-top: rem(20);
 
-.m-contact-button {
+  @include mq('lg') {
+    flex-direction: column;
+    align-items: center;
+    gap: rem(40);
+  }
 }

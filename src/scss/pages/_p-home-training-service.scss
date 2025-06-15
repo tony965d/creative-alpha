@@ -22,7 +22,7 @@
 }
 
 .p-home-training-service__header-text {
-  margin-top: rem(48);
+  margin-top: rem(58);
 }
 
 .p-home-training-service__wrapper {
@@ -36,6 +36,10 @@
   left: rem(264);
   width: rem(129);
   height: rem(95);
+
+  @include mq('md') {
+    left: rem(190);
+  }
 }
 
 .p-home-training-service__bg-icon img {
@@ -46,7 +50,12 @@
 }
 
 .p-home-training-service__cards {
+  grid-template-columns: repeat(2, 1fr);
   margin-top: rem(27);
+
+  @include mq('md') {
+    grid-template-columns: 1fr;
+  }
 }
 
 .p-home-training-service__bottom {

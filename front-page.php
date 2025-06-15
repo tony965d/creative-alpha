@@ -125,7 +125,7 @@
         <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-service-training-icon.png" alt="" width="129" height="95" loading="lazy">
       </picture>
       <div class="p-home-training-service__header">
-        <hgroup class="m-section-header">
+        <hgroup class="m-section-header m-section-header--training-service">
           <p class="m-section-header__subtitle">Training</p>
           <h2 class="m-section-header__title">研修サービス</h2>
         </hgroup>
@@ -169,7 +169,26 @@
                   <h3 class="m-card__title"><?php the_title(); ?></h3>
                 </div>
                 <div class="m-card__body">
+                  <ul class="m-card__items">
+                    <?php
+                    $blocks = parse_blocks(get_the_content());
+                    foreach ($blocks as $block) {
+                      if ($block['blockName'] === 'lazyblock/training-service') {
+                        $trainingService_loop_json = urldecode($block['attrs']['training-service__loop']);
+                        $trainingService_loop = json_decode($trainingService_loop_json, true);
 
+                        if (!empty($trainingService_loop)) {
+                          foreach ($trainingService_loop as $trainingService_item) {
+                            $trainingService_title = isset($trainingService_item['training-service__title']) ? esc_html($trainingService_item['training-service__title']) : '';
+                            if (!empty($trainingService_title)) {
+                              echo '<li class="m-card__item">' . $trainingService_title . '</li>';
+                            }
+                          }
+                        }
+                      }
+                    }
+                    ?>
+                  </ul>
                 </div>
               </a>
             <?php endwhile; ?>
@@ -223,7 +242,7 @@
           </div>
         </div>
         <div class="p-home-training-service__bottom m-voice-block">
-          <div class="m-voice-block__content">
+          <div class="m-voice-block__content m-voice-block__content--mystery-shopper">
             <div class="m-voice-block__body">
               <h3 class="m-voice-block__title">
                 <span class="m-voice-block__title-sub">覆面調査を実施した</span>
@@ -244,13 +263,12 @@
   </section>
   <!-- /覆面調査 -->
 
-
   <!-- おすすめ記事 -->
   <section class="p-home-column">
     <div class="p-home-column__inner l-inner">
       <div class="p-home-column__wrapper">
         <hgroup class="m-section-header m-section-header--column">
-          <p class="m-section-header__subtitle">Pickup Column</p>
+          <p class="m-section-header__subtitle m-section-header__subtitle--column">Pickup Column</p>
           <h2 class="m-section-header__title m-section-header__title--column">おすすめ記事</h2>
         </hgroup>
         <div class="p-home-column__cards l-grid">
@@ -295,7 +313,7 @@
           <?php endif;  ?>
         </div>
         <div class="p-home-column__button">
-          <a href="<?php echo home_url('/column'); ?>" class="m-button m-button--invert">詳しく見る</a>
+          <a href="<?php echo home_url('/column'); ?>" class="m-button m-button--invert">一覧に戻る</a>
         </div>
       </div>
     </div>
@@ -304,7 +322,7 @@
 
 
   <!-- お問い合わせ -->
-  <section class="p-home-contact">
+  <section class="p-contact-cta">
     <?php get_template_part('template-parts/contact'); ?>
   </section>
   <!-- /お問い合わせ -->

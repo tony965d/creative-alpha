@@ -1,6 +1,11 @@
 @use '../_global' as *;
 
 .m-tel-unit {
+  @include mq('md') {
+    display: grid;
+    justify-items: center;
+    gap: rem(20);
+  }
 }
 
 .m-tel-unit__link {
@@ -16,6 +21,7 @@
   letter-spacing: -0.05em;
 
   @include mq('md') {
+    font-size: rem(32);
     pointer-events: auto;
   }
 }
@@ -41,6 +47,11 @@
   display: flex;
   width: rem(36);
   height: rem(36);
+
+  @include mq('md') {
+    width: rem(32);
+    height: rem(32);
+  }
 }
 
 .m-tel-unit__link-icon.m-tel-unit__link-icon--header {
