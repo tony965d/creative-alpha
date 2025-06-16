@@ -1,16 +1,16 @@
 @use '../_global' as *;
 
-.p-home-column {
+.m-home-column {
   padding-block: rem(100);
 }
 
-.p-home-column__inner {
+.m-home-column__inner {
 }
 
-.p-home-column__wrapper {
+.m-home-column__wrapper {
 }
 
-.p-home-column__cards {
+.m-home-column__cards {
   --_min-width__column: 360;
   --_column-gap: 22;
   margin-top: rem(39);
@@ -20,14 +20,14 @@
   }
 }
 
-.p-home-column__button {
+.m-home-column__button {
   position: relative;
   display: flex;
   justify-content: center;
   margin-top: rem(64);
 }
 
-.p-home-column__button::before {
+.m-home-column__button::before {
   content: '';
   position: absolute;
   top: rem(-29);
@@ -40,4 +40,9 @@
   height: rem(133);
   aspect-ratio: 156 / 133;
   z-index: -1;
+
+  @include mq('md') {
+    top: 0;
+    left: 0;
+  }
 }

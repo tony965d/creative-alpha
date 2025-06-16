@@ -6,6 +6,10 @@
   padding-bottom: rem(17);
   padding-left: rem(84);
   padding-right: rem(83);
+
+  @include mq('md') {
+    padding-inline: rem(20);
+  }
 }
 
 .m-training-service-block::before {
@@ -28,9 +32,13 @@
   background-clip: text;
   color: transparent;
   line-height: calc(45 / 32);
+
+  @include mq('md') {
+    font-size: rem(24);
+  }
 }
 
-.m-training-service-block__list {
+.m-training-service-block__wrapper {
   border-top: 2px solid #4e64ad;
   margin-top: rem(10);
 }

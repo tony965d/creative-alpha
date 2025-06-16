@@ -1,8 +1,5 @@
 @use '../_global' as *;
 
-.m-pc-nav {
-}
-
 .m-pc-nav__items {
   display: flex;
   align-items: center;
@@ -22,10 +19,6 @@
   font-size: clamp(0.75rem, 0.442rem + 0.48vw, 14px);
   font-weight: 500;
   line-height: calc(22 / 14);
-}
-
-.m-pc-nav__link:hover {
-  opacity: var(--opacity__hover);
 }
 
 .m-pc-nav__link-arrow {

@@ -39,6 +39,20 @@
   font-weight: 700;
   line-height: calc(19 / 16);
   letter-spacing: 0.02em;
+
+  @include mq('md') {
+    width: 100%;
+  }
+}
+
+.m-definition-list__term.m-definition-list__term--last {
+  @include mq('lg') {
+    flex-direction: column;
+  }
+
+  @include mq('md') {
+    flex-direction: row;
+  }
 }
 
 .m-definition-list__description {
@@ -50,6 +64,11 @@
   padding-block: rem(15);
   padding-left: rem(38);
   border-bottom: 1px solid #dddddd;
+
+  @include mq('md') {
+    width: 100%;
+    padding-left: rem(10);
+  }
 }
 
 .m-definition-list__term-icon {

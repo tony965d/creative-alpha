@@ -1,12 +1,12 @@
 @use '../_global' as *;
 
-.p-home-training-service {
+.m-home-training-service {
   position: relative;
   padding-top: rem(99);
   padding-bottom: rem(100);
 }
 
-.p-home-training-service::before {
+.m-home-training-service::before {
   content: '';
   position: absolute;
   top: 0;
@@ -17,20 +17,20 @@
   z-index: -1;
 }
 
-.p-home-training-service__inner {
+.m-home-training-service__inner {
   position: relative;
 }
 
-.p-home-training-service__header-text {
+.m-home-training-service__header-text {
   margin-top: rem(58);
 }
 
-.p-home-training-service__wrapper {
+.m-home-training-service__wrapper {
   position: relative;
   margin-top: rem(76);
 }
 
-.p-home-training-service__bg-icon {
+.m-home-training-service__bg-icon {
   position: absolute;
   top: rem(-7);
   left: rem(264);
@@ -42,14 +42,14 @@
   }
 }
 
-.p-home-training-service__bg-icon img {
+.m-home-training-service__bg-icon img {
   object-fit: cover;
   aspect-ratio: 129 / 95;
   width: 100%;
   height: 100%;
 }
 
-.p-home-training-service__cards {
+.m-home-training-service__cards {
   grid-template-columns: repeat(2, 1fr);
   margin-top: rem(27);
 
@@ -58,6 +58,6 @@
   }
 }
 
-.p-home-training-service__bottom {
+.m-home-training-service__bottom {
   margin-top: rem(60);
 }

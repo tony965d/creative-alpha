@@ -7,10 +7,6 @@
   gap: rem(12);
 }
 
-.m-card:hover {
-  opacity: var(--opacity__hover);
-}
-
 .m-card__thumbnail {
 }
 
@@ -51,9 +47,6 @@
 
 .m-card__body {
   padding-left: rem(6);
-}
-
-.m-card__text {
 }
 
 .m-card__items {

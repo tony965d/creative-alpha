@@ -1,12 +1,12 @@
 @use '../_global' as *;
 
-.p-home-about {
+.m-home-about {
   position: relative;
   padding-top: rem(106);
   padding-bottom: rem(107);
 }
 
-.p-home-about::before {
+.m-home-about::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -21,39 +21,39 @@
   z-index: -1;
 }
 
-.p-home-about__top {
+.m-home-about__top {
   --_width__left: 551;
   --_width__right: 520;
   --_column-gap: 53;
   --_row-gap__grid: 40;
 }
 
-.p-home-about__top-item {
+.m-home-about__top-item {
   align-items: center;
 }
 
-.p-home-about__top-image img {
+.m-home-about__top-image img {
   object-fit: cover;
   aspect-ratio: 520 / 376;
   height: 100%;
   border-radius: 20px;
 }
 
-.p-home-about__content {
+.m-home-about__content {
   margin-top: rem(40);
 }
 
-.p-home-about__content.l-two-columns {
+.m-home-about__content.l-two-columns {
   --_width__left: 423;
   --_width__right: 626;
   --_column-gap: 75;
 }
 
-.p-home-about__content-body {
+.m-home-about__content-body {
   padding-top: rem(36);
 }
 
-.p-home-about__content-body-button {
+.m-home-about__content-body-button {
   display: flex;
   margin-top: rem(40);
 
@@ -62,6 +62,6 @@
   }
 }
 
-.p-home-about__button-unit {
+.m-home-about__button-unit-wrapper {
   margin-top: rem(80);
 }

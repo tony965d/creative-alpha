@@ -1,11 +1,11 @@
 @use '../_global' as *;
 
-.p-single-training-service {
+.m-single-training-service {
   position: relative;
   padding-bottom: rem(88);
 }
 
-.p-single-training-service::before {
+.m-single-training-service::before {
   content: '';
   position: absolute;
   top: 0;
@@ -20,17 +20,17 @@
   z-index: -1;
 }
 
-.p-single-training-service__outer {
+.m-single-training-service__outer {
 }
 
-.p-single-training-service__inner.l-inner {
+.m-single-training-service__inner.l-inner {
   --_max-width: 975;
 }
 
-.p-single-training-service__wrapper {
+.m-single-training-service__wrapper {
 }
 
-.p-single-training-service__contents {
+.m-single-training-service__contents {
   display: grid;
   gap: rem(40);
   margin-top: rem(33);

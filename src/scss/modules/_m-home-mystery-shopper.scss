@@ -1,12 +1,12 @@
 @use '../_global' as *;
 
-.p-home-mystery-shopper {
+.m-home-mystery-shopper {
   position: relative;
   padding-top: rem(100);
   padding-bottom: rem(102);
 }
 
-.p-home-mystery-shopper::before {
+.m-home-mystery-shopper::before {
   content: '';
   position: absolute;
   top: 0;
@@ -20,29 +20,29 @@
   z-index: -1;
 }
 
-.p-home-mystery-shopper__inner {
+.m-home-mystery-shopper__inner {
 }
 
-.p-home-mystery-shopper__wrapper {
+.m-home-mystery-shopper__wrapper {
 }
 
-.p-home-mystery-shopper__content {
+.m-home-mystery-shopper__content {
 }
 
-.p-home-mystery-shopper__content.l-two-columns {
+.m-home-mystery-shopper__content.l-two-columns {
   --_width__left: 503;
   --_width__right: 562;
   --_column-gap: 59;
 }
 
-.p-home-mystery-shopper__content-item {
+.m-home-mystery-shopper__item {
 }
 
-.p-home-mystery-shopper__content-image {
+.m-home-mystery-shopper__image {
   position: relative;
 }
 
-.p-home-mystery-shopper__content-image img {
+.m-home-mystery-shopper__image img {
   position: absolute;
   top: 50%;
   right: 0;
@@ -54,15 +54,19 @@
   border-radius: 20px;
 }
 
-.p-home-mystery-shopper__content-body {
+.m-home-mystery-shopper__body {
 }
 
-.p-home-mystery-shopper__content-body-text {
+.m-home-mystery-shopper__text {
   margin-top: rem(34);
 }
 
-.p-home-mystery-shopper__content-body-button {
+.m-home-mystery-shopper__button {
   display: flex;
   justify-content: center;
   margin-top: rem(72);
+}
+
+.m-home-mystery-shopper__bottom {
+  margin-top: rem(60);
 }

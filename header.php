@@ -30,10 +30,10 @@
               </div>
               <div class="m-header__right l-two-columns__right">
                 <div class="m-tel-unit">
-                  <a href="tel:03-6402-7573" class="m-tel-unit__link m-tel-unit__link--header"><span class="m-tel-unit__link-icon m-tel-unit__link-icon--header"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/tel-icon.svg" alt="" width="21" height="21" loading="lazy"></span>03-6402-7573</a>
+                  <a href="tel:03-6402-7573" class="m-tel-unit__link m-tel-unit__link--header"><span class="m-tel-unit__icon m-tel-unit__icon--header"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/tel-icon.svg" alt="" width="21" height="21" loading="lazy"></span>03-6402-7573</a>
                   <p class="m-tel-unit__text m-tel-unit__text--header">受付時間 平日 10:00〜18:00</p>
                 </div>
-                <a href="<?php echo get_esc_home_url('/contact'); ?>" class="m-contact-button m-contact-button--header"><span class="m-contact-button__icon"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/contact-icon.svg" alt="" width="16" height="12" loading="lazy"></span>お問い合わせ</a>
+                <a href="<?php echo get_esc_home_url('/contact'); ?>" class="m-contact-button m-contact-button--header"><i class="fa-solid fa-envelope"></i>お問い合わせ</a>
               </div>
             </div>
             <div class="m-hamburger js-hamburger" aria-label="メニューを開く" title="メニューを開く">
@@ -45,28 +45,28 @@
           <div class="m-header__bottom">
             <nav class="m-pc-nav">
               <ul class="m-pc-nav__items">
-                <li class="m-pc-nav__item m-pc-nav__item--first">
-                  <a href="<?php echo get_esc_home_url('/about'); ?>" class="m-pc-nav__link">クリエイティブアルファについて<span class="m-pc-nav__link-arrow"></span></a>
+                <li class="m-pc-nav__item">
+                  <a href="<?php echo get_esc_home_url('/about'); ?>" class="m-pc-nav__link u-hover">クリエイティブアルファについて<span class="m-pc-nav__link-arrow"></span></a>
                 </li>
                 <li class="m-pc-nav__item">
-                  <a href="<?php echo get_esc_home_url('/training-service'); ?>" class="m-pc-nav__link">研修サービス<span class="m-pc-nav__link-arrow"></span></a>
+                  <a href="<?php echo get_esc_home_url('/training-service'); ?>" class="m-pc-nav__link u-hover">研修サービス<span class="m-pc-nav__link-arrow"></span></a>
                 </li>
                 <li class="m-pc-nav__item">
-                  <a href="<?php echo get_esc_home_url('/mystery-shopper'); ?>" class="m-pc-nav__link">覆面調査（ミステリーショッパー）<span class="m-pc-nav__link-arrow"></span></a>
+                  <a href="<?php echo get_esc_home_url('/mystery-shopper'); ?>" class="m-pc-nav__link u-hover">覆面調査（ミステリーショッパー）<span class="m-pc-nav__link-arrow"></span></a>
                 </li>
                 <li class="m-pc-nav__item">
-                  <a href="<?php echo get_esc_home_url('/voice'); ?>" class="m-pc-nav__link">お客様の声<span class="m-pc-nav__link-arrow"></span></a>
+                  <a href="<?php echo get_esc_home_url('/voice'); ?>" class="m-pc-nav__link u-hover">お客様の声<span class="m-pc-nav__link-arrow"></span></a>
                 </li>
                 <li class="m-pc-nav__item">
-                  <a href="<?php echo get_esc_home_url('/company'); ?>" class="m-pc-nav__link">会社概要・講師紹介<span class="m-pc-nav__link-arrow"></span></a>
+                  <a href="<?php echo get_esc_home_url('/company'); ?>" class="m-pc-nav__link u-hover">会社概要・講師紹介<span class="m-pc-nav__link-arrow"></span></a>
                 </li>
                 <li class="m-pc-nav__item">
-                  <a href="<?php echo get_esc_home_url('/column'); ?>" class="m-pc-nav__link">コラム<span class="m-pc-nav__link-arrow"></span></a>
+                  <a href="<?php echo get_esc_home_url('/column'); ?>" class="m-pc-nav__link u-hover">コラム<span class="m-pc-nav__link-arrow"></span></a>
                 </li>
               </ul>
             </nav>
           </div>
-          <nav class="m-header__sp-nav m-sp-nav js-sp-nav">
+          <nav class="m-sp-nav js-sp-nav">
             <div class="m-sp-nav__inner l-inner">
               <div class="m-sp-nav__wrapper">
                 <ul class="m-sp-nav__items">
@@ -89,6 +89,13 @@
                     <a href="<?php echo get_esc_home_url('/column'); ?>" class="m-sp-nav__menu">コラム</a>
                   </li>
                 </ul>
+                <div class="m-sp-nav__contact">
+                  <div class="m-tel-unit m-tel-unit--sp-nav">
+                    <a href="tel:03-6402-7573" class="m-tel-unit__link m-tel-unit__link--header"><span class="m-tel-unit__icon m-tel-unit__icon--header"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/tel-icon.svg" alt="" width="21" height="21" loading="lazy"></span>03-6402-7573</a>
+                    <p class="m-tel-unit__text m-tel-unit__text--header">受付時間 平日 10:00〜18:00</p>
+                  </div>
+                  <a href="<?php echo get_esc_home_url('/contact'); ?>" class="m-contact-button m-contact-button--header"><i class="fa-solid fa-envelope"></i>お問い合わせ</a>
+                </div>
               </div>
             </div>
           </nav>

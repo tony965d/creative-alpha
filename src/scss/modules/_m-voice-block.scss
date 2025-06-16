@@ -35,6 +35,7 @@
 .m-voice-block__content--mystery-shopper {
   gap: clamp(150px, 6.304rem + 6.4vw, 193px);
   padding-top: rem(47);
+  padding-bottom: rem(56);
 
   @include mq('lg') {
     gap: rem(40);
@@ -69,6 +70,11 @@
   background-clip: text;
   color: transparent;
   line-height: calc(59 / 42);
+
+  @include mq('md') {
+    font-size: rem(32);
+    line-height: calc(48 / 32);
+  }
 }
 
 .m-voice-block__button {

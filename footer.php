@@ -16,58 +16,60 @@
                     〒105-0013<br>
                     東京都港区浜松町1-2-14　ユーデン浜松町ビル2F
                   </p>
-                  <div class="m-footer__tel m-tel-unit">
-                    <a href="tel:03-6402-7573" class="m-tel-unit__link"><span class="m-tel-unit__link-icon m-tel-unit__link-icon--contact"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/tel-icon.svg" alt="" width="21" height="21" loading="lazy"></span>03-6402-7573</a>
-                    <p class="m-tel-unit__text">
-                      受付時間 平日 10:00〜18:00
-                    </p>
+                  <div class="m-footer__tel">
+                    <div class="m-tel-unit">
+                      <a href="tel:03-6402-7573" class="m-tel-unit__link"><span class="m-tel-unit__icon m-tel-unit__icon--contact"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/tel-icon.svg" alt="" width="21" height="21" loading="lazy"></span>03-6402-7573</a>
+                      <p class="m-tel-unit__text">
+                        受付時間 平日 10:00〜18:00
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <div class="m-footer__right l-two-columns__right">
-                  <nav class="m-footer__nav m-footer-nav">
+                  <nav class="m-footer-nav">
                     <div class="m-footer-nav__block">
                       <ul class="m-footer-nav__items">
                         <li class="m-footer-nav__item">
-                          <a href="<?php echo get_esc_home_url('/training-service'); ?>" class="m-footer-nav__menu">研修サービス</a>
+                          <a href="<?php echo get_esc_home_url('/training-service'); ?>" class="m-footer-nav__menu u-hover">研修サービス</a>
                           <ul class="m-footer-nav__sub-items">
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu">接客研修</a>
+                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu u-hover">接客研修</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu">店舗運営</a>
+                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu u-hover">店舗運営</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu">売場づくり(VMD研修)</a>
+                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu u-hover">売場づくり(VMD研修)</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu">リアル店舗価値向上</a>
+                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu u-hover">リアル店舗価値向上</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu">顧客ロイヤルティ向上</a>
+                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu u-hover">顧客ロイヤルティ向上</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu">商圏戦略</a>
+                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu u-hover">商圏戦略</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu">現場指導型研修(OJT研修)</a>
+                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu u-hover">現場指導型研修(OJT研修)</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu">マネジメント・リーダ・育成</a>
+                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu u-hover">マネジメント・リーダ・育成</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu">クレーム・カスタマーハラスメント</a>
+                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu u-hover">クレーム・カスタマーハラスメント</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu">インバウンド</a>
+                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu u-hover">インバウンド</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu">接客ロープレコンテスト</a>
+                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu u-hover">接客ロープレコンテスト</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu">年間プログラム研修</a>
+                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu u-hover">年間プログラム研修</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu">NPS調査・eNPS調査</a>
+                              <a href="<?php echo get_esc_home_url('/training-service/#'); ?>" class="m-footer-nav__sub-menu u-hover">NPS調査・eNPS調査</a>
                             </li>
                           </ul>
                         </li>
@@ -76,26 +78,26 @@
                     <div class="m-footer-nav__block m-footer-nav__block---right">
                       <ul class="m-footer-nav__items">
                         <li class="m-footer-nav__item">
-                          <a href="<?php echo get_esc_home_url('/about'); ?>" class="m-footer-nav__menu">クリエイティブアルファについて</a>
+                          <a href="<?php echo get_esc_home_url('/about'); ?>" class="m-footer-nav__menu u-hover">クリエイティブアルファについて</a>
                         </li>
                         <li class="m-footer-nav__item">
-                          <a href="<?php echo get_esc_home_url('/mystery-shopper'); ?>" class="m-footer-nav__menu">覆面調査（ミステリーショッパー）</a>
+                          <a href="<?php echo get_esc_home_url('/mystery-shopper'); ?>" class="m-footer-nav__menu u-hover">覆面調査（ミステリーショッパー）</a>
                         </li>
                         <li class="m-footer-nav__item">
-                          <a href="<?php echo get_esc_home_url('/voice'); ?>" class="m-footer-nav__menu">お客様の声</a>
+                          <a href="<?php echo get_esc_home_url('/voice'); ?>" class="m-footer-nav__menu u-hover">お客様の声</a>
                         </li>
                         <li class="m-footer-nav__item">
-                          <a href="<?php echo get_esc_home_url('/company'); ?>" class="m-footer-nav__menu">会社概要・講師紹介</a>
+                          <a href="<?php echo get_esc_home_url('/company'); ?>" class="m-footer-nav__menu u-hover">会社概要・講師紹介</a>
                         </li>
                         <li class="m-footer-nav__item">
-                          <a href="<?php echo get_esc_home_url('/column'); ?>" class="m-footer-nav__menu">コラム</a>
+                          <a href="<?php echo get_esc_home_url('/column'); ?>" class="m-footer-nav__menu u-hover">コラム</a>
                         </li>
                         <li class="m-footer-nav__item">
-                          <a href="<?php echo get_esc_home_url('/privacy'); ?>" class="m-footer-nav__menu">プライバシーポリシー</a>
+                          <a href="<?php echo get_esc_home_url('/privacy'); ?>" class="m-footer-nav__menu u-hover">プライバシーポリシー</a>
                         </li>
                       </ul>
-                      <div class="m-footer-nav__block-button">
-                        <a href="<?php echo get_esc_home_url('/contact'); ?>" class="m-contact-button m-contact-button--footer"><span class="m-contact-button__icon"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/contact-icon.svg" alt="" width="16" height="12" loading="lazy"></span>お問い合わせ</a>
+                      <div class="m-footer-nav__button">
+                        <a href="<?php echo get_esc_home_url('/contact'); ?>" class="m-contact-button m-contact-button--footer"><i class="fa-solid fa-envelope"></i>お問い合わせ</a>
                       </div>
                     </div>
                   </nav>

@@ -32,7 +32,7 @@
   --_max-width: 1360;
 
   @include mq('md') {
-    --_max-width: var(--max-width__base);
+    max-width: 100%;
   }
 }
 
@@ -48,9 +48,6 @@
   }
 }
 
-.m-header__item {
-}
-
 .m-header__left {
   display: flex;
   flex-wrap: wrap;
@@ -63,10 +60,6 @@
   align-items: center;
   height: inherit;
   z-index: 100;
-}
-
-.m-header__logo:hover {
-  opacity: var(--opacity__hover);
 }
 
 .m-header__logo img {

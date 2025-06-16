@@ -56,8 +56,8 @@
                     <?php the_post_thumbnail('full'); ?>
                   <?php } else { ?>
                     <picture>
-                      <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy-image1.webp" type="image/webp">
-                      <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy-image1.jpg" alt="ダミー画像" width="524" height="280" loading="lazy">
+                      <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy.webp" type="image/webp">
+                      <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy.png" alt="ダミー画像" width="524" height="280" loading="lazy">
                     </picture>
                   <?php } ?>
                 </figure>

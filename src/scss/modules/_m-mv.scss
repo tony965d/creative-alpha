@@ -8,6 +8,10 @@
   object-fit: cover;
   aspect-ratio: 1440 / 700;
   height: 100%;
+
+  @include mq('md') {
+    aspect-ratio: 3 / 4;
+  }
 }
 
 .m-mv__body {
@@ -31,6 +35,11 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+
+  @include mq('md') {
+    font-size: rem(32);
+    line-height: calc(48 / 32);
+  }
 }
 
 .m-mv__title-main-accent {
@@ -44,10 +53,20 @@
   font-weight: 700;
   line-height: calc(29 / 18);
   margin-top: rem(34);
+
+  @include mq('md') {
+    font-size: rem(16);
+    line-height: calc(24 / 16);
+    margin-top: rem(24);
+  }
 }
 
 .m-mv__body-button {
   display: flex;
   justify-content: center;
   margin-top: rem(40);
+
+  @include mq('md') {
+    margin-top: rem(24);
+  }
 }

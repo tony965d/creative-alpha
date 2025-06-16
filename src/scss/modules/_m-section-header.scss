@@ -36,6 +36,11 @@
   background-clip: text;
   color: transparent;
   line-height: calc(44 / 37);
+
+  @include mq('lg') {
+    font-size: rem(32);
+    line-height: calc(48 / 32);
+  }
 }
 
 .m-section-header__title.m-section-header__title--mystery-shopper {
@@ -53,6 +58,11 @@
   background: unset;
   -webkit-background-clip: unset;
   background-clip: unset;
+
+  @include mq('md') {
+    font-size: rem(32);
+    line-height: calc(48 / 32);
+  }
 }
 
 .m-section-header__title.m-section-header__title--column::before {
@@ -85,6 +95,11 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+
+  @include mq('md') {
+    font-size: rem(24);
+    line-height: calc(32 / 24);
+  }
 }
 
 .m-section-header__subtitle {

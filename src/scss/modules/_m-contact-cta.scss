@@ -1,11 +1,11 @@
 @use '../_global' as *;
 
-.m-contact {
+.m-contact-cta {
   position: relative;
   padding-block: rem(100);
 }
 
-.m-contact::before {
+.m-contact-cta::before {
   content: '';
   position: absolute;
   top: 0;
@@ -17,7 +17,7 @@
   z-index: -1;
 }
 
-.m-contact__inner.l-inner {
+.m-contact-cta__inner.l-inner {
   --_max-width: 983;
 
   @include mq('md') {
@@ -25,10 +25,10 @@
   }
 }
 
-.m-contact__wrapper {
+.m-contact-cta__wrapper {
 }
 
-.m-contact__block {
+.m-contact-cta__block {
   position: relative;
   border-radius: 10px;
   background-color: var(--color__white);
@@ -38,7 +38,7 @@
   margin-top: rem(39);
 }
 
-.m-contact__block::before {
+.m-contact-cta__block::before {
   content: '';
   position: absolute;
   top: rem(-98);
@@ -59,11 +59,11 @@
   }
 }
 
-.m-contact__block-text {
+.m-contact-cta__text-wrapper {
   text-align: center;
 }
 
-.m-contact__block-body {
+.m-contact-cta__body {
   display: flex;
   justify-content: center;
   gap: rem(69);

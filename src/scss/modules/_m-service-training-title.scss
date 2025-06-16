@@ -25,4 +25,9 @@
   background-clip: text;
   color: transparent;
   line-height: calc(43 / 30);
+
+  @include mq('md') {
+    font-size: rem(24);
+    line-height: calc(32 / 24);
+  }
 }
