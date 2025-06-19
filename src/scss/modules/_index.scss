@@ -1,5 +1,8 @@
 // modules styles
 
+@forward "m-voice-training-service";
+@forward "m-voice-mystery-shopper";
+@forward "m-voice-contents";
 @forward "m-voice-block";
 @forward "m-triangle-arrow";
 @forward "m-training-service-block";
@@ -15,6 +18,9 @@
 @forward "m-pc-nav";
 @forward "m-pc-nav-menu";
 @forward "m-page-title";
+@forward "m-mystery-shopper-problems";
+@forward "m-mystery-shopper-point";
+@forward "m-mystery-shopper-features";
 @forward "m-mv";
 @forward "m-home-training-service";
 @forward "m-home-mystery-shopper";
@@ -27,6 +33,7 @@
 @forward "m-divider-title";
 @forward "m-definition-list";
 @forward "m-content-title";
+@forward "m-content-subtitle";
 @forward "m-contact-form";
 @forward "m-contact-cta";
 @forward "m-contact-button";
@@ -34,8 +41,13 @@
 @forward "m-card";
 @forward "m-button";
 @forward "m-breadcrumb";
+@forward "m-base-text";
+@forward "m-article-content";
 @forward "m-archive-training";
 @forward "m-accordion";
 @forward "m-accordion-group";
-@forward "./m-base-text";
-@forward "./m-article-content";
+@forward "m-about-training-service";
+@forward "m-about-mystery-shopper";
+@forward "m-about-header";
+@forward "m-about-contents";
+@forward "m-about-case-studies";

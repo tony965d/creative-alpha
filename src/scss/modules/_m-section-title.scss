@@ -6,9 +6,15 @@
   gap: rem(6);
 }
 
-.m-section-title__icon {
+.m-section-title--center {
+  justify-content: center;
+}
+
+.m-section-title__icon img {
+  object-fit: cover;
+  aspect-ratio: 57 / 50;
   width: rem(57);
-  height: rem(50);
+  height: 100%;
 }
 
 .m-section-title__text {
@@ -18,5 +24,23 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  line-height: calc(42 / 35);
+
+  @include mq('md') {
+    font-size: rem(24);
+  }
+}
+
+.m-section-title__text--training-service {
   line-height: calc(44 / 35);
+}
+
+.m-section-title__text--middle {
+  font-size: rem(35);
+  line-height: calc(42 / 35);
+}
+
+.m-section-title__text--large {
+  font-size: rem(37);
+  line-height: calc(44 / 37);
 }

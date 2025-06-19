@@ -55,6 +55,6 @@
 
 @include mq('md') {
   .l-two-columns--zigzag .l-two-columns__item:nth-of-type(even) {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }

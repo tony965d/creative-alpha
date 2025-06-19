@@ -25,3 +25,20 @@
   height: rem(94);
   z-index: -1;
 }
+
+.m-page-title--large {
+  font-size: rem(37);
+  line-height: calc(43 / 37);
+}
+
+.m-page-title--large::before {
+  right: rem(-130);
+
+  @include mq('md') {
+    right: 0;
+  }
+}
+
+.m-page-title--icon-invert::before {
+  background-image: url(../images/common/sub-mv-title-icon-invert.webp);
+}

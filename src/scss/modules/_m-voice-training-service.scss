@@ -1,0 +1,7 @@
+@use '../_global' as *;
+
+.m-voice-training-service__wrapper {
+  display: grid;
+  gap: rem(48);
+  margin-top: rem(40);
+}

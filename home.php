@@ -6,7 +6,7 @@
     <div class="m-sub-mv">
       <div class="m-sub-mv__inner l-inner">
         <div class="m-sub-mv__wrapper">
-          <h1 class="m-page-title">研修サービス</h1>
+          <h1 class="m-page-title m-page-title--icon-invert">研修サービス</h1>
         </div>
       </div>
     </div>
@@ -54,7 +54,7 @@
             <?php if ($trainingService_query->have_posts()) : ?>
               <?php while ($trainingService_query->have_posts()) : ?>
                 <?php $trainingService_query->the_post(); ?>
-                <a href="<?php the_permalink(); ?>" class="m-card">
+                <a href="<?php the_permalink(); ?>" class="m-card u-hover">
                   <figure class="m-card__thumbnail">
                     <?php if (has_post_thumbnail()) { ?>
                       <?php the_post_thumbnail('full'); ?>

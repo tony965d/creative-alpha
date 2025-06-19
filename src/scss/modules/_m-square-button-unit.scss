@@ -15,3 +15,12 @@
     grid-template-columns: auto;
   }
 }
+
+.m-square-button-unit--wide {
+  --_max-width: 1054;
+}
+
+.m-square-button-unit--max {
+  gap: rem(45);
+  max-width: 100%;
+}
