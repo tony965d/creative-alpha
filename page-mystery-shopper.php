@@ -193,6 +193,414 @@
   </section>
   <!-- クリエイティブアルファの店舗調査が選ばれる3つのポイント -->
 
+  <!-- 覆面調査料金 -->
+  <section class="p-mystery-shopper__fee">
+    <div class="m-mystery-shopper-fee">
+      <div class="m-mystery-shopper-fee__inner l-inner">
+        <div class="m-mystery-shopper-fee__wrapper">
+          <h2 class="m-section-title m-section-title--center">
+            <picture class="m-section-title__icon">
+              <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.png" alt="" width="57" height="50" loading="lazy">
+            </picture>
+            <span class="m-section-title__text m-section-title__text--middle">覆面調査料金</span>
+          </h2>
+          <div class="m-mystery-shopper-fee__box-wrapper l-grid-two">
+            <div class="m-fee-box">
+              <h3 class="m-fee-box__header">
+                <picture class="m-fee-box__header-icon">
+                  <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/fee-box-title-icon.webp" type="image/webp">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/fee-box-title-icon.png" alt="" width="29" height="25" loading="lazy">
+                </picture>
+                <span class="m-fee-box__header-title">商業施設様向け料金</span>
+              </h3>
+              <div class="m-fee-box__body">
+                <dl class="m-fee-box__list">
+                  <div class="m-fee-box__item m-fee-box__item--first">
+                    <dt class="m-fee-box__item-title">
+                      <picture class="m-fee-box__item-icon">
+                        <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/fee-box-item-icon.webp" type="image/webp">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/fee-box-item-icon.png" alt="" width="18" height="16" loading="lazy">
+                      </picture>
+                      初期費用
+                    </dt>
+                    <dd class="m-fee-box__price">10万円</dd>
+                  </div>
+                  <div class="m-fee-box__item">
+                    <dt class="m-fee-box__item-title">
+                      <picture class="m-fee-box__item-icon">
+                        <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/fee-box-item-icon.webp" type="image/webp">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/fee-box-item-icon.png" alt="" width="18" height="16" loading="lazy">
+                      </picture>
+                      調査費用
+                    </dt>
+                    <dd class="m-fee-box__price">
+                      <span class="m-fee-box__price-small">単価</span>1.8
+                      <span class="m-fee-box__price-small">万〜</span>2.5
+                      <span class="m-fee-box__price-small">万円/店</span>
+                    </dd>
+                  </div>
+                </dl>
+                <ul class="m-fee-box__note-wrapper">
+                  <li class="m-fee-box__note">
+                    ※<span class="m-fee-box__note-text">実施店舗数によりディスカウントさせて頂いております。<br>
+                      例) 100店舗の場合の概算(1店舗単価:14,400円〜18,750円程度となります。)</span>
+                  </li>
+                  <li class="m-fee-box__note">※<span class="m-fee-box__note-text">初期費用(10万円) + 1,440,000円〜1,875,000円</span></li>
+                  <li class="m-fee-box__note">※<span class="m-fee-box__note-text">交通費及び調査に関わる実費費用は別途ご請求</span></li>
+                  <li class="m-fee-box__note">※<span class="m-fee-box__note-text">ご予算やご希望に合わせてプランニング致しますので、ご要望などお申し付け下さい。</span></li>
+                  <li class="m-fee-box__note">※<span class="m-fee-box__note-text">別途消費税</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="m-fee-box">
+              <h3 class="m-fee-box__header">
+                <picture class="m-fee-box__header-icon">
+                  <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/fee-box-title-icon.webp" type="image/webp">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/fee-box-title-icon.png" alt="" width="29" height="25" loading="lazy">
+                </picture>
+                <span class="m-fee-box__header-title">企業様向け料金</span>
+              </h3>
+              <div class="m-fee-box__body">
+                <dl class="m-fee-box__list">
+                  <div class="m-fee-box__item m-fee-box__item--first">
+                    <dt class="m-fee-box__item-title">
+                      <picture class="m-fee-box__item-icon">
+                        <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/fee-box-item-icon.webp" type="image/webp">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/fee-box-item-icon.png" alt="" width="18" height="16" loading="lazy">
+                      </picture>
+                      初期費用
+                    </dt>
+                    <dd class="m-fee-box__price">10万円</dd>
+                  </div>
+                  <div class="m-fee-box__item">
+                    <dt class="m-fee-box__item-title">
+                      <picture class="m-fee-box__item-icon">
+                        <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/fee-box-item-icon.webp" type="image/webp">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/fee-box-item-icon.png" alt="" width="18" height="16" loading="lazy">
+                      </picture>
+                      調査費用
+                    </dt>
+                    <dd class="m-fee-box__price">3<span class="m-fee-box__price-small">万円～/店</span></dd>
+                  </div>
+                </dl>
+                <ul class="m-fee-box__note-wrapper">
+                  <li class="m-fee-box__note">
+                    ※<span class="m-fee-box__note-text">交通費及び調査に関わる実費費用は別途ご請求。<br>
+                      ご予算やご希望に合わせて、オリジナルのプランニングも可能ですので、ご要望などお申し付け下さい。
+                    </span>
+                  </li>
+                  <li class="m-fee-box__note">※<span class="m-fee-box__note-text">別途消費税</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 覆面調査料金 -->
+
+  <!-- 覆面調査及び店長個別面談プログラム -->
+  <section class="p-mystery-shopper__program">
+    <div class="m-mystery-shopper-program">
+      <div class="m-mystery-shopper-program__inner l-inner">
+        <div class="m-mystery-shopper-program__wrapper">
+          <h2 class="m-section-title m-section-title--center">
+            <picture class="m-section-title__icon">
+              <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.png" alt="" width="57" height="50" loading="lazy">
+            </picture>
+            <span class="m-section-title__text m-section-title__text--middle">覆面調査及び店長個別面談プログラム</span>
+          </h2>
+          <h3 class="m-mystery-shopper-program__subtitle">お店の総合力を上げる５つのステップ！</h3>
+          <div class="m-mystery-shopper-program__step-wrapper l-grid-five">
+            <div class="m-program-step">
+              <div class="m-program-step__header-shadow">
+                <div class="m-program-step__header m-program-step__header--first">
+                  <div class="m-program-step__number">
+                    <span class="m-program-step__number-text">STEP</span>01
+                  </div>
+                </div>
+              </div>
+              <div class="m-program-step__body">
+                <h4 class="m-program-step__title">調査員による覆面調査</h4>
+                <p class="m-program-step__text">
+                  プロの調査員が徹底したお客様視点で顧客感情を数値化！
+                </p>
+              </div>
+            </div>
+            <div class="m-program-step">
+              <div class="m-program-step__header-shadow">
+                <div class="m-program-step__header m-program-step__header--second">
+                  <div class="m-program-step__number">
+                    <span class="m-program-step__number-text">STEP</span>02
+                  </div>
+                </div>
+              </div>
+              <div class="m-program-step__body">
+                <h4 class="m-program-step__title">各店長による自己採点</h4>
+                <p class="m-program-step__text">
+                  店長の自己採点による、現在の認識（意識）を数値化！
+                </p>
+              </div>
+            </div>
+            <div class="m-program-step">
+              <div class="m-program-step__header-shadow">
+                <div class="m-program-step__header m-program-step__header--third">
+                  <div class="m-program-step__number">
+                    <span class="m-program-step__number-text">STEP</span>03
+                  </div>
+                </div>
+              </div>
+              <div class="m-program-step__body">
+                <h4 class="m-program-step__title">
+                  アドバイザーによる<br>
+                  集計報告
+                </h4>
+                <p class="m-program-step__text">
+                  調査報告資料まとめ<br>
+                  （全体）
+                </p>
+              </div>
+            </div>
+            <div class="m-program-step">
+              <div class="m-program-step__header-shadow">
+                <div class="m-program-step__header m-program-step__header--fourth">
+                  <div class="m-program-step__number">
+                    <span class="m-program-step__number-text">STEP</span>04
+                  </div>
+                </div>
+              </div>
+              <div class="m-program-step__body">
+                <h4 class="m-program-step__title">
+                  アドバイザーによる<br>
+                  店長面談
+                </h4>
+                <p class="m-program-step__text">
+                  個店毎の調査レポートを基に面談 ※店長面談は任意にて選択可。実施店舗数も指定できます。
+                </p>
+              </div>
+            </div>
+            <div class="m-program-step">
+              <div class="m-program-step__header-shadow">
+                <div class="m-program-step__header m-program-step__header--fifth">
+                  <div class="m-program-step__number">
+                    <span class="m-program-step__number-text">STEP</span>05
+                  </div>
+                </div>
+              </div>
+              <div class="m-program-step__body">
+                <h4 class="m-program-step__title">各店長による改善計画</h4>
+                <p class="m-program-step__text">改善計画シート（任意）</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 覆面調査及び店長個別面談プログラム -->
+
+
+  <!-- 覆面調査 (ミステリーショッパー)のお客様の声 -->
+  <section class="p-mystery-shopper__voice">
+    <div class="m-mystery-shopper-voice">
+      <div class="m-mystery-shopper-voice__inner l-inner">
+        <h2 class="m-section-title m-section-title--center">
+          <picture class="m-section-title__icon">
+            <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.webp" type="image/webp">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.png" alt="" width="57" height="50" loading="lazy">
+          </picture>
+          <span class="m-section-title__text m-section-title__text--middle">覆面調査 (ミステリーショッパー)のお客様の声</span>
+        </h2>
+        <div class="m-mystery-shopper-voice__wrapper">
+          <div class="m-voice-contents m-voice-contents--mystery-shopper">
+            <div class="m-voice-contents__header l-two-columns">
+              <div class="m-voice-contents__header-item l-two-columns__item">
+                <picture class="m-voice-contents__image l-two-columns__left">
+                  <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-7.webp" type="image/webp">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-7.jpg" alt="" width="300" height="300" loading="lazy">
+                </picture>
+                <div class="m-voice-contents__heading l-two-columns__right">
+                  <h3 class="m-content-subtitle">プロのショップアドバイザーの意見を聞けて良かったと思います</h3>
+                  <p class="m-voice-contents__name">商業施設様</p>
+                </div>
+              </div>
+            </div>
+            <div class="m-voice-contents__description">
+              <p class="m-base-text">
+                これまでは一般の方に覆面調査をお願いしていたのですが、
+                クリエイティブアルファさんの覆面調査はプロのショップアドバイザーが覆面調査をしてくださるということで、
+                試しにお願いしました。調査結果を見て、やっぱりプロのショップアドバイザーの意見を聞けて良かったと思います。
+                一般の方の感想を聞いても具体的にどう改善すれば良いかわからなかったのですが、
+                プロのショップアドバイザーの方に具体的なアドバイスをしていただき、とても参考になりました。
+              </p>
+            </div>
+          </div>
+          <div class="m-voice-contents m-voice-contents--mystery-shopper">
+            <div class="m-voice-contents__header l-two-columns">
+              <div class="m-voice-contents__header-item l-two-columns__item">
+                <picture class="m-voice-contents__image l-two-columns__left">
+                  <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-8.webp" type="image/webp">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-8.jpg" alt="" width="300" height="300" loading="lazy">
+                </picture>
+                <div class="m-voice-contents__heading l-two-columns__right">
+                  <h3 class="m-content-subtitle">覆面調査の結果、スタッフのCXの意識が十分でないことがわかりました</h3>
+                  <p class="m-voice-contents__name">アパレルブランド様</p>
+                </div>
+              </div>
+            </div>
+            <div class="m-voice-contents__description">
+              <p class="m-base-text">
+                覆面調査の結果、スタッフのCXの意識が十分でないことがわかりました。今後は単に接客しているだけでは差別化ができないので、
+                顧客体験を意識し、お客様に感動してもらえるような接客をする必要があると考えています。
+                一部のスタッフにクリエイティブアルファさんのCX接客研修を受けさせていただきましたが、そちらも好評です。
+                他のスタッフにも受けさせたいと思っています。
+              </p>
+            </div>
+          </div>
+          <div class="m-voice-contents m-voice-contents--mystery-shopper">
+            <div class="m-voice-contents__header l-two-columns">
+              <div class="m-voice-contents__header-item l-two-columns__item">
+                <picture class="m-voice-contents__image l-two-columns__left">
+                  <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-9.webp" type="image/webp">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-9.jpg" alt="" width="300" height="300" loading="lazy">
+                </picture>
+                <div class="m-voice-contents__heading l-two-columns__right">
+                  <h3 class="m-content-subtitle">スタッフをどう教育すれば良いかということまでアドバイスしてもらえた</h3>
+                  <p class="m-voice-contents__name">服飾雑貨店様</p>
+                </div>
+              </div>
+            </div>
+            <div class="m-voice-contents__description">
+              <p class="m-base-text">
+                覆面調査の後の面談で、改善点だけではなく、スタッフをどう教育すれば良いかということまでアドバイスしてもらえたのは良かったです。
+                これまでスタッフ育成のために様々な研修をおこなっていたのですが「このような点を改善する」といった目的意識が希薄だったような気がします。
+                改善点が明確になり、それに合わせて研修を企画することでより効果的な研修を実施できると思います。継続的に覆面調査を依頼したいと思います。
+              </p>
+            </div>
+          </div>
+          <div class="m-voice-contents m-voice-contents--mystery-shopper">
+            <div class="m-voice-contents__header l-two-columns">
+              <div class="m-voice-contents__header-item l-two-columns__item">
+                <picture class="m-voice-contents__image l-two-columns__left">
+                  <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-10.webp" type="image/webp">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-10.jpg" alt="" width="300" height="300" loading="lazy">
+                </picture>
+                <div class="m-voice-contents__heading l-two-columns__right">
+                  <h3 class="m-content-subtitle">自社に合わせて内容をしっかりと練っていただけた</h3>
+                  <p class="m-voice-contents__name">ジュエリーブランド様</p>
+                </div>
+              </div>
+            </div>
+            <div class="m-voice-contents__description">
+              <p class="m-base-text">
+                覆面調査とスタッフ研修を実施していただきありがとうございました。覆面調査も研修も全てお任せできるので良かったです。
+                最初にヒアリングしていただき、自社に合わせて内容をしっかりと練っていただけたので、安心してお任せすることができました。
+                今度は店舗相談会もお願いしたいと考えています。引き続き、宜しくお願いいたします。
+              </p>
+            </div>
+          </div>
+          <div class="m-voice-contents m-voice-contents--mystery-shopper">
+            <div class="m-voice-contents__header l-two-columns">
+              <div class="m-voice-contents__header-item l-two-columns__item">
+                <picture class="m-voice-contents__image l-two-columns__left">
+                  <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-11.webp" type="image/webp">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-11.jpg" alt="" width="300" height="300" loading="lazy">
+                </picture>
+                <div class="m-voice-contents__heading l-two-columns__right">
+                  <h3 class="m-content-subtitle">色々と融通をきかせていただきありがとうございました</h3>
+                  <p class="m-voice-contents__name">カフェチェーン店様</p>
+                </div>
+              </div>
+            </div>
+            <div class="m-voice-contents__description">
+              <p class="m-base-text">
+                複数の覆面調査の会社に見積りを依頼したのですが、予算内で覆面調査を実施できる会社はありませんでした。
+                しかし、クリエイティブアルファさんに費用について相談したところ、予算内になるよう対象店舗数や内容を変更していただき、
+                なんとか予算内で覆面調査を実施することができました。無理なご相談にもかかわらず、
+                色々と融通をきかせていただきありがとうございました。またお願いします。
+              </p>
+            </div>
+          </div>
+          <div class="m-voice-contents m-voice-contents--mystery-shopper">
+            <div class="m-voice-contents__header l-two-columns">
+              <div class="m-voice-contents__header-item l-two-columns__item">
+                <picture class="m-voice-contents__image l-two-columns__left">
+                  <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-12.webp" type="image/webp">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-12.jpg" alt="" width="300" height="300" loading="lazy">
+                </picture>
+                <div class="m-voice-contents__heading l-two-columns__right">
+                  <h3 class="m-content-subtitle">テナントの店長様からも好評な調査で現場の成長につながっている</h3>
+                  <p class="m-voice-contents__name">商業施設様</p>
+                </div>
+              </div>
+            </div>
+            <div class="m-voice-contents__description">
+              <p class="m-base-text">
+                以前までは覆面調査に関しては、テナントの店長様からも、
+                「その瞬間を切り取っただけの、現状のほんの一部分しか可視化されない」とあまり好評ではありませんでした。
+                今回、クリエイティブアルファさんに調査をしていただいたことで、「テナントそれぞれの指導面、
+                育成面を含めた店舗運営に関する課題点」に対して最もコアな部分にも気付くきっかけになった店舗様が多く、
+                毎年「調査の時期」が近づくと明らかに「現場の空気感が変わる」のを感じますし、それが現場の成長につながっていることが嬉しく思います。
+              </p>
+            </div>
+          </div>
+          <div class="m-voice-contents m-voice-contents--mystery-shopper">
+            <div class="m-voice-contents__header l-two-columns">
+              <div class="m-voice-contents__header-item l-two-columns__item">
+                <picture class="m-voice-contents__image l-two-columns__left">
+                  <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-13.webp" type="image/webp">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-13.jpg" alt="" width="300" height="300" loading="lazy">
+                </picture>
+                <div class="m-voice-contents__heading l-two-columns__right">
+                  <h3 class="m-content-subtitle">テナントスタッフの「やる気」に繋がる フォローが大変心強い</h3>
+                  <p class="m-voice-contents__name">商業施設様</p>
+                </div>
+              </div>
+            </div>
+            <div class="m-voice-contents__description">
+              <p class="m-base-text">
+                クリエイティブアルファさんの「個店別調査報告シート」は仮に調査結果内容が悪かった場合でも、
+                基本的に文章のアプローチが「現場を応援する姿勢を重視」しているので、
+                しっかり「改善点」が可視化される中で、同時に「現場の強み」も知ることができます。<br>
+                「あとはここさえしっかりレベルアップできればワンランク上の店舗運営ができる」という前向きな内容により、
+                現場リーダー及びスタッフたちの「やる気」や「モチベーション」がアップするのを肌で感じることができるのはディベロッパー側としても大変心強いです。
+              </p>
+            </div>
+          </div>
+          <div class="m-voice-contents m-voice-contents--mystery-shopper">
+            <div class="m-voice-contents__header l-two-columns">
+              <div class="m-voice-contents__header-item l-two-columns__item">
+                <picture class="m-voice-contents__image l-two-columns__left">
+                  <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-14.webp" type="image/webp">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-14.jpg" alt="" width="300" height="300" loading="lazy">
+                </picture>
+                <div class="m-voice-contents__heading l-two-columns__right">
+                  <h3 class="m-content-subtitle">アドバイスから実際に売上アップにつながった店舗も</h3>
+                  <p class="m-voice-contents__name">商業施設様</p>
+                </div>
+              </div>
+            </div>
+            <div class="m-voice-contents__description">
+              <p class="m-base-text">
+                クリエイティブアルファさんの覆面調査は「おもてなし面」「環境面」「CX＝顧客体験価値面」において、
+                「店舗運営のプロである、全国の商業施設を熟知された調査員（専門講師の方）」が、
+                その項目それぞれにおいて「お客様が感じている」感情を数値化してくれます。
+                館内100以上のテナントそれぞれが実際「マーケットに対してどのように向き合い、
+                どの程度現状魅力を発揮しているか」も可視化されますので、フロアマネージメントにおいても大変参考になりますし、
+                調査結果から得たアドバイスにより、売上アップに繋がっている店舗も出ていますので、
+                今後も継続して調査をお願い出来ればと思っています。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 覆面調査 (ミステリーショッパー)のお客様の声 -->
+
 
   <!-- お問い合わせ -->
   <section class="p-mystery-shopper__contact-cta">
