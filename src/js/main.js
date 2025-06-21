@@ -179,13 +179,13 @@ jQuery(function ($) {
   // ////// アコーディオン //////
   $(function () {
     // 初期状態ですべてのコンテンツを非表示に
-    $('.js-accordion-body').hide();
+    $('.js-accordion-answer').hide();
 
     $('.js-accordion-open').on('click', function (event) {
       event.preventDefault();
-      $(this).toggleClass('active');
+      $(this).find('.m-accordion__question-text').toggleClass('active');
       const details = $(this).parent();
-      const content = $(this).next('.js-accordion-body');
+      const content = $(this).next('.js-accordion-answer');
 
       if (details.attr('open')) {
         content.slideUp(300, function () {

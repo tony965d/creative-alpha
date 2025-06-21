@@ -4,6 +4,10 @@
   display: flex;
   align-items: center;
   gap: rem(6);
+
+  @include mq('md') {
+    gap: rem(14);
+  }
 }
 
 .m-section-title--center {
@@ -15,6 +19,10 @@
   aspect-ratio: 57 / 50;
   width: rem(57);
   height: 100%;
+
+  @include mq('md') {
+    width: rem(40);
+  }
 }
 
 .m-section-title__text {
@@ -26,8 +34,12 @@
   color: transparent;
   line-height: calc(42 / 35);
 
+  @include mq('lg') {
+    flex: 1;
+  }
+
   @include mq('md') {
-    font-size: rem(24);
+    font-size: rem(28);
   }
 }
 
@@ -38,9 +50,17 @@
 .m-section-title__text--middle {
   font-size: rem(35);
   line-height: calc(42 / 35);
+
+  @include mq('md') {
+    font-size: rem(28);
+  }
 }
 
 .m-section-title__text--large {
   font-size: rem(37);
   line-height: calc(44 / 37);
+
+  @include mq('md') {
+    font-size: rem(28);
+  }
 }

@@ -8,6 +8,10 @@
   font-weight: 700;
   color: var(--color__white);
   line-height: calc(41 / 35);
+
+  @include mq('md') {
+    font-size: rem(28);
+  }
 }
 
 .m-page-title::before {
@@ -22,8 +26,12 @@
   background-repeat: no-repeat;
   aspect-ratio: 129 / 94;
   width: rem(129);
-  height: rem(94);
   z-index: -1;
+
+  @include mq('md') {
+    right: 0;
+    width: rem(100);
+  }
 }
 
 .m-page-title--large {

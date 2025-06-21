@@ -18,18 +18,38 @@
   align-items: center;
   justify-content: space-between;
   margin-top: rem(41);
+
+  @include mq('md') {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: rem(40);
+  }
 }
 
 .m-mystery-shopper-features__image {
   width: 50vw;
   margin-left: calc((50vw - 50%) * -1);
+
+  @include mq('md') {
+    width: 100%;
+    margin-left: unset;
+  }
 }
 
 .m-mystery-shopper-features__image img {
   object-fit: cover;
   aspect-ratio: 802 / 512;
-  width: rem(802);
+  // width: rem(802);
+  width: clamp(37.5rem, 6.423rem + 48.56vw, 50.125rem);
   height: 100%;
+
+  @include mq('lg') {
+    width: clamp(25rem, -12.5rem + 78.13vw, 37.5rem);
+  }
+
+  @include mq('md') {
+    width: 100%;
+  }
 }
 
 .m-mystery-shopper-features__lead {
@@ -43,4 +63,8 @@
   -webkit-background-clip: text;
   background-clip: text;
   line-height: calc(45 / 28);
+
+  @include mq('md') {
+    font-size: rem(24);
+  }
 }

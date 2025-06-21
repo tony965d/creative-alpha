@@ -61,6 +61,11 @@
   padding-left: rem(26);
   padding-right: rem(20);
   padding-bottom: rem(31);
+
+  @include mq('md') {
+    padding-left: rem(20);
+    padding-bottom: rem(20);
+  }
 }
 
 .m-fee-box__list {
@@ -72,6 +77,11 @@
   gap: rem(32);
   padding-top: rem(13);
   padding-bottom: rem(14);
+
+  @include mq('md') {
+    flex-direction: column;
+    gap: rem(16);
+  }
 }
 
 .m-fee-box__item--first {

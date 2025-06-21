@@ -91,6 +91,10 @@
 .m-program-step__body {
   position: relative;
   padding: rem(24);
+
+  @include mq('lg') {
+    padding: rem(12);
+  }
 }
 
 .m-program-step__body::before {

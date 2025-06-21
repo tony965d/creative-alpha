@@ -13,3 +13,9 @@
     calc(var(--_row-gap) * 1px)
   );
 }
+
+@include mq('md') {
+  .l-grid-five {
+    grid-template-columns: auto;
+  }
+}

@@ -601,6 +601,94 @@
   </section>
   <!-- 覆面調査 (ミステリーショッパー)のお客様の声 -->
 
+  <!-- よくあるご質問 -->
+  <section class="p-mystery-shopper__faq">
+    <div class="m-mystery-shopper-faq">
+      <div class="m-mystery-shopper-faq__inner l-inner">
+        <div class="m-mystery-shopper-faq__wrapper">
+          <h2 class="m-section-title m-section-title--center">
+            <picture class="m-section-title__icon">
+              <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.png" alt="" width="57" height="50" loading="lazy">
+            </picture>
+            <span class="m-section-title__text m-section-title__text--middle">よくあるご質問</span>
+          </h2>
+          <div class="m-mystery-shopper-faq__contents">
+            <div class="m-accordion-group">
+              <details class="m-accordion">
+                <summary class="m-accordion__question js-accordion-open">
+                  <span class="m-accordion__question-icon">Q</span>
+                  <p class="m-accordion__question-text">全国対応は可能でしょうか？</p>
+                </summary>
+                <div class="m-accordion__answer js-accordion-answer">
+                  <span class="m-accordion__answer-icon">A</span>
+                  <p class="m-accordion__answer-text m-base-text">はい。対応可能です。</p>
+                </div>
+              </details>
+              <details class="m-accordion">
+                <summary class="m-accordion__question js-accordion-open">
+                  <span class="m-accordion__question-icon">Q</span>
+                  <p class="m-accordion__question-text">どのくらいの回数、頻度で導入したほうがよいですか？</p>
+                </summary>
+                <div class="m-accordion__answer js-accordion-answer">
+                  <span class="m-accordion__answer-icon">A</span>
+                  <p class="m-accordion__answer-text m-base-text">テキストテキストテキストテキスト</p>
+                </div>
+              </details>
+              <details class="m-accordion">
+                <summary class="m-accordion__question js-accordion-open">
+                  <span class="m-accordion__question-icon">Q</span>
+                  <p class="m-accordion__question-text">調査員はどんな人ですか？</p>
+                </summary>
+                <div class="m-accordion__answer js-accordion-answer">
+                  <span class="m-accordion__answer-icon">A</span>
+                  <p class="m-accordion__answer-text m-base-text">テキストテキストテキストテキスト</p>
+                </div>
+              </details>
+              <details class="m-accordion">
+                <summary class="m-accordion__question js-accordion-open">
+                  <span class="m-accordion__question-icon">Q</span>
+                  <p class="m-accordion__question-text">他の覆面調査と違うところはどこですか？</p>
+                </summary>
+                <div class="m-accordion__answer js-accordion-answer">
+                  <span class="m-accordion__answer-icon">A</span>
+                  <p class="m-accordion__answer-text m-base-text">テキストテキストテキストテキスト</p>
+                </div>
+              </details>
+              <details class="m-accordion">
+                <summary class="m-accordion__question js-accordion-open">
+                  <span class="m-accordion__question-icon">Q</span>
+                  <p class="m-accordion__question-text">調査できない店舗はありますか？</p>
+                </summary>
+                <div class="m-accordion__answer js-accordion-answer">
+                  <span class="m-accordion__answer-icon">A</span>
+                  <p class="m-accordion__answer-text m-base-text">テキストテキストテキストテキスト</p>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+        <div class="m-mystery-shopper-faq__bottom">
+          <div class="m-media-coverage">
+            <h3 class="m-media-coverage__title">メディア掲載</h3>
+            <div class="m-media-coverage__pickup">
+              <span class="m-media-coverage__text">弊社が</span>
+              <picture class="m-media-coverage__icon">
+                <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/media-coverage-icon.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/media-coverage-icon.png" alt="" width="30" height="25" loading="lazy">
+              </picture>
+              <span class="m-media-coverage__text-highlight">ランキング1位</span>
+              <span class="m-media-coverage__text">で紹介されました！</span>
+            </div>
+            <div class="m-media-coverage__button">
+              <a href="<?php echo home_url('/'); ?>" class="m-button">詳しく見る</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- よくあるご質問 -->
 
   <!-- お問い合わせ -->
   <section class="p-mystery-shopper__contact-cta">
