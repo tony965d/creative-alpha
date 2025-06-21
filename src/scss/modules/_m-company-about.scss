@@ -1,0 +1,25 @@
+@use '../_global' as *;
+
+.m-company-about {
+  padding-bottom: rem(80);
+}
+
+.m-company-about__inner {
+  --_max-width: 810;
+}
+
+.m-company-about__contents {
+  margin-top: rem(25);
+}
+
+.m-company-about__map {
+  margin-top: rem(44);
+}
+
+.m-company-about__map iframe {
+  object-fit: cover;
+  aspect-ratio: 810 / 479;
+  width: 100%;
+  max-width: rem(810);
+  height: 100%;
+}

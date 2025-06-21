@@ -696,7 +696,6 @@
   </section>
   <!-- /お問い合わせ -->
 
-
 </main>
 
 <?php get_footer(); ?>

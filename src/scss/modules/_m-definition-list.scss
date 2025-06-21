@@ -55,6 +55,16 @@
   }
 }
 
+.m-definition-list__term--company {
+  color: transparent;
+  background: var(--color__gradient-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  border-bottom: 1px solid #a8b3d7;
+  padding-block: rem(16);
+  padding-left: 0;
+}
+
 .m-definition-list__description {
   font-size: rem(16);
   font-weight: 500;
@@ -71,6 +81,12 @@
   }
 }
 
+.m-definition-list__description--company {
+  border-bottom: 1px solid #a8b3d7;
+  padding-block: rem(16);
+  padding-left: 0;
+}
+
 .m-definition-list__term-icon {
   width: rem(22);
   height: rem(22);
@@ -85,6 +101,10 @@
   position: relative;
   padding-left: rem(16);
   margin-left: rem(4);
+}
+
+.m-definition-list__description-item--company {
+  margin-left: rem(12);
 }
 
 .m-definition-list__description-item::before {
@@ -104,4 +124,8 @@
   height: rem(8);
   clip-path: polygon(0 0, 0 100%, 100% 50%);
   border-radius: unset;
+}
+
+.m-definition-list__description-item--company::before {
+  background-color: var(--color__black);
 }
