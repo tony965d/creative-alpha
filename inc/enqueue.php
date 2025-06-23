@@ -54,29 +54,12 @@ function mytheme_enqueue_assets()
     true
   );
 
-  // GSAPを読み込む
-  wp_enqueue_script(
-    'gsap',
-    'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js',
-    array(),
-    null,
-    true
-  );
-
-  // ScrollTriggerプラグインを読み込む
-  wp_enqueue_script(
-    'scrolltrigger',
-    'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js',
-    array('gsap'),
-    null,
-    true
-  );
 
   // 基本のJavaScript
   wp_enqueue_script(
     'mytheme-script',
     get_theme_url_with_version('assets/js/main.js'),
-    array('jquery', 'swiper', 'gsap', 'scrolltrigger'),
+    array('jquery', 'swiper'),
     null,
     true
   );

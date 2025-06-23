@@ -31,10 +31,11 @@ jQuery(function ($) {
       new Swiper('.js-swiper-mv', {
         slidesPerView: 1,
         loop: true,
+        effect: "fade",
         autoplay: {
-          delay: 3000,
+          delay: 4000,
         },
-        speed: 1000,
+        speed: 2000,
       });
     }
   });

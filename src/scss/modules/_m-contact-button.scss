@@ -80,6 +80,12 @@
 
 .m-contact-button.m-contact-button--mv {
   --_max-width: 270;
+
+  @include mq('md') {
+    font-size: rem(18);
+    line-height: calc(26 / 18);
+    --_max-width: 220;
+  }
 }
 
 .m-contact-button.m-contact-button--contact {

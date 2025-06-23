@@ -6,7 +6,7 @@
     <div class="m-sub-mv">
       <div class="m-sub-mv__inner l-inner">
         <div class="m-sub-mv__wrapper">
-          <h1 class="m-page-title">お問い合わせ完了</h1>
+          <h1 class="m-page-title">404</h1>
         </div>
       </div>
     </div>

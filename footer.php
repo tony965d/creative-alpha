@@ -69,7 +69,7 @@
                               <a href="<?php echo get_esc_home_url('/post/post-110/'); ?>" class="m-footer-nav__sub-menu u-hover">年間プログラム研修</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="" class="m-footer-nav__sub-menu u-hover">NPS調査・eNPS調査</a>
+                              <a href="<?php echo get_esc_home_url('/post/post-209/'); ?>" class="m-footer-nav__sub-menu u-hover">NPS調査・eNPS調査</a>
                             </li>
                           </ul>
                         </li>

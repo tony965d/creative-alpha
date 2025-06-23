@@ -632,7 +632,7 @@
                 </summary>
                 <div class="m-accordion__answer js-accordion-answer">
                   <span class="m-accordion__answer-icon">A</span>
-                  <p class="m-accordion__answer-text m-base-text">テキストテキストテキストテキスト</p>
+                  <p class="m-accordion__answer-text m-base-text">年1回の実施をされる企業様が多く御座います。目的や業態などにより、年間でも複数回実施する企業様も御座いますので、ご要望にあわせて、カスタマイズさせて頂きます。</p>
                 </div>
               </details>
               <details class="m-accordion">
@@ -642,7 +642,7 @@
                 </summary>
                 <div class="m-accordion__answer js-accordion-answer">
                   <span class="m-accordion__answer-icon">A</span>
-                  <p class="m-accordion__answer-text m-base-text">テキストテキストテキストテキスト</p>
+                  <p class="m-accordion__answer-text m-base-text">調査員はすべて、小売経験者で、現在も小売・飲食・サービス業界にて、現役の講師として研修やOJT指導等を行っているプロの専門調査員となります。</p>
                 </div>
               </details>
               <details class="m-accordion">
@@ -652,7 +652,7 @@
                 </summary>
                 <div class="m-accordion__answer js-accordion-answer">
                   <span class="m-accordion__answer-icon">A</span>
-                  <p class="m-accordion__answer-text m-base-text">テキストテキストテキストテキスト</p>
+                  <p class="m-accordion__answer-text m-base-text">通常の覆面調査はCS（顧客満足）基準の調査となりますが、当社は売上との相関性 が強いCX（顧客体験価値）基準の調査となります。また、調査後の店長面談・現地指導の実施を行い、お店の総合力を強化することが可能です。</p>
                 </div>
               </details>
               <details class="m-accordion">
@@ -662,7 +662,7 @@
                 </summary>
                 <div class="m-accordion__answer js-accordion-answer">
                   <span class="m-accordion__answer-icon">A</span>
-                  <p class="m-accordion__answer-text m-base-text">テキストテキストテキストテキスト</p>
+                  <p class="m-accordion__answer-text m-base-text">小売、飲食、サービス、アミューズメント業界等で御座いましたら、特に制限は御座いませんので、ご相談下さい。</p>
                 </div>
               </details>
             </div>
@@ -681,7 +681,7 @@
               <span class="m-media-coverage__text">で紹介されました！</span>
             </div>
             <div class="m-media-coverage__button">
-              <a href="<?php echo home_url('/'); ?>" class="m-button">詳しく見る</a>
+              <a href="https://mysteryshopper-hikaku.info/" class="m-button" target="_blank" rel="noopener noreferrer">詳しく見る</a>
             </div>
           </div>
         </div>

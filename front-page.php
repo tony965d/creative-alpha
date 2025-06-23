@@ -48,7 +48,7 @@
               <span>スタッフに<strong class="m-mv__title-main-accent">やりがい</strong>を。</span>
             </h1>
             <p class="m-mv__title-sub">
-              ショップスタッフが笑顔でやりがいを持ち、<br>
+              ショップスタッフが笑顔でやりがいを持ち、<br class="u-only--pc">
               お客様に更なる感動をご提供できるように私たちがお手伝いします。
             </p>
           </hgroup>
@@ -102,14 +102,14 @@
           </div>
           <div class="m-home-about__button-unit-wrapper">
             <div class="m-square-button-unit">
-              <a href="<?php echo home_url('/training-service'); ?>" class="m-square-button m-square-button--training-service u-hover">
+              <a href="#home-training-service" class="m-square-button m-square-button--training-service u-hover">
                 <picture class="m-square-button__icon m-square-button__icon--training-service">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-1.webp" type="image/webp">
                   <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-1.jpg" alt="" width="109" height="61" loading="lazy">
                 </picture>
                 <span class="m-square-button__text">研修サービス</span>
               </a>
-              <a href="<?php echo home_url('/mystery-shopper'); ?>" class="m-square-button m-square-button--mystery-shopper u-hover">
+              <a href="#home-mystery-shopper" class="m-square-button m-square-button--mystery-shopper u-hover">
                 <picture class="m-square-button__icon m-square-button__icon--mystery-shopper">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-2.webp" type="image/webp">
                   <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-2.jpg" alt="" width="42" height="63" loading="lazy">
@@ -126,7 +126,7 @@
   <!-- /クリエイティブアルファについて -->
 
   <!-- 研修サービス -->
-  <section class="p-home__training-service">
+  <section id="home-training-service" class="p-home__training-service">
     <div class="m-home-training-service">
       <div class="m-home-training-service__inner l-inner">
         <picture class="m-home-training-service__bg-icon">
@@ -159,6 +159,7 @@
               array(
                 'post_type'      => 'post',
                 'posts_per_page' => -1,
+                'post__not_in'   => array(209),
               )
             );
             ?>
@@ -232,7 +233,7 @@
   <!-- /研修サービス -->
 
   <!-- 覆面調査 -->
-  <section class="p-home__mystery-shopper">
+  <section id="home-mystery-shopper" class="p-home__mystery-shopper">
     <div class="m-home-mystery-shopper">
       <div class="m-home-mystery-shopper__inner l-inner">
         <div class="m-home-mystery-shopper__wrapper">

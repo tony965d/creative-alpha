@@ -19,11 +19,12 @@
   justify-content: flex-end;
   gap: rem(12);
   pointer-events: none;
-  font-size: rem(45);
-  font-family: var(--font-family--roboto);
+  font-size: clamp(40px, 1.731rem + 1.2vw, 45px);
+  font-family: var(--font-family__roboto);
   font-weight: 600;
   line-height: 1;
   letter-spacing: -0.05em;
+  white-space: nowrap;
 
   @include mq('md') {
     font-size: rem(32);

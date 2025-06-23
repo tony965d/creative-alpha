@@ -19,6 +19,7 @@
   background-color: #f6f8ff;
   width: 100%;
   height: 100%;
+  border-radius: 20px;
   z-index: -1;
 }
 
@@ -34,9 +35,6 @@
 
 .m-voice-contents__header-item {
   align-items: center;
-}
-
-.m-voice-contents__image {
 }
 
 .m-voice-contents__image img {

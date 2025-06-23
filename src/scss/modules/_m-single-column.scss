@@ -5,9 +5,6 @@
   padding-bottom: rem(130);
 }
 
-.m-single-column__inner {
-}
-
 .m-single-column__wrapper {
   --_width__left: 808;
   --_width__right: 250;
@@ -15,9 +12,9 @@
 }
 
 .m-single-column__item {
-}
-
-.m-single-column__main {
+  @include mq('md') {
+    row-gap: rem(80);
+  }
 }
 
 .m-single-column__header {

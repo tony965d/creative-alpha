@@ -5,115 +5,16 @@
 // =========================================
 
 // Inter
-@font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter/Inter-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter/Inter-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-// /Inter
-
-// Noto Sans JP
-@font-face {
-  font-family: 'Noto Sans JP';
-  src: url('../fonts/font-face/Noto Sans JP/Noto Sans JP-Regular.woff2')
-    format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Noto Sans JP';
-  src: url('../fonts/font-face/Noto Sans JP/Noto Sans JP-Medium.woff2')
-    format('woff2');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Noto Sans JP';
-  src: url('../fonts/font-face/Noto Sans JP/Noto Sans JP-Bold.woff2')
-    format('woff2');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Noto Sans JP';
-  src: url('../fonts/font-face/Noto Sans JP/Noto Sans JP-Black.woff2')
-    format('woff2');
-  font-weight: 900;
-  font-style: normal;
-}
-// /Noto Sans JP
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+// Noto Sans JP（日本語）
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
 // Roboto
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/font-face/Roboto/Roboto-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/font-face/Roboto/Roboto-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto';
-  src: url('../fonts/font-face/Roboto/Roboto-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-}
-// /Roboto
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;600;700&display=swap');
 // Montserrat
-@font-face {
-  font-family: 'Montserrat';
-  src: url('../fonts/font-face/Montserrat/Montserrat-SemiBold.woff2')
-    format('woff2');
-  font-weight: 600;
-  font-style: normal;
-}
-// /Montserrat
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 // Outfit
-@font-face {
-  font-family: 'Outfit';
-  src: url('../fonts/font-face/Outfit/Outfit-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-}
-// /Outfit
-
-// sawarabi gothic
-@font-face {
-  font-family: 'Sawarabi Gothic';
-  src: url('../fonts/font-face/Sawarabi Gothic/Sawarabi Gothic-Regular.woff2')
-    format('woff2');
-  font-weight: 400;
-  font-style: normal;
-}
-// /sawarabi gothic
-
-// noto rashi hebrew
-@font-face {
-  font-family: 'Noto Rashi Hebrew';
-  src: url('../fonts/font-face/Noto Rashi Hebrew/Noto Rashi Hebrew-SemiBold.woff2')
-    format('woff2');
-  font-weight: 600;
-  font-style: normal;
-}
-// /noto rashi hebrew
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+// さわらびゴシック（日本語）
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+// Noto Rashi Hebrew（ヘブライ語）
+@import url('https://fonts.googleapis.com/css2?family=Noto+Rashi+Hebrew:wght@600&display=swap');
