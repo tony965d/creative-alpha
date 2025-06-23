@@ -77,7 +77,7 @@
               <div class="m-home-about__top-right l-two-columns__right">
                 <picture class="m-home-about__top-image">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-1.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-1.png" alt="" width="520" height="376" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-1.jpg" alt="" width="520" height="376" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -86,7 +86,7 @@
             <div class="m-home-about__content-item l-two-columns__item">
               <picture class="m-home-about__content-image l-two-columns__left">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-2.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-2.png" alt="" width="423" height="287" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-2.jpg" alt="" width="423" height="287" loading="lazy">
               </picture>
               <div class="m-home-about__content-body l-two-columns__right">
                 <p class="m-base-text">
@@ -102,14 +102,14 @@
           </div>
           <div class="m-home-about__button-unit-wrapper">
             <div class="m-square-button-unit">
-              <a href="<?php echo home_url('/training-service'); ?>" class="m-square-button m-square-button--training-service">
+              <a href="<?php echo home_url('/training-service'); ?>" class="m-square-button m-square-button--training-service u-hover">
                 <picture class="m-square-button__icon m-square-button__icon--training-service">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-1.webp" type="image/webp">
                   <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-1.jpg" alt="" width="109" height="61" loading="lazy">
                 </picture>
                 <span class="m-square-button__text">研修サービス</span>
               </a>
-              <a href="<?php echo home_url('/mystery-shopper'); ?>" class="m-square-button m-square-button--mystery-shopper">
+              <a href="<?php echo home_url('/mystery-shopper'); ?>" class="m-square-button m-square-button--mystery-shopper u-hover">
                 <picture class="m-square-button__icon m-square-button__icon--mystery-shopper">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-2.webp" type="image/webp">
                   <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-2.jpg" alt="" width="42" height="63" loading="lazy">
@@ -148,7 +148,7 @@
         <div class="m-home-training-service__wrapper">
           <h3 class="m-service-training-title">
             <picture class="m-service-training-title__icon">
-              <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/  .webp" type="image/webp">
+              <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/service-training-title-icon.webp" type="image/webp">
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/service-training-title-icon.png" alt="" width="57" height="50" loading="lazy">
             </picture>
             <span class="m-service-training-title__text">サンプルプログラムのご紹介</span>
@@ -240,7 +240,7 @@
             <div class="m-home-mystery-shopper__item l-two-columns__item">
               <picture class="m-home-mystery-shopper__image l-two-columns__left">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-mystery-shopper-1.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-mystery-shopper-1.png" alt="" width="527" height="318" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-mystery-shopper-1.jpg" alt="" width="527" height="318" loading="lazy">
               </picture>
               <div class="m-home-mystery-shopper__body l-two-columns__right">
                 <hgroup class="m-section-header">
@@ -305,14 +305,14 @@
               <?php while ($column_query->have_posts()) : ?>
                 <?php $column_query->the_post(); ?>
 
-                <a href="<?php the_permalink() ?>" class="m-column-card">
+                <a href="<?php the_permalink() ?>" class="m-column-card u-hover">
                   <figure class="m-column-card__thumbnail">
                     <?php if (has_post_thumbnail()) { ?>
                       <?php the_post_thumbnail('full'); ?>
                     <?php } else { ?>
                       <picture>
                         <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy.webp" type="image/webp">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy.png" alt="ダミー画像" width="524" height="280" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy.png" alt="ダミー画像" width="300" height="168" loading="lazy">
                       </picture>
                     <?php } ?>
                   </figure>
@@ -320,7 +320,7 @@
                     <time datetime="<?php the_time('Y-m-d'); ?>" class="m-column-card__date"><?php the_time('Y.m.d'); ?></time>
                     <p class="m-column-card__category">
                       <?php
-                      $terms = get_the_terms($post->ID, 'column__category');
+                      $terms = get_the_terms($post->ID, 'column_category');
                       foreach ($terms as $term) {
                         echo $term->name;
                       }

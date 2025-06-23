@@ -1,18 +1,18 @@
 <?php get_header(); ?>
 
-<main class="p-error">
+<main class="p-privacy-policy">
 
-  <section class="p-error__mv">
+  <section class="p-privacy-policy__mv">
     <div class="m-sub-mv">
       <div class="m-sub-mv__inner l-inner">
         <div class="m-sub-mv__wrapper">
-          <h1 class="m-page-title">お問い合わせ完了</h1>
+          <h1 class="m-page-title">プライバシーポリシー</h1>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="p-error__main">
+  <section class="p-privacy-policy__main">
     <!-- パンくず -->
     <div class="m-breadcrumb">
       <div class="m-breadcrumb__inner l-inner">
@@ -24,16 +24,11 @@
       </div>
     </div>
     <!-- パンくず -->
-    <div class="m-error l-outer">
-      <div class="m-error__inner l-inner">
-        <div class="m-error__wrapper">
-          <p class="m-error__text m-base-text">
-            申し訳ございません。<br>お探しのページが見つかりません。
-          </p>
+    <div class="m-privacy-policy">
+      <div class="m-privacy-policy__inner l-inner">
+        <div class="m-privacy-policy__wrapper">
+          <?php the_content(); ?>
         </div>
-      </div>
-      <div class="m-error__button">
-        <a href="<?php echo get_esc_home_url('/'); ?>" class="m-contact-button">TOP</a>
       </div>
     </div>
   </section>

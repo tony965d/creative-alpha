@@ -6,7 +6,7 @@
     <div class="m-sub-mv">
       <div class="m-sub-mv__inner l-inner">
         <div class="m-sub-mv__wrapper">
-          <h1 class="m-page-title m-page-title--icon-invert">研修サービス</h1>
+          <h1 class="m-page-title m-page-title--icon-invert"><?php the_title(); ?></h1>
         </div>
       </div>
     </div>
@@ -184,8 +184,8 @@
   </section>
 
   <!-- お問い合わせ -->
-  <section class="p-training-service__cta">
-    <?php get_template_part('template-parts/contact'); ?>
+  <section class="p-training-service__contact-cta">
+    <?php get_template_part('template-parts/contact-cta'); ?>
   </section>
   <!-- /お問い合わせ -->
 </main>

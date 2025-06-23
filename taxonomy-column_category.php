@@ -33,39 +33,20 @@
             <div class="l-two-columns__left">
               <div class="m-archive-column__contents l-grid-two">
                 <?php
-                $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-
-                // 月別アーカイブの処理（クエリパラメータ方式）
-                if (isset($_GET['archive']) && !empty($_GET['archive'])) {
-                  $archive_date = sanitize_text_field($_GET['archive']);
-                  $date_parts = explode('-', $archive_date);
-
-                  if (count($date_parts) === 2) {
-                    $year = intval($date_parts[0]);
-                    $month = intval($date_parts[1]);
-
-                    if ($year > 0 && $month >= 1 && $month <= 12) {
-                      $column_query = new WP_Query(array(
-                        'post_type' => 'column',
-                        'posts_per_page' => 8,
-                        'paged' => $paged,
-                        'date_query' => array(
-                          array(
-                            'year' => $year,
-                            'month' => $month,
-                          ),
-                        ),
-                      ));
-                    }
-                  }
-                } else {
-                  // 通常時は標準のクエリを使用
-                  $column_query = new WP_Query(array(
-                    'post_type' => 'column',
-                    'posts_per_page' => 8,
-                    'paged' => $paged,
-                  ));
-                }
+                $term = get_queried_object();
+                $paged = max(1, get_query_var('paged'));
+                $column_query = new WP_Query(array(
+                  'post_type' => 'column',
+                  'posts_per_page' => 8,
+                  'paged' => $paged,
+                  'tax_query' => array(
+                    array(
+                      'taxonomy' => $term->taxonomy, // 'column_category' など
+                      'field'    => 'slug',
+                      'terms'    => $term->slug,
+                    ),
+                  ),
+                ));
                 ?>
                 <?php if ($column_query->have_posts()) : ?>
                   <?php while ($column_query->have_posts()) : ?>
@@ -102,30 +83,19 @@
               <?php if ($column_query->max_num_pages > 1) : ?>
                 <div class="m-archive-column__page-nav">
                   <?php
-                    if (isset($_GET['archive']) && !empty($_GET['archive'])) {
-                      // 月別アーカイブ時：クエリパラメータ形式
-                      $base_url = add_query_arg('archive', sanitize_text_field($_GET['archive']), get_post_type_archive_link('column'));
-                      echo paginate_links(array(
-                        'base' => add_query_arg('paged', '%#%', $base_url),
-                        'format' => '',
-                        'current' => $paged,
-                        'total' => $column_query->max_num_pages,
-                        'type' => 'list',
-                        'prev_text' => '<',
-                        'next_text' => '>',
-                      ));
-                    } else {
-                      // 通常時：パス形式
-                      echo paginate_links(array(
-                        'base' => trailingslashit(get_post_type_archive_link('column')) . 'page/%#%/',
-                        'format' => '',
-                        'current' => $paged,
-                        'total' => $column_query->max_num_pages,
-                        'type' => 'list',
-                        'prev_text' => '<',
-                        'next_text' => '>',
-                      ));
-                    }
+                    // カスタムクエリ用のページネーション
+                    $current_page = max(1, get_query_var('paged'));
+                    $term = get_queried_object();
+
+                    echo paginate_links(array(
+                      'base'      => get_term_link($term) . 'page/%#%/',
+                      'format'    => '',
+                      'current'   => $current_page,
+                      'total'     => $column_query->max_num_pages,
+                      'type'      => 'list',
+                      'prev_text' => '<',
+                      'next_text' => '>',
+                    ));
                   ?>
                 </div>
               <?php endif; ?>

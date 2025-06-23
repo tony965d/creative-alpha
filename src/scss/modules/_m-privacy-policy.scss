@@ -1,0 +1,58 @@
+@use '../_global' as *;
+
+.m-privacy-policy {
+  padding-top: rem(59);
+  padding-bottom: rem(128);
+
+  @include mq('md') {
+    padding-bottom: rem(60);
+  }
+}
+
+.m-privacy-policy__wrapper h2 {
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: calc(29 / 16);
+  margin-top: rem(20);
+}
+
+.m-privacy-policy__wrapper p {
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: calc(26 / 16);
+  margin-top: rem(20);
+}
+
+.m-privacy-policy__wrapper p:first-of-type {
+  margin-top: 0;
+}
+
+.m-privacy-policy__wrapper ul {
+  margin-top: rem(11);
+  margin-left: rem(48);
+
+  @include mq('md') {
+    margin-left: rem(8);
+  }
+}
+
+.m-privacy-policy__wrapper li {
+  position: relative;
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: calc(26 / 16);
+  padding-left: rem(24);
+}
+
+.m-privacy-policy__wrapper li::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: rem(9);
+  transform: translateY(-50%);
+  background-color: var(--color__black);
+  width: rem(4);
+  height: rem(4);
+  border-radius: 50%;
+  z-index: -1;
+}

@@ -3,14 +3,6 @@
 jQuery(function ($) {
 
 
-  const scrollToTopButton = $(".js-scrollToTop");
-  scrollToTopButton.on("click", () => {
-    import("./components/scroll-to-top.js").then((module) => {
-      module.init(scrollToTopButton);
-    });
-  });
-
-
   $(".js-hamburger").click(function () {
     if ($(".js-hamburger").hasClass("active")) {
       $(".js-hamburger").removeClass("active");
@@ -48,50 +40,6 @@ jQuery(function ($) {
   });
 
 
-  /// mv画像swiperフェードアウト /////
-  // const mvSwiper = new Swiper(".js-swiper-mv", {
-  //   loop: true,
-  //   effect: "fade",
-  //   autoplay: {
-  //     delay: 4000,
-  //     disableOnInteraction: false,
-  //   },
-  //   speed: 2000,
-  // });
-
-
-
-  ///// * ズームアウト */////
-  $(function() {
-    // ページが読み込まれた後に実行されるコード
-    $(".js-mv-sub").each(function () {
-      // アニメーションを適用したい要素にスタイルを設定
-      $(this).css("animation", "zoomOut 1s ease-out forwards");
-    });
-  });
-
-  ///// 下からフェードイン /////
-  $(".js-fade-up").css("opacity", 0);
-  ScrollTrigger.batch(".js-fade-up", {
-    onEnter: (elements, triggers) => {
-      gsap.set(elements, { y: "20%", opacity: 0 });
-      gsap.to(elements, { y: 0, opacity: 1, duration: 1 }); // アニメーション時間を1秒に変更
-    },
-    start: "top 60%", // スクロール開始位置を少し下にずらす（60%の位置で開始）
-    once: true,
-  });
-
-  ///// 左からフェードイン /////
-  $(".js-fade-left").css("opacity", 0);
-  ScrollTrigger.batch(".js-fade-left", {
-    onEnter: (elements, triggers) => {
-      gsap.set(elements, { x: "-20%", opacity: 0 }); // 左に移動させる
-      gsap.to(elements, { x: 0, opacity: 1, duration: 1 }); // 左からフェードインする
-    },
-    start: "top 70%", // スクロール開始位置を少し下にずらす（70%の位置で開始）
-    once: true,
-  });
-
   //// ContactForm7エラー箇所までスクロール
   $(function() {
     const $wpcf7El = $(".wpcf7");
@@ -99,80 +47,37 @@ jQuery(function ($) {
     if ($wpcf7El.length) {
       $wpcf7El.on("wpcf7invalid", function() {
         const SCROLL_SPEED = 1000;
-        const SCROLL_DELAY = 100;
+        const SCROLL_DELAY = 300; // 遅延を増やしてDOM更新を待つ
         const $header = $("header");
 
         setTimeout(function() {
-          const $firstErrorEl = $(".wpcf7-not-valid").first();
-          if (!$firstErrorEl.length) return;
+          // エラー要素を複数のセレクタで検索
+          const $firstErrorEl = $(".wpcf7-not-valid, .wpcf7-not-valid-tip").first();
+          
+          if (!$firstErrorEl.length) {
+            console.warn('ContactForm7: エラー要素が見つかりませんでした');
+            return;
+          }
 
-          const scrollAmount = $firstErrorEl.offset().top - $header.innerHeight();
+          // ヘッダーの高さを取得（固定ヘッダーの場合を考慮）
+          const headerHeight = $header.outerHeight() || 0;
+          
+          // エラー要素の位置を計算
+          const errorOffset = $firstErrorEl.offset();
+          if (!errorOffset) {
+            console.warn('ContactForm7: エラー要素の位置を取得できませんでした');
+            return;
+          }
 
+          const scrollAmount = errorOffset.top - headerHeight - 40; // 20pxの余白を追加
+
+          // スクロール実行
           $("html, body").animate({
-            scrollTop: scrollAmount
+            scrollTop: Math.max(0, scrollAmount) // 負の値にならないように制限
           }, SCROLL_SPEED, "swing");
         }, SCROLL_DELAY);
       });
     }
-  });
-
-  ////// メニューホバーでメニュー表示 PC
-  $(function() {
-    const $pcNavMenu = $('header').find('.js-pc-nav-menu');
-    const $pcNavOpen = $('.js-pc-nav-open');
-
-    // デフォルトで非表示に設定
-    gsap.set($pcNavMenu, { 
-      opacity: 0,
-      display: 'none'
-    });
-
-    // ホバーでメニューを表示・非表示にする
-    $pcNavOpen.hover(
-      function() {
-        gsap.set($pcNavMenu, { display: 'grid' });
-        gsap.to($pcNavMenu, {
-          opacity: 1,
-          duration: 0.3,
-          ease: 'power2.out'
-        });
-      },
-      function() {
-        if (!$pcNavMenu.is(':hover')) {
-          gsap.to($pcNavMenu, {
-            opacity: 0,
-            duration: 0.3,
-            ease: 'power2.inOut',
-            onComplete: () => {
-              gsap.set($pcNavMenu, { display: 'none' });
-            }
-          });
-        }
-      }
-    );
-
-    $pcNavMenu.hover(
-      function() {
-        gsap.set($pcNavMenu, { display: 'grid' });
-        gsap.to($pcNavMenu, {
-          opacity: 1,
-          duration: 0.3,
-          ease: 'power2.out'
-        });
-      },
-      function() {
-        if (!$pcNavOpen.is(':hover')) {
-          gsap.to($pcNavMenu, {
-            opacity: 0,
-            duration: 0.3,
-            ease: 'power2.inOut',
-            onComplete: () => {
-              gsap.set($pcNavMenu, { display: 'none' });
-            }
-          });
-        }
-      }
-    );
   });
 
 
@@ -195,38 +100,6 @@ jQuery(function ($) {
         details.attr('open', true);
         content.slideDown(300);
       }
-    });
-  });
-
-
-
-  ///// スクロール時にボタンを表示＆非表示 /////
-  $(function() {
-    const $pageTop = $('.js-page-top');
-    const $mv = $('.p-mv');
-    $pageTop.hide();
-
-    // スクロールイベントの最適化（パフォーマンス向上）
-    $(window).on('scroll', function() {
-      // スクロールイベントを間引く
-      window.requestAnimationFrame(function() {
-        const mvHeight = $mv.outerHeight();
-        const scrollTop = $(window).scrollTop();
-
-        if (scrollTop < mvHeight) {
-          $pageTop.fadeOut(700);
-        } else {
-          $pageTop.fadeIn(700);
-        }
-      });
-    });
-
-    // ページトップボタンのクリックイベント
-    $pageTop.on('click', function(e) {
-      e.preventDefault(); // return falseより推奨
-      $('html, body').animate({
-        scrollTop: 0
-      }, 300, 'swing');
     });
   });
 
@@ -259,51 +132,6 @@ jQuery(function ($) {
       resizeTimer = setTimeout(adjustMvPadding, 250);
     });
   });
-
-
-  //  gsapの基本構文
-  //  gsap.fromTo (
-  //   // ターゲット(どの要素を動かすのか)
-  //   '.js-sample',
-  //   // 最初の状態
-  //   {
-  //     opacity: 0,
-  //   }
-  //   ,
-  //   // 最後の状態
-  //   {
-  //     opacity: 1,
-  //     duration: 3,
-  //     ease: "power1.out",
-  //   }
-  //  )
-
-
-  // 上の実装をスクロールトリガーと合わせた場合
-  // gsap.set('.js-sample', { opacity: 0 }); // 初期状態を設定
-
-  // ScrollTrigger.create({
-  //   trigger: '.js-sample',
-  //   start: 'top 80%', // スクロール開始位置を少し下にずらす（80%の位置で開始）
-  //   once: true,
-  //   onEnter: () => {
-  //     gsap.fromTo (
-  //       // ターゲット(どの要素を動かすのか)
-  //       '.js-sample',
-  //       // 最初の状態
-  //       {
-  //         opacity: 0,
-  //       }
-  //       ,
-  //       // 最後の状態
-  //       {
-  //         opacity: 1,
-  //         duration: 3,
-  //         ease: "power1.out",
-  //       }
-  //     )
-  //   }
-  // })
 
 
 });

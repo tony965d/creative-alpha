@@ -1,17 +1,8 @@
 <?php get_header(); ?>
 
-<main class="p-training-service l-main">
-  <!-- サブメインビジュアル -->
-  <section class="m-sub-mv">
-    <div class="m-sub-mv__inner l-inner">
-      <div class="m-sub-mv__wrapper">
-        <h1 class="m-page-title"><?php the_title(); ?></h1>
-      </div>
-    </div>
-  </section>
-  <!-- サブメインビジュアル -->
+<main class="p-column">
 
-  <section class="p-single-training-service">
+  <section class="p-column__single">
     <!-- パンくず -->
     <div class="m-breadcrumb">
       <div class="m-breadcrumb__inner l-inner">
@@ -23,79 +14,52 @@
       </div>
     </div>
     <!-- パンくず -->
-    <div class="p-single-training-service__outer l-outer">
-      <div class="p-single-training-service__inner l-inner">
-        <div class="p-single-training-service__wrapper">
-          <h3 class="m-service-training-title">
-            <picture class="m-service-training-title__icon">
-              <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/  .webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/service-training-title-icon.png" alt="" width="57" height="50" loading="lazy">
-            </picture>
-            <span class="m-service-training-title__text">サンプルプログラムのご紹介</span>
-          </h3>
-          <div class="p-single-training-service__contents">
-            <div class="p-single-training-service__block m-training-service-block">
-              <h4 class="m-training-service-block__title">お店のファンを増やすヒアリングの極意</h4>
-              <dl class="m-training-service-block__list m-definition-list">
-                <div class="m-definition-list__item">
-                  <dt class="m-definition-list__term">
-                    <span class="m-definition-list__term-icon"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/training-service-block-flag.svg" alt="" width="22" height="22" loading="lazy"></span>目的
-                  </dt>
-                  <dd class="m-definition-list__description">お客様が主役となるヒアリング中心の接客シーンを獲得強化する</dd>
+    <div class="m-single-column">
+      <div class="m-single-column__inner l-inner">
+        <div class="m-single-column__wrapper l-two-columns">
+          <div class="m-single-column__item l-two-columns__item">
+            <div class="m-single-column__main l-two-columns__left">
+              <div class="m-single-column__header">
+                <div class="m-single-column__header-unit">
+                  <time datetime="<?php the_time('Y-m-d'); ?>" class="m-single-column__date"><?php the_time('Y.m.d'); ?></time>
+                  <?php
+                  $terms = get_the_terms($post->ID, 'column_category');
+                  if ($terms && !is_wp_error($terms)) {
+                    foreach ($terms as $term) {
+                      $term_link = get_term_link($term);
+                      if (!is_wp_error($term_link)) {
+                        echo '<a href="' . esc_url($term_link) . '" class="m-single-column__category">' . $term->name . '</a>';
+                      } else {
+                        echo '<span class="m-single-column__category">' . $term->name . '</span>';
+                      }
+                    }
+                  }
+                  ?>
                 </div>
-                <div class="m-definition-list__item">
-                  <dt class="m-definition-list__term">
-                    <span class="m-definition-list__term-icon"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/training-service-block-student.svg" alt="" width="22" height="22" loading="lazy"></span>受講対象者
-                  </dt>
-                  <dd class="m-definition-list__description">
-                    ワンランク上のおもてなし技術を獲得したい方。<br>
-                    お店の顧客や常連をもっと増やしたいと感じている方。
-                  </dd>
-                </div>
-                <div class="m-definition-list__item">
-                  <dt class="m-definition-list__term">
-                    <span class="m-definition-list__term-icon"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/training-service-block-article.svg" alt="" width="22" height="22" loading="lazy"></span>研修内容
-                  </dt>
-                  <dd class="m-definition-list__description">
-                    <ul>
-                      <li>お店のファンの増やし方</li>
-                      <li>CX＝顧客体験価値向上</li>
-                      <li>顧客心理学2023／ニーズとウォンツ</li>
-                      <li>ラポールで信頼関係を構築しよう！</li>
-                      <li>ラポールトレーニング！</li>
-                      <li>｢こと｣消費／｢こと｣提供がリアル店舗の強み！</li>
-                      <li>あなたのお店の｢こと｣って何？</li>
-                      <li>ヒアリング強化トレーニング！</li>
-                    </ul>
-                  </dd>
-                </div>
-                <div class="m-definition-list__item">
-                  <dt class="m-definition-list__term">
-                    <span class="m-definition-list__term-icon"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/training-service-block-voice.svg" alt="" width="22" height="22" loading="lazy"></span>参加者声
-                  </dt>
-                  <dd class="m-definition-list__description">
-                    <ul>
-                      <li>ヒヤリングが課題と感じていたので今後も教えてもらったトレーニングを続けようと思った。</li>
-                      <li>最新のお客様の考え方が理解できたのでスタッフ指導にも役立つと感じた。</li>
-                    </ul>
-                  </dd>
-                </div>
-                <div class="m-definition-list__item">
-                  <dt class="m-definition-list__term">
-                    <span class="m-definition-list__term-item"><span class="m-definition-list__term-icon"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/training-service-block-watch.svg" alt="" width="22" height="22" loading="lazy"></span>時間</span>
-                    <span class="m-definition-list__term-item"><span class="m-definition-list__term-icon"><img src="<?php echo get_template_directory_uri() ?>/assets/images/common/training-service-block-wallet.svg" alt="" width="22" height="22" loading="lazy"></span>料金</span>
-                  </dt>
-                  <dd class="m-definition-list__description">
-                    <ul>
-                      <li>2時間以内：15万円（税別）</li>
-                      <li>半日（3～4時間）：25万円（税別）</li>
-                      <li>1日（4時間以上）：35万円</li>
-                    </ul>
-                  </dd>
-                </div>
-              </dl>
-              <p class="m-training-service-block__note">※【コーディング指示用】料金は入力が無ければ非表示になるように対応。以降も同様</p>
+                <h1 class="m-single-column__title"><?php the_title(); ?></h1>
+              </div>
+              <figure class="m-single-column__thumbnail">
+                <?php if (has_post_thumbnail()) { ?>
+                  <?php the_post_thumbnail('full'); ?>
+                <?php } else { ?>
+                  <picture>
+                    <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy.webp" type="image/webp">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy.png" alt="ダミー画像" width="337" height="170" loading="lazy">
+                  </picture>
+                <?php } ?>
+              </figure>
+              <div class="m-single-column__body">
+                <?php the_content(); ?>
+              </div>
+              <div class="m-single-column__button">
+                <a href="<?php echo home_url('/column'); ?>" class="m-button m-button--invert">一覧に戻る</a>
+              </div>
             </div>
+            <!-- サイドバー -->
+            <div class="m-archive-column__sidebar l-two-columns__right">
+              <?php get_sidebar(); ?>
+            </div>
+            <!-- サイドバー -->
           </div>
         </div>
       </div>
@@ -103,10 +67,11 @@
   </section>
 
   <!-- お問い合わせ -->
-  <section class="p-contact-cta">
-    <?php get_template_part('template-parts/contact'); ?>
+  <section class="p-column__contact-cta">
+    <?php get_template_part('template-parts/contact-cta'); ?>
   </section>
   <!-- /お問い合わせ -->
+
 </main>
 
 <?php get_footer();

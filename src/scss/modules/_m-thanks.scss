@@ -1,0 +1,20 @@
+@use '../_global' as *;
+
+.m-thanks {
+  padding-bottom: rem(80);
+}
+
+.m-thanks__wrapper {
+  display: grid;
+  gap: rem(40);
+}
+
+.m-thanks__text {
+  text-align: center;
+}
+
+.m-thanks__button {
+  display: flex;
+  justify-content: center;
+  margin-top: rem(60);
+}

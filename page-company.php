@@ -402,9 +402,8 @@
   </section>
   <!-- 講師紹介 -->
 
-
   <!-- お問い合わせ -->
-  <section class="p-mystery-shopper__contact-cta">
+  <section class="p-company__contact-cta">
     <?php get_template_part('template-parts/contact-cta'); ?>
   </section>
   <!-- /お問い合わせ -->

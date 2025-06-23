@@ -42,6 +42,3 @@ require_once get_template_directory() . '/inc/disable-auto-updates.php';
 
 // Contact Form 7のカスタマイズを読み込む
 require_once get_template_directory() . '/inc/contact-form.php';
-
-// カテゴリー別テンプレート読み込み機能を読み込む
-require_once get_template_directory() . '/inc/template-loader.php';

@@ -1,0 +1,33 @@
+@use '../_global' as *;
+
+.m-archive-column {
+  padding-top: rem(50);
+  padding-bottom: rem(128);
+
+  @include mq('md') {
+    padding-bottom: rem(80);
+  }
+}
+
+.m-archive-column__two-columns {
+  --_row-gap__grid: 80;
+  --_width__left: 822;
+  --_width__right: 250;
+  --_column-gap: 52;
+}
+
+.m-archive-column__item {
+  @include mq('md') {
+    row-gap: rem(80);
+  }
+}
+
+.m-archive-column__contents {
+  --_max-width: 822;
+  --_column-gap: 34;
+  --_row-gap: 33;
+}
+
+.m-archive-column__page-nav {
+  margin-top: rem(50);
+}

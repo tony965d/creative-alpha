@@ -461,13 +461,11 @@
   </section>
   <!-- 覆面調査 (ミステリーショッパー)を実施した、お客様の声 -->
 
-
   <!-- お問い合わせ -->
   <section class="p-voice__contact-cta">
     <?php get_template_part('template-parts/contact-cta'); ?>
   </section>
   <!-- /お問い合わせ -->
-
 
 </main>
 
