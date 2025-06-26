@@ -11,12 +11,15 @@
   --_column-gap: 66;
 }
 
+<<<<<<< HEAD
 .m-single-column__item {
   @include mq('md') {
     row-gap: rem(80);
   }
 }
 
+=======
+>>>>>>> ed3bd7aa92236deef8e0464886a8281ee99cfe91
 .m-single-column__header {
   display: grid;
   gap: rem(5);

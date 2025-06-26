@@ -20,6 +20,7 @@
   left: 11%;
   z-index: 1;
 
+<<<<<<< HEAD
   @include mq('lg') {
     top: 20%;
   }
@@ -31,6 +32,8 @@
   }
 }
 
+=======
+>>>>>>> ed3bd7aa92236deef8e0464886a8281ee99cfe91
 .m-mv__title-main {
   display: flex;
   flex-direction: column;
