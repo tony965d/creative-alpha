@@ -30,7 +30,7 @@
                     <div class="m-footer-nav__block">
                       <ul class="m-footer-nav__items">
                         <li class="m-footer-nav__item">
-                          <a href="<?php echo get_esc_home_url('/training-service'); ?>" class="m-footer-nav__menu u-hover">研修サービス</a>
+                          <a href="<?php echo get_esc_home_url('/menu'); ?>" class="m-footer-nav__menu u-hover">研修サービス</a>
                           <ul class="m-footer-nav__sub-items">
                             <li class="m-footer-nav__sub-item">
                               <a href="<?php echo get_esc_home_url('/post/post-31/'); ?>" class="m-footer-nav__sub-menu u-hover">接客研修</a>
@@ -81,13 +81,13 @@
                           <a href="<?php echo get_esc_home_url('/about'); ?>" class="m-footer-nav__menu u-hover">クリエイティブアルファについて</a>
                         </li>
                         <li class="m-footer-nav__item">
-                          <a href="<?php echo get_esc_home_url('/mystery-shopper'); ?>" class="m-footer-nav__menu u-hover">覆面調査（ミステリーショッパー）</a>
+                          <a href="<?php echo get_esc_home_url('/shoppers'); ?>" class="m-footer-nav__menu u-hover">覆面調査（ミステリーショッパー）</a>
                         </li>
                         <li class="m-footer-nav__item">
                           <a href="<?php echo get_esc_home_url('/voice'); ?>" class="m-footer-nav__menu u-hover">お客様の声</a>
                         </li>
                         <li class="m-footer-nav__item">
-                          <a href="<?php echo get_esc_home_url('/company'); ?>" class="m-footer-nav__menu u-hover">会社概要・講師紹介</a>
+                          <a href="<?php echo get_esc_home_url('/corporation'); ?>" class="m-footer-nav__menu u-hover">会社概要・講師紹介</a>
                         </li>
                         <li class="m-footer-nav__item">
                           <a href="<?php echo get_esc_home_url('/column'); ?>" class="m-footer-nav__menu u-hover">コラム</a>

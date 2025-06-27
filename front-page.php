@@ -254,7 +254,7 @@
                   </p>
                 </div>
                 <div class="m-home-mystery-shopper__button">
-                  <a href="<?php echo home_url('/mystery-shopper'); ?>" class="m-button">詳しく見る</a>
+                  <a href="<?php echo home_url('/shoppers'); ?>" class="m-button">詳しく見る</a>
                 </div>
               </div>
             </div>

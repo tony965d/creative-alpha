@@ -107,9 +107,9 @@ add_action('init', 'custom_post_type_rewrite_rules');
 
 function custom_post_type_link($permalink, $post)
 {
-  if ($post->post_type === 'post') {
+  if ($post->post_type === 'menu') {
     // カテゴリーを含まないURLに変更
-    return home_url('post/' . $post->post_name . '/');
+    return home_url('menu/' . $post->post_name . '/');
   }
   return $permalink;
 }

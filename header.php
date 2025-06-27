@@ -49,16 +49,16 @@
                   <a href="<?php echo get_esc_home_url('/about'); ?>" class="m-pc-nav__link u-hover">クリエイティブアルファについて<span class="m-pc-nav__link-arrow"></span></a>
                 </li>
                 <li class="m-pc-nav__item">
-                  <a href="<?php echo get_esc_home_url('/training-service'); ?>" class="m-pc-nav__link u-hover">研修サービス<span class="m-pc-nav__link-arrow"></span></a>
+                  <a href="<?php echo get_esc_home_url('/menu'); ?>" class="m-pc-nav__link u-hover">研修サービス<span class="m-pc-nav__link-arrow"></span></a>
                 </li>
                 <li class="m-pc-nav__item">
-                  <a href="<?php echo get_esc_home_url('/mystery-shopper'); ?>" class="m-pc-nav__link u-hover">覆面調査（ミステリーショッパー）<span class="m-pc-nav__link-arrow"></span></a>
+                  <a href="<?php echo get_esc_home_url('/shoppers'); ?>" class="m-pc-nav__link u-hover">覆面調査（ミステリーショッパー）<span class="m-pc-nav__link-arrow"></span></a>
                 </li>
                 <li class="m-pc-nav__item">
                   <a href="<?php echo get_esc_home_url('/voice'); ?>" class="m-pc-nav__link u-hover">お客様の声<span class="m-pc-nav__link-arrow"></span></a>
                 </li>
                 <li class="m-pc-nav__item">
-                  <a href="<?php echo get_esc_home_url('/company'); ?>" class="m-pc-nav__link u-hover">会社概要・講師紹介<span class="m-pc-nav__link-arrow"></span></a>
+                  <a href="<?php echo get_esc_home_url('/corporation'); ?>" class="m-pc-nav__link u-hover">会社概要・講師紹介<span class="m-pc-nav__link-arrow"></span></a>
                 </li>
                 <li class="m-pc-nav__item">
                   <a href="<?php echo get_esc_home_url('/column'); ?>" class="m-pc-nav__link u-hover">コラム<span class="m-pc-nav__link-arrow"></span></a>
@@ -74,16 +74,16 @@
                     <a href="<?php echo get_esc_home_url('/about'); ?>" class="m-sp-nav__menu">クリエイティブアルファについて</a>
                   </li>
                   <li class="m-sp-nav__item">
-                    <a href="<?php echo get_esc_home_url('/training-service'); ?>" class="m-sp-nav__menu">研修サービス</a>
+                    <a href="<?php echo get_esc_home_url('/menu'); ?>" class="m-sp-nav__menu">研修サービス</a>
                   </li>
                   <li class="m-sp-nav__item">
-                    <a href="<?php echo get_esc_home_url('/mystery-shopper'); ?>" class="m-sp-nav__menu">覆面調査（ミステリーショッパー）</a>
+                    <a href="<?php echo get_esc_home_url('/shoppers'); ?>" class="m-sp-nav__menu">覆面調査（ミステリーショッパー）</a>
                   </li>
                   <li class="m-sp-nav__item">
                     <a href="<?php echo get_esc_home_url('/voice'); ?>" class="m-sp-nav__menu">お客様の声</a>
                   </li>
                   <li class="m-sp-nav__item">
-                    <a href="<?php echo get_esc_home_url('/company'); ?>" class="m-sp-nav__menu">会社概要・講師紹介</a>
+                    <a href="<?php echo get_esc_home_url('/corporation'); ?>" class="m-sp-nav__menu">会社概要・講師紹介</a>
                   </li>
                   <li class="m-sp-nav__item">
                     <a href="<?php echo get_esc_home_url('/column'); ?>" class="m-sp-nav__menu">コラム</a>

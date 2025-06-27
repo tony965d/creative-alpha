@@ -55,7 +55,7 @@
   </div>
   <div class="m-contact-form__acceptance">
     [acceptance acceptance class:m-contact-form__acceptance-text]
-    <a href="/privacy-policy" class="m-contact-form__acceptance-link" target="_blank" rel="noopener">プライバシーポリシー</a>に同意する
+    <a href="/privacy" class="m-contact-form__acceptance-link" target="_blank" rel="noopener">プライバシーポリシー</a>に同意する
     [/acceptance]
   </div>
 </div>
