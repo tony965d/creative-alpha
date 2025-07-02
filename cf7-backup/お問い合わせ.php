@@ -1,6 +1,6 @@
 [response]
 
-<div class="m-contact-form l-two-columns js-fade-up-parent">
+<div class="m-contact-form l-two-columns">
   <div class="m-contact-form__group l-two-columns__item">
     <label for="your-last-name" class="m-contact-form__label l-two-columns__left">
       会社名<span class="m-contact-form__required">必須</span>
@@ -59,7 +59,7 @@
     [/acceptance]
   </div>
 </div>
-<div class="m-contact-form__button js-fade-up">
+<div class="m-contact-form__button">
   [submit "送信する"]
 </div>
 
