@@ -6,7 +6,7 @@
     <div class="m-sub-mv">
       <div class="m-sub-mv__inner l-inner">
         <div class="m-sub-mv__wrapper">
-          <h1 class="m-page-title">お問い合わせ</h1>
+          <h1 class="m-page-title js-fade-up">お問い合わせ</h1>
         </div>
       </div>
     </div>
@@ -16,7 +16,7 @@
     <!-- パンくず -->
     <div class="m-breadcrumb">
       <div class="m-breadcrumb__inner l-inner">
-        <div class="wp-breadcrumb">
+        <div class="wp-breadcrumb js-fade-up">
           <?php if (function_exists('bcn_display')) {
             bcn_display();
           } ?>
@@ -27,7 +27,7 @@
     <div class="m-contact">
       <div class="m-contact__inner l-inner">
         <div class="m-contact__wrapper">
-          <p class="m-base-text">
+          <p class="m-base-text js-fade-up">
             クリエイティブアルファの研修やサービスについて関心がある方は以下のお問合せフォームよりご連絡ください。
             課題・ご要望などをヒアリングさせていただき、研修の企画書を作成させていただきます。企画書の作成は無料ですので、お気軽にご相談いただきますと幸いです。
           </p>

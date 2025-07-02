@@ -6,7 +6,7 @@
     <div class="m-sub-mv">
       <div class="m-sub-mv__inner l-inner">
         <div class="m-sub-mv__wrapper">
-          <h1 class="m-page-title m-page-title--icon-invert">研修サービス</h1>
+          <h1 class="m-page-title m-page-title--icon-invert js-fade-up">研修サービス</h1>
         </div>
       </div>
     </div>
@@ -18,7 +18,7 @@
     <!-- パンくず -->
     <div class="m-breadcrumb">
       <div class="m-breadcrumb__inner l-inner">
-        <div class="wp-breadcrumb">
+        <div class="wp-breadcrumb js-fade-up">
           <?php if (function_exists('bcn_display')) {
             bcn_display();
           } ?>
@@ -29,12 +29,12 @@
     <div class="m-archive-training-service l-outer">
       <div class="m-archive-training-service__inner l-inner">
         <div class="m-archive-training-service__wrapper">
-          <p class="m-base-text">
+          <p class="m-base-text js-fade-up">
             研修プログラムの内容は、各社様の課題やご要望に合わせてオーダーメイドで作成させて頂きます。<br>
             ご予算に合わせてカスタマイズも可能ですので、先ずはお気軽にお問合せ下さい。なお、ヒアリングや企画書の作成は無料で承っております。
           </p>
           <div class="m-archive-training-service__title-wrapper">
-            <h2 class="m-section-title">
+            <h2 class="m-section-title js-fade-up-parent">
               <picture class="m-section-title__icon">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.webp" type="image/webp">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.png" alt="" width="57" height="50" loading="lazy">
@@ -42,7 +42,7 @@
               <span class="m-section-title__text">お店の課題を解決する体感型研修をオーダーメイドで提供</span>
             </h2>
           </div>
-          <div class="m-archive-training-service__contents l-grid-two">
+          <div class="m-archive-training-service__contents l-grid-two js-fade-up-parent">
             <?php
             $trainingService_query = new WP_Query(
               array(

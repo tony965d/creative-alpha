@@ -35,6 +35,12 @@ body {
   color: var(--color__black);
   font-size: calc(16rem / var(--font-size__base));
   font-weight: 400;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* 透明度の変化を0.5秒かけて */
+}
+
+body.loaded {
+  opacity: 1;
 }
 
 // 画像

@@ -42,7 +42,7 @@
           </div>
         </div>
         <div class="m-mv__body">
-          <hgroup class="m-mv__title">
+          <hgroup class="m-mv__title js-fade-up-parent">
             <h1 class="m-mv__title-main">
               <span>お客様に<strong class="m-mv__title-main-accent">感動</strong>を。</span>
               <span>スタッフに<strong class="m-mv__title-main-accent">やりがい</strong>を。</span>
@@ -52,8 +52,8 @@
               お客様に更なる感動をご提供できるように私たちがお手伝いします。
             </p>
           </hgroup>
-          <div class="m-mv__body-button">
-            <a href="<?php echo home_url('/contact'); ?>" class="m-contact-button m-contact-button--mv"><i class="fa-solid fa-envelope"></i>お問い合わせ<i class="fa-solid fa-angle-right"></i></a>
+          <div class="m-mv__body-button js-fade-up">
+            <a href="<?php echo home_url('/contact/'); ?>" class="m-contact-button m-contact-button--mv"><i class="fa-solid fa-envelope"></i>お問い合わせ<i class="fa-solid fa-angle-right"></i></a>
           </div>
         </div>
       </div>
@@ -68,13 +68,13 @@
         <div class="m-home-about__wrapper">
           <div class="m-home-about__top l-two-columns">
             <div class="m-home-about__top-item l-two-columns__item">
-              <div class="m-home-about__top-left l-two-columns__left">
+              <div class="m-home-about__top-left l-two-columns__left js-fade-up-parent">
                 <hgroup class="m-section-header">
                   <p class="m-section-header__subtitle">About Us</p>
                   <h2 class="m-section-header__title">クリエイティブアルファについて</h2>
                 </hgroup>
               </div>
-              <div class="m-home-about__top-right l-two-columns__right">
+              <div class="m-home-about__top-right l-two-columns__right js-fade-up">
                 <picture class="m-home-about__top-image">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-1.webp" type="image/webp">
                   <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-1.jpg" alt="" width="520" height="376" loading="lazy">
@@ -84,24 +84,24 @@
           </div>
           <div class="m-home-about__content l-two-columns">
             <div class="m-home-about__content-item l-two-columns__item">
-              <picture class="m-home-about__content-image l-two-columns__left">
+              <picture class="m-home-about__content-image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-2.webp" type="image/webp">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-2.jpg" alt="" width="423" height="287" loading="lazy">
               </picture>
-              <div class="m-home-about__content-body l-two-columns__right">
+              <div class="m-home-about__content-body l-two-columns__right js-fade-up-parent">
                 <p class="m-base-text">
                   クリエイティブアルファは小売・飲食・サービス業などの企業様や商業施設のテナント様向けに研修や覆面調査サービスを提供しております。
                   スタッフの育成やリアル店舗の価値、顧客ロイヤルティ向上など店舗事業に関する課題をヒアリングし、
                   課題解決に最も効果的な研修や調査をオーダーメイドで企画いたします。
                 </p>
                 <div class="m-home-about__content-body-button">
-                  <a href="<?php echo home_url('/about'); ?>" class="m-button">詳しく見る</a>
+                  <a href="<?php echo home_url('/about/'); ?>" class="m-button">詳しく見る</a>
                 </div>
               </div>
             </div>
           </div>
           <div class="m-home-about__button-unit-wrapper">
-            <div class="m-square-button-unit">
+            <div class="m-square-button-unit js-fade-up-parent">
               <a href="#home-training-service" class="m-square-button m-square-button--training-service u-hover">
                 <picture class="m-square-button__icon m-square-button__icon--training-service">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-1.webp" type="image/webp">
@@ -129,11 +129,11 @@
   <section id="home-training-service" class="p-home__training-service">
     <div class="m-home-training-service">
       <div class="m-home-training-service__inner l-inner">
-        <picture class="m-home-training-service__bg-icon">
+        <picture class="m-home-training-service__bg-icon js-fade-up">
           <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-service-training-icon.webp" type="image/webp">
           <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-service-training-icon.png" alt="" width="129" height="95" loading="lazy">
         </picture>
-        <div class="m-home-training-service__header">
+        <div class="m-home-training-service__header js-fade-up-parent">
           <hgroup class="m-section-header m-section-header--training-service">
             <p class="m-section-header__subtitle">Training</p>
             <h2 class="m-section-header__title">研修サービス</h2>
@@ -146,14 +146,14 @@
           </div>
         </div>
         <div class="m-home-training-service__wrapper">
-          <h3 class="m-service-training-title">
+          <h3 class="m-service-training-title js-fade-up-parent">
             <picture class="m-service-training-title__icon">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/service-training-title-icon.webp" type="image/webp">
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/service-training-title-icon.png" alt="" width="57" height="50" loading="lazy">
             </picture>
             <span class="m-service-training-title__text">サンプルプログラムのご紹介</span>
           </h3>
-          <div class="m-home-training-service__cards l-grid">
+          <div class="m-home-training-service__cards l-grid js-fade-up-parent">
             <?php
             $trainingService_query = new WP_Query(
               array(
@@ -208,16 +208,16 @@
             <?php endif;  ?>
           </div>
         </div>
-        <div class="m-home-training-service__bottom">
+        <div class="m-home-training-service__bottom js-fade-up-parent">
           <div class="m-voice-block">
-            <div class="m-voice-block__content">
-              <div class="m-voice-block__body">
+            <div class="m-voice-block__content js-fade-up-parent">
+              <div class="m-voice-block__body js-fade-up-parent">
                 <h3 class="m-voice-block__title">
                   <span class="m-voice-block__title-sub">研修を受けた</span>
                   <span class="m-voice-block__title-main">お客様の声</span>
                 </h3>
                 <div class="m-voice-block__button">
-                  <a href="<?php echo home_url('/about'); ?>" class="m-button">詳しく見る</a>
+                  <a href="<?php echo home_url('/voice/'); ?>#voice-training-service" class="m-button">詳しく見る</a>
                 </div>
               </div>
               <picture class="m-voice-block__image m-voice-block__image--service-training">
@@ -239,11 +239,11 @@
         <div class="m-home-mystery-shopper__wrapper">
           <div class="m-home-mystery-shopper__content l-two-columns">
             <div class="m-home-mystery-shopper__item l-two-columns__item">
-              <picture class="m-home-mystery-shopper__image l-two-columns__left">
+              <picture class="m-home-mystery-shopper__image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-mystery-shopper-1.webp" type="image/webp">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-mystery-shopper-1.jpg" alt="" width="527" height="318" loading="lazy">
               </picture>
-              <div class="m-home-mystery-shopper__body l-two-columns__right">
+              <div class="m-home-mystery-shopper__body l-two-columns__right js-fade-up-parent">
                 <hgroup class="m-section-header">
                   <p class="m-section-header__subtitle">Mystery Shopper</p>
                   <h2 class="m-section-header__title m-section-header__title--mystery-shopper">覆面調査<span class="m-section-header__title-sub">（ミステリーショッパー）</span></h2>
@@ -254,21 +254,21 @@
                   </p>
                 </div>
                 <div class="m-home-mystery-shopper__button">
-                  <a href="<?php echo home_url('/shoppers'); ?>" class="m-button">詳しく見る</a>
+                  <a href="<?php echo home_url('/shoppers/'); ?>" class="m-button">詳しく見る</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="m-home-mystery-shopper__bottom">
+          <div class="m-home-mystery-shopper__bottom js-fade-up-parent">
             <div class="m-voice-block">
-              <div class="m-voice-block__content m-voice-block__content--mystery-shopper">
-                <div class="m-voice-block__body">
+              <div class="m-voice-block__content m-voice-block__content--mystery-shopper js-fade-up-parent">
+                <div class="m-voice-block__body js-fade-up-parent">
                   <h3 class="m-voice-block__title">
                     <span class="m-voice-block__title-sub">覆面調査を実施した</span>
                     <span class="m-voice-block__title-main">お客様の声</span>
                   </h3>
                   <div class="m-voice-block__button m-voice-block__button--mystery-shopper">
-                    <a href="<?php echo home_url('/about'); ?>" class="m-button">詳しく見る</a>
+                    <a href="<?php echo home_url('/voice/'); ?>#voice-mystery-shopper" class="m-button">詳しく見る</a>
                   </div>
                 </div>
                 <picture class="m-voice-block__image m-voice-block__image--mystery-shopper">
@@ -289,11 +289,11 @@
     <div class="m-home-column">
       <div class="m-home-column__inner l-inner">
         <div class="m-home-column__wrapper">
-          <hgroup class="m-section-header m-section-header--column">
+          <hgroup class="m-section-header m-section-header--column js-fade-up">
             <p class="m-section-header__subtitle m-section-header__subtitle--column">Pickup Column</p>
             <h2 class="m-section-header__title m-section-header__title--column">おすすめ記事</h2>
           </hgroup>
-          <div class="m-home-column__cards l-grid">
+          <div class="m-home-column__cards l-grid js-fade-up-parent">
             <?php
             $column_query = new WP_Query(
               array(
@@ -334,8 +334,8 @@
               <?php wp_reset_postdata(); ?>
             <?php endif;  ?>
           </div>
-          <div class="m-home-column__button">
-            <a href="<?php echo home_url('/column'); ?>" class="m-button m-button--invert">一覧に戻る</a>
+          <div class="m-home-column__button js-fade-up">
+            <a href="<?php echo home_url('/column/'); ?>" class="m-button m-button--invert">一覧に戻る</a>
           </div>
         </div>
       </div>

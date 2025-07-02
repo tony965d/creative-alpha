@@ -6,7 +6,7 @@
     <div class="m-sub-mv">
       <div class="m-sub-mv__inner l-inner">
         <div class="m-sub-mv__wrapper">
-          <h1 class="m-page-title m-page-title--large">クリエイティブアルファについて</h1>
+          <h1 class="m-page-title m-page-title--large js-fade-up">クリエイティブアルファについて</h1>
         </div>
       </div>
     </div>
@@ -17,7 +17,7 @@
     <!-- パンくず -->
     <div class="m-breadcrumb">
       <div class="m-breadcrumb__inner l-inner">
-        <div class="wp-breadcrumb">
+        <div class="wp-breadcrumb js-fade-up">
           <?php if (function_exists('bcn_display')) {
             bcn_display();
           } ?>
@@ -28,7 +28,7 @@
     <div class="m-about-header l-outer">
       <div class="m-about-header__inner l-inner">
         <div class="m-about-header__title-wrapper">
-          <h2 class="m-section-title">
+          <h2 class="m-section-title js-fade-up-parent">
             <picture class="m-section-title__icon">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.webp" type="image/webp">
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.png" alt="" width="57" height="50" loading="lazy">
@@ -37,7 +37,7 @@
           </h2>
           <div class="m-about-header__contents l-two-columns">
             <div class="m-about-header__item l-two-columns__item">
-              <div class="m-about-header__body l-two-columns__left">
+              <div class="m-about-header__body l-two-columns__left js-fade-up-parent">
                 <p class="m-about-header__text">商環境の未来を切り拓く。</p>
                 <p class="m-about-header__text">
                   あらゆるキタイに、お応えすること。<br>
@@ -49,7 +49,7 @@
                   どこまでも、徹底的に。
                 </p>
               </div>
-              <picture class="m-about-header__image l-two-columns__right">
+              <picture class="m-about-header__image l-two-columns__right js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/about/about-header.webp" type="image/webp">
                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-header.jpg" alt="" width="429" height="310" loading="lazy">
               </picture>
@@ -57,7 +57,7 @@
           </div>
           <div class="m-about-header__button-wrapper">
             <div class="m-square-button-unit m-square-button-unit--wide">
-              <a href="#about-training-service" class="m-square-button m-square-button--about-training-service u-hover">
+              <a href="#about-training-service" class="m-square-button m-square-button--about-training-service u-hover js-fade-up">
                 <picture class="m-square-button__icon m-square-button__icon--training-service">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-1.webp" type="image/webp">
                   <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-1.jpg" alt="" width="109" height="61" loading="lazy">
@@ -65,7 +65,7 @@
                 <span class="m-square-button__text">研修サービスが選ばれる理由</span>
                 <span class="u-triangle--right"></span>
               </a>
-              <a href="#about-mystery-shopper" class="m-square-button m-square-button--about-mystery-shopper u-hover">
+              <a href="#about-mystery-shopper" class="m-square-button m-square-button--about-mystery-shopper u-hover js-fade-up">
                 <picture class="m-square-button__icon m-square-button__icon--mystery-shopper">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-2.webp" type="image/webp">
                   <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-2.jpg" alt="" width="42" height="63" loading="lazy">
@@ -84,7 +84,7 @@
   <section id="about-training-service" class="p-about__training-service">
     <div class="m-about-training-service">
       <div class="m-about-training-service__inner l-inner">
-        <h2 class="m-section-title">
+        <h2 class="m-section-title js-fade-up-parent js-fade-up-parent">
           <picture class="m-section-title__icon">
             <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.webp" type="image/webp">
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.png" alt="" width="57" height="50" loading="lazy">
@@ -93,11 +93,11 @@
         </h2>
         <div class="m-about-contents l-two-columns l-two-columns--zigzag">
           <div class="m-about-contents__item l-two-columns__item">
-            <picture class="m-about-contents__image l-two-columns__left">
+            <picture class="m-about-contents__image l-two-columns__left js-fade-up">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/about/about-training-service-1.webp" type="image/webp">
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-training-service-1.jpg" alt="" width="572" height="381" loading="lazy">
             </picture>
-            <div class="m-about-contents__body l-two-columns__right">
+            <div class="m-about-contents__body l-two-columns__right js-fade-up-parent">
               <h3 class="m-content-subtitle">自ら答えに気づき、現場ですぐに実践できる</h3>
               <p class="m-base-text">
                 クリエイティブアルファの研修では、受講者に気づきを与えることはもちろんですが、
@@ -109,11 +109,11 @@
             </div>
           </div>
           <div class="m-about-contents__item l-two-columns__item">
-            <picture class="m-about-contents__image l-two-columns__left">
+            <picture class="m-about-contents__image l-two-columns__left js-fade-up">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/about/about-training-service-2.webp" type="image/webp">
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-training-service-2.jpg" alt="" width="572" height="381" loading="lazy">
             </picture>
-            <div class="m-about-contents__body l-two-columns__right">
+            <div class="m-about-contents__body l-two-columns__right js-fade-up-parent">
               <h3 class="m-content-subtitle">楽しく主体的に学べるので研修の定着率が高い</h3>
               <p class="m-base-text">
                 クリエイティブアルファの研修はグループで討論したり、ロールプレイングをおこなう体感型ワークショップ形式です。
@@ -123,11 +123,11 @@
             </div>
           </div>
           <div class="m-about-contents__item l-two-columns__item">
-            <picture class="m-about-contents__image l-two-columns__left">
+            <picture class="m-about-contents__image l-two-columns__left js-fade-up">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/about/about-training-service-3.webp" type="image/webp">
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-training-service-3.jpg" alt="" width="572" height="381" loading="lazy">
             </picture>
-            <div class="m-about-contents__body l-two-columns__right">
+            <div class="m-about-contents__body l-two-columns__right js-fade-up-parent">
               <h3 class="m-content-subtitle">課題やご要望に合った研修を企画してもらえる</h3>
               <p class="m-base-text">
                 クリエイティブアルファでは、研修の導入背景や店舗の課題、目指すゴールなどを事前にヒアリングさせていただき、
@@ -146,7 +146,7 @@
   <section id="about-mystery-shopper" class="p-about__mystery-shopper">
     <div class="m-about-mystery-shopper">
       <div class="m-about-mystery-shopper__inner l-inner">
-        <h2 class="m-section-title">
+        <h2 class="m-section-title js-fade-up-parent">
           <picture class="m-section-title__icon">
             <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.webp" type="image/webp">
             <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.png" alt="" width="57" height="50" loading="lazy">
@@ -155,11 +155,11 @@
         </h2>
         <div class="m-about-contents l-two-columns l-two-columns--zigzag">
           <div class="m-about-contents__item l-two-columns__item">
-            <picture class="m-about-contents__image l-two-columns__left">
+            <picture class="m-about-contents__image l-two-columns__left js-fade-up">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/about/about-mystery-shopper-1.webp" type="image/webp">
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-mystery-shopper-1.jpg" alt="" width="572" height="381" loading="lazy">
             </picture>
-            <div class="m-about-contents__body l-two-columns__right">
+            <div class="m-about-contents__body l-two-columns__right js-fade-up-parent">
               <h3 class="m-content-subtitle">
                 調査員は店舗ビジネスを<br>
                 熟知する現役講師！課題解決まで 丁寧にサポート
@@ -172,11 +172,11 @@
             </div>
           </div>
           <div class="m-about-contents__item l-two-columns__item">
-            <picture class="m-about-contents__image l-two-columns__left">
+            <picture class="m-about-contents__image l-two-columns__left js-fade-up">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/about/about-mystery-shopper-2.webp" type="image/webp">
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-mystery-shopper-2.jpg" alt="" width="572" height="381" loading="lazy">
             </picture>
-            <div class="m-about-contents__body l-two-columns__right">
+            <div class="m-about-contents__body l-two-columns__right js-fade-up-parent">
               <h3 class="m-content-subtitle">
                 売上との相関性が強い指標<br>
                 「顧客体験価値（CX）」にフォーカスした調査
@@ -187,11 +187,11 @@
             </div>
           </div>
           <div class="m-about-contents__item l-two-columns__item">
-            <picture class="m-about-contents__image l-two-columns__left">
+            <picture class="m-about-contents__image l-two-columns__left js-fade-up">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/about/about-mystery-shopper-3.webp" type="image/webp">
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-mystery-shopper-3.jpg" alt="" width="572" height="381" loading="lazy">
             </picture>
-            <div class="m-about-contents__body l-two-columns__right">
+            <div class="m-about-contents__body l-two-columns__right js-fade-up-parent">
               <h3 class="m-content-subtitle">
                 課題を解消するための<br>
                 適切な研修や個別指導を受けられる
@@ -213,8 +213,8 @@
   <section class="p-about__case-studies">
     <div class="m-about-case-studies">
       <div class="m-about-case-studies__inner l-inner">
-        <h2 class="m-about-case-studies__title">導入実績</h2>
-        <div class="m-about-case-studies__wrapper">
+        <h2 class="m-about-case-studies__title js-fade-up">導入実績</h2>
+        <div class="m-about-case-studies__wrapper js-fade-up">
           <p class="m-about-case-studies__text">
             アパレル／ファッション雑貨／コスメ／和洋菓子／スポーツ／アウトドア／玩具／飲食／カフェ／商業施設／インテリア／生活雑貨／ホテル／美容／音楽／医療／保険／カルチャースクール／自動車／レンタル／生花／レジャー／リユース／etc
           </p>

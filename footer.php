@@ -30,46 +30,46 @@
                     <div class="m-footer-nav__block">
                       <ul class="m-footer-nav__items">
                         <li class="m-footer-nav__item">
-                          <a href="<?php echo get_esc_home_url('/menu'); ?>" class="m-footer-nav__menu u-hover">研修サービス</a>
+                          <a href="<?php echo get_esc_home_url('/menu/'); ?>" class="m-footer-nav__menu u-hover">研修サービス</a>
                           <ul class="m-footer-nav__sub-items">
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/post/post-31/'); ?>" class="m-footer-nav__sub-menu u-hover">接客研修</a>
+                              <a href="<?php echo get_esc_home_url('/sekkyaku/'); ?>" class="m-footer-nav__sub-menu u-hover">接客研修</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/post/post-79/'); ?>" class="m-footer-nav__sub-menu u-hover">店舗運営</a>
+                              <a href="<?php echo get_esc_home_url('/store/'); ?>" class="m-footer-nav__sub-menu u-hover">店舗運営</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/post/post-83/'); ?>" class="m-footer-nav__sub-menu u-hover">売場づくり(VMD研修)</a>
+                              <a href="<?php echo get_esc_home_url('/vmd/'); ?>" class="m-footer-nav__sub-menu u-hover">売場づくり(VMD研修)</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/post/post-86/'); ?>" class="m-footer-nav__sub-menu u-hover">リアル店舗価値向上</a>
+                              <a href="<?php echo get_esc_home_url('/value/'); ?>" class="m-footer-nav__sub-menu u-hover">リアル店舗価値向上</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/post/post-89/'); ?>" class="m-footer-nav__sub-menu u-hover">顧客ロイヤルティ向上</a>
+                              <a href="<?php echo get_esc_home_url('/loyalty/'); ?>" class="m-footer-nav__sub-menu u-hover">顧客ロイヤルティ向上</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/post/post-92/'); ?>" class="m-footer-nav__sub-menu u-hover">商圏戦略</a>
+                              <a href="<?php echo get_esc_home_url('/strategy/'); ?>" class="m-footer-nav__sub-menu u-hover">商圏戦略</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/post/post-95/'); ?>" class="m-footer-nav__sub-menu u-hover">現場指導型研修(OJT研修)</a>
+                              <a href="<?php echo get_esc_home_url('/ojt/'); ?>" class="m-footer-nav__sub-menu u-hover">現場指導型研修(OJT研修)</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/post/post-98/'); ?>" class="m-footer-nav__sub-menu u-hover">マネジメント・リーダ・育成</a>
+                              <a href="<?php echo get_esc_home_url('/management/'); ?>" class="m-footer-nav__sub-menu u-hover">マネジメント・リーダ・育成</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/post/post-101/'); ?>" class="m-footer-nav__sub-menu u-hover">クレーム・カスタマーハラスメント</a>
+                              <a href="<?php echo get_esc_home_url('/claim/'); ?>" class="m-footer-nav__sub-menu u-hover">クレーム・カスタマーハラスメント</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/post/post-104/'); ?>" class="m-footer-nav__sub-menu u-hover">インバウンド</a>
+                              <a href="<?php echo get_esc_home_url('/inbound/'); ?>" class="m-footer-nav__sub-menu u-hover">インバウンド</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/post/post-107/'); ?>" class="m-footer-nav__sub-menu u-hover">接客ロープレコンテスト</a>
+                              <a href="<?php echo get_esc_home_url('/ropeplay/'); ?>" class="m-footer-nav__sub-menu u-hover">接客ロープレコンテスト</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/post/post-110/'); ?>" class="m-footer-nav__sub-menu u-hover">年間プログラム研修</a>
+                              <a href="<?php echo get_esc_home_url('/yearl/'); ?>" class="m-footer-nav__sub-menu u-hover">年間プログラム研修</a>
                             </li>
                             <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/post/post-209/'); ?>" class="m-footer-nav__sub-menu u-hover">NPS調査・eNPS調査</a>
+                              <a href="<?php echo get_esc_home_url('/nps/'); ?>" class="m-footer-nav__sub-menu u-hover">NPS調査・eNPS調査</a>
                             </li>
                           </ul>
                         </li>
@@ -78,26 +78,26 @@
                     <div class="m-footer-nav__block m-footer-nav__block---right">
                       <ul class="m-footer-nav__items">
                         <li class="m-footer-nav__item">
-                          <a href="<?php echo get_esc_home_url('/about'); ?>" class="m-footer-nav__menu u-hover">クリエイティブアルファについて</a>
+                          <a href="<?php echo get_esc_home_url('/about/'); ?>" class="m-footer-nav__menu u-hover">クリエイティブアルファについて</a>
                         </li>
                         <li class="m-footer-nav__item">
-                          <a href="<?php echo get_esc_home_url('/shoppers'); ?>" class="m-footer-nav__menu u-hover">覆面調査（ミステリーショッパー）</a>
+                          <a href="<?php echo get_esc_home_url('/shoppers/'); ?>" class="m-footer-nav__menu u-hover">覆面調査（ミステリーショッパー）</a>
                         </li>
                         <li class="m-footer-nav__item">
-                          <a href="<?php echo get_esc_home_url('/voice'); ?>" class="m-footer-nav__menu u-hover">お客様の声</a>
+                          <a href="<?php echo get_esc_home_url('/voice/'); ?>" class="m-footer-nav__menu u-hover">お客様の声</a>
                         </li>
                         <li class="m-footer-nav__item">
-                          <a href="<?php echo get_esc_home_url('/corporation'); ?>" class="m-footer-nav__menu u-hover">会社概要・講師紹介</a>
+                          <a href="<?php echo get_esc_home_url('/corporation/'); ?>" class="m-footer-nav__menu u-hover">会社概要・講師紹介</a>
                         </li>
                         <li class="m-footer-nav__item">
-                          <a href="<?php echo get_esc_home_url('/column'); ?>" class="m-footer-nav__menu u-hover">コラム</a>
+                          <a href="<?php echo get_esc_home_url('/column/'); ?>" class="m-footer-nav__menu u-hover">コラム</a>
                         </li>
                         <li class="m-footer-nav__item">
                           <a href="<?php echo get_esc_home_url('/privacy'); ?>" class="m-footer-nav__menu u-hover">プライバシーポリシー</a>
                         </li>
                       </ul>
                       <div class="m-footer-nav__button">
-                        <a href="<?php echo get_esc_home_url('/contact'); ?>" class="m-contact-button m-contact-button--footer"><i class="fa-solid fa-envelope"></i>お問い合わせ</a>
+                        <a href="<?php echo get_esc_home_url('/contact/'); ?>" class="m-contact-button m-contact-button--footer"><i class="fa-solid fa-envelope"></i>お問い合わせ</a>
                       </div>
                     </div>
                   </nav>

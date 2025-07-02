@@ -29,3 +29,36 @@
   gap: rem(40);
   margin-top: rem(33);
 }
+
+.m-single-training-service__body h2 {
+  font-size: rem(24);
+  font-weight: 700;
+  color: transparent;
+  background: var(--color__gradient-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  line-height: calc(38 / 24);
+  margin-top: rem(22);
+}
+
+.m-single-training-service__body h2:first-child {
+  margin-top: 0;
+}
+
+.m-single-training-service__body h3 {
+  font-size: rem(20);
+  font-weight: 700;
+  line-height: calc(32 / 20);
+  color: transparent;
+  background: var(--color__gradient-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-top: rem(16);
+}
+
+.m-single-training-service__body p {
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: calc(29 / 16);
+  margin-top: rem(8);
+}

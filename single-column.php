@@ -6,7 +6,7 @@
     <!-- パンくず -->
     <div class="m-breadcrumb">
       <div class="m-breadcrumb__inner l-inner">
-        <div class="wp-breadcrumb">
+        <div class="wp-breadcrumb js-fade-up">
           <?php if (function_exists('bcn_display')) {
             bcn_display();
           } ?>
@@ -52,7 +52,7 @@
                 <?php the_content(); ?>
               </div>
               <div class="m-single-column__button">
-                <a href="<?php echo home_url('/column'); ?>" class="m-button m-button--invert">一覧に戻る</a>
+                <a href="<?php echo home_url('/column/'); ?>" class="m-button m-button--invert">一覧に戻る</a>
               </div>
             </div>
             <!-- サイドバー -->

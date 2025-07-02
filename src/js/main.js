@@ -2,7 +2,6 @@
 
 jQuery(function ($) {
 
-
   $(".js-hamburger").click(function () {
     if ($(".js-hamburger").hasClass("active")) {
       $(".js-hamburger").removeClass("active");
@@ -105,15 +104,38 @@ jQuery(function ($) {
   });
 
 
-  ///// ページ内アンカーリンク
+  // ページ内＆ページ外アンカーリンク
   $(document).on('click', 'a[href*="#"]', function () {
     let time = 400;
     let header = $('header').innerHeight();
     let target = $(this.hash);
-    if (!target.length) return;
-    let targetY = target.offset().top - header;
-    $('html,body').animate({ scrollTop: targetY }, time, 'swing');
-    return false;
+    
+    // ページ内のアンカーリンクの場合
+    if (target.length) {
+      let targetY = target.offset().top - header;
+      $('html,body').animate({ scrollTop: targetY }, time, 'swing');
+      return false;
+    }
+    
+    // ページ外のアンカーリンクの場合
+    // URLにハッシュを保持したまま遷移
+    return true; // デフォルト動作を許可
+  });
+  
+  // ページ読み込み時にハッシュがある場合の処理
+  $(function() {
+    if (window.location.hash) {
+      const target = $(window.location.hash);
+      if (target.length) {
+        const header = $('header').innerHeight();
+        const targetY = target.offset().top - header;
+        
+        // 少し遅延させてからスクロール（ページ読み込み完了を待つ）
+        setTimeout(function() {
+          $('html,body').animate({ scrollTop: targetY }, 400, 'swing');
+        }, 100);
+      }
+    }
   });
 
 
@@ -135,5 +157,63 @@ jQuery(function ($) {
   });
 
 
+
+
 });
 
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+window.addEventListener('load', function() {
+  document.body.classList.add('loaded');
+
+  setTimeout(function() {
+    // 画面内に入っていない要素だけopacity: 0にする
+    document.querySelectorAll('.js-fade-up, .js-fade-up-parent > *').forEach(function(el) {
+      const rect = el.getBoundingClientRect();
+      // 画面下にある要素だけopacity: 0
+      if (rect.top > window.innerHeight) {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20%)';
+      }
+    });
+
+    // ScrollTriggerでアニメーション
+    ScrollTrigger.batch(".js-fade-up", {
+      onEnter: (elements, triggers) => {
+        gsap.to(elements, { 
+          y: 0, 
+          opacity: 1, 
+          duration: 1,
+          onComplete: function() {
+            elements.forEach(el => {
+              el.style.removeProperty('opacity');
+              el.style.removeProperty('transform');
+            });
+          }
+        });
+      },
+      start: "top 70%",
+      once: true,
+    });
+
+    ScrollTrigger.batch(".js-fade-up-parent > *", {
+      onEnter: (elements, triggers) => {
+        gsap.to(elements, { 
+          y: 0, 
+          opacity: 1, 
+          duration: 1,
+          onComplete: function() {
+            elements.forEach(el => {
+              el.style.removeProperty('opacity');
+              el.style.removeProperty('transform');
+            });
+          }
+        });
+      },
+      start: "top 70%",
+      once: true,
+    });
+  }, 800);
+});
