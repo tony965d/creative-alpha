@@ -57,7 +57,7 @@
                         $trainingService_purpose = isset($trainingService_item['training-service__purpose']) ? esc_html($trainingService_item['training-service__purpose']) : '';
                         $trainingService_target = isset($trainingService_item['training-service__target']) ? esc_html($trainingService_item['training-service__target']) : '';
                         $trainingService_content = isset($trainingService_item['training-service__content']) ? esc_html($trainingService_item['training-service__content']) : '';
-                        $trainingService_voice = isset($trainingService_item['training-service__voice/']) ? esc_html($trainingService_item['training-service__voice/']) : '';
+                        $trainingService_voice = isset($trainingService_item['training-service__voice']) ? esc_html($trainingService_item['training-service__voice']) : '';
                         $trainingService_time = isset($trainingService_item['training-service__time']) ? esc_html($trainingService_item['training-service__time']) : '';
                         $trainingService_price = isset($trainingService_item['training-service__price']) ? esc_html($trainingService_item['training-service__price']) : '';
                         $trainingService_note = isset($trainingService_item['training-service__note']) ? esc_html($trainingService_item['training-service__note']) : '';
@@ -109,7 +109,9 @@
                                           echo '<ul class="m-definition-list__description-items">';
                                           foreach ($content_array as $content) {
                                             if (!empty(trim($content))) {
-                                              echo '<li class="m-definition-list__description-item">' . esc_html($content) . '</li>';
+                                              echo '<li class="m-definition-list__description-item m-definition-list__description-item--training">' . esc_html($content) . '</li>';
+                                            } else {
+                                              echo '<br>';
                                             }
                                           }
                                           echo '</ul>';

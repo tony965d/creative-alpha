@@ -107,6 +107,11 @@
   margin-left: rem(12);
 }
 
+.m-definition-list__description-item--training {
+  padding-left: 0;
+  margin-left: 0;
+}
+
 .m-definition-list__description-item::before {
   content: '';
   position: absolute;
@@ -116,6 +121,10 @@
   width: rem(5);
   height: rem(5);
   border-radius: 20px;
+}
+
+.m-definition-list__description-item.m-definition-list__description-item--training::before {
+  display: none;
 }
 
 .m-definition-list__description-item.m-definition-list__description-item--triangle::before {
