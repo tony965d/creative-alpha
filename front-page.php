@@ -12,7 +12,7 @@
                 <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/mv-pc-1.webp" type="image/webp">
                 <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/mv-pc-1.jpg">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/mv-sp-1.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/mv-sp-1.jpg" alt="" width="1440" height="700" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/mv-sp-1.jpg" alt="飲食店で注文を取る笑顔の女性スタッフ" width="1440" height="700" loading="lazy">
               </picture>
             </div>
             <div class="swiper-slide">
@@ -20,7 +20,7 @@
                 <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/mv-pc-2.webp" type="image/webp">
                 <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/mv-pc-2.jpg">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/mv-sp-2.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/mv-sp-2.jpg" alt="" width="1440" height="700" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/mv-sp-2.jpg" alt="化粧品売り場で笑顔の女性スタッフ" width="1440" height="700" loading="lazy">
               </picture>
             </div>
             <div class="swiper-slide">
@@ -28,7 +28,7 @@
                 <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/mv-pc-3.webp" type="image/webp">
                 <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/mv-pc-3.jpg">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/mv-sp-3.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/mv-sp-3.jpg" alt="" width="1440" height="700" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/mv-sp-3.jpg" alt="ホテルや店舗でお客様を案内する女性スタッフ" width="1440" height="700" loading="lazy">
               </picture>
             </div>
             <div class="swiper-slide">
@@ -36,7 +36,7 @@
                 <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/mv-pc-4.webp" type="image/webp">
                 <source media="(min-width: 768px)" srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/mv-pc-4.jpg">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/mv-sp-4.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/mv-sp-4.jpg" alt="" width="1440" height="700" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/mv-sp-4.jpg" alt="飲食店でグラスを運ぶ男性スタッフ" width="1440" height="700" loading="lazy">
               </picture>
             </div>
           </div>
@@ -78,7 +78,7 @@
               <div class="m-home-about__top-right l-two-columns__right js-fade-up">
                 <picture class="m-home-about__top-image">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-1.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-1.jpg" alt="" width="520" height="376" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-1.jpg" alt="ショップスタッフが接客について話し合っている様子" width="520" height="376" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -87,7 +87,7 @@
             <div class="m-home-about__content-item l-two-columns__item">
               <picture class="m-home-about__content-image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-2.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-2.jpg" alt="" width="423" height="287" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-2.jpg" alt="会議でプレゼンテーションを行うビジネスマン" width="423" height="287" loading="lazy">
               </picture>
               <div class="m-home-about__content-body l-two-columns__right js-fade-up-parent">
                 <p class="m-base-text">
@@ -242,7 +242,7 @@
             <div class="m-home-mystery-shopper__item l-two-columns__item">
               <picture class="m-home-mystery-shopper__image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-mystery-shopper-1.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-mystery-shopper-1.jpg" alt="" width="527" height="318" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-mystery-shopper-1.jpg" alt="ノートパソコンと手帳で仕事をする様子" width="527" height="318" loading="lazy">
               </picture>
               <div class="m-home-mystery-shopper__body l-two-columns__right js-fade-up-parent">
                 <hgroup class="m-section-header">

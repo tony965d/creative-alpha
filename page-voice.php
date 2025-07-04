@@ -62,7 +62,7 @@
               <div class="m-voice-contents__header-item l-two-columns__item">
                 <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-1.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-1.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-1.jpg" alt="笑顔の女性のプロフィール写真" width="300" height="300" loading="lazy">
                 </picture>
                 <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">良い結果が得られていると感じております。</h3>
@@ -97,7 +97,7 @@
               <div class="m-voice-contents__header-item l-two-columns__item">
                 <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-2.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-2.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-2.jpg" alt="笑顔の女性のプロフィール写真" width="300" height="300" loading="lazy">
                 </picture>
                 <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">今回研修に参加できて本当に良かったと感じています。</h3>
@@ -133,7 +133,7 @@
               <div class="m-voice-contents__header-item l-two-columns__item">
                 <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-3.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-3.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-3.jpg" alt="ファッションショーでランウェイを歩くモデル" width="300" height="300" loading="lazy">
                 </picture>
                 <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">参加した店長達は終始集中力も高く、盛り上がった研修の場となりました。</h3>
@@ -168,7 +168,7 @@
               <div class="m-voice-contents__header-item l-two-columns__item">
                 <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-4.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-4.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-4.jpg" alt="ショッピングバッグを持って歩く人" width="300" height="300" loading="lazy">
                 </picture>
                 <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">多くの気付きと学びの反響がありました。</h3>
@@ -200,7 +200,7 @@
               <div class="m-voice-contents__header-item l-two-columns__item">
                 <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-5.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-5.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-5.jpg" alt="メイクブラシとアイシャドウパレットが並ぶコスメカウンター" width="300" height="300" loading="lazy">
                 </picture>
                 <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">早くお店で活用したいと笑顔で答えてくれたことが印象に残っています。</h3>
@@ -233,7 +233,7 @@
               <div class="m-voice-contents__header-item l-two-columns__item">
                 <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-6.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-6.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-6.jpg" alt="レストランで提供されるラムチョップの料理" width="300" height="300" loading="lazy">
                 </picture>
                 <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">各々の心にしっかり届く研修として今後も期待しています。</h3>
@@ -280,7 +280,7 @@
               <div class="m-voice-contents__header-item l-two-columns__item">
                 <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-7.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-7.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-7.jpg" alt="ショッピングモールの外観と通路を歩く人々" width="300" height="300" loading="lazy">
                 </picture>
                 <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">プロのショップアドバイザーの意見を聞けて良かったと思います</h3>
@@ -303,7 +303,7 @@
               <div class="m-voice-contents__header-item l-two-columns__item">
                 <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-8.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-8.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-8.jpg" alt="アパレルショップのマネキンと店内の様子" width="300" height="300" loading="lazy">
                 </picture>
                 <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">覆面調査の結果、スタッフのCXの意識が十分でないことがわかりました</h3>
@@ -325,7 +325,7 @@
               <div class="m-voice-contents__header-item l-two-columns__item">
                 <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-9.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-9.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-9.jpg" alt="高級ブランドバッグが並ぶショーウィンドウ" width="300" height="300" loading="lazy">
                 </picture>
                 <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">スタッフをどう教育すれば良いかということまでアドバイスしてもらえた</h3>
@@ -346,7 +346,7 @@
               <div class="m-voice-contents__header-item l-two-columns__item">
                 <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-10.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-10.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-10.jpg" alt="宝石やアクセサリーが並ぶジュエリーのディスプレイ" width="300" height="300" loading="lazy">
                 </picture>
                 <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">自社に合わせて内容をしっかりと練っていただけた</h3>
@@ -367,7 +367,7 @@
               <div class="m-voice-contents__header-item l-two-columns__item">
                 <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-11.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-11.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-11.jpg" alt="ハンドドリップでコーヒーを淹れている様子" width="300" height="300" loading="lazy">
                 </picture>
                 <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">色々と融通をきかせていただきありがとうございました</h3>
@@ -389,7 +389,7 @@
               <div class="m-voice-contents__header-item l-two-columns__item">
                 <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-12.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-12.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-12.jpg" alt="家具やインテリアが並ぶ明るい店内" width="300" height="300" loading="lazy">
                 </picture>
                 <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">テナントの店長様からも好評な調査で現場の成長につながっている</h3>
@@ -412,7 +412,7 @@
               <div class="m-voice-contents__header-item l-two-columns__item">
                 <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-13.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-13.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-13.jpg" alt="カラフルなバッグが並ぶ店内の売り場" width="300" height="300" loading="lazy">
                 </picture>
                 <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">テナントスタッフの「やる気」に繋がる フォローが大変心強い</h3>
@@ -435,7 +435,7 @@
               <div class="m-voice-contents__header-item l-two-columns__item">
                 <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-14.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-14.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-14.jpg" alt="アパレルショップの店内とマネキン" width="300" height="300" loading="lazy">
                 </picture>
                 <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">アドバイスから実際に売上アップにつながった店舗も</h3>

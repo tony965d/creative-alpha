@@ -39,7 +39,7 @@
             <div class="m-mystery-shopper-features__item">
               <picture class="m-mystery-shopper-features__image js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/features.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/features.png" alt="" width="802" height="535" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/features.png" alt="タブレットを操作するスーツ姿の女性ビジネスパーソン" width="802" height="535" loading="lazy">
               </picture>
               <div class="m-mystery-shopper-features__lead">
                 <h3 class="m-mystery-shopper-features__subtitle js-fade-up">
@@ -138,7 +138,7 @@
             </div>
             <picture class="m-mystery-shopper-point__image l-two-columns__right js-fade-up">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/point-1.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/point-1.jpg" alt="" width="400" height="300" loading="lazy">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/point-1.jpg" alt="屋外カフェでパソコンとスマートフォンを使うビジネスウーマン" width="400" height="300" loading="lazy">
             </picture>
           </div>
           <div class="m-mystery-shopper-point__contents l-two-columns__item">
@@ -160,7 +160,7 @@
             </div>
             <picture class="m-mystery-shopper-point__image l-two-columns__right js-fade-up">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/point-2.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/point-2.jpg" alt="" width="400" height="300" loading="lazy">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/point-2.jpg" alt="店舗で買い物袋を手渡しする笑顔の女性スタッフ" width="400" height="300" loading="lazy">
             </picture>
           </div>
           <div class="m-mystery-shopper-point__contents l-two-columns__item">
@@ -184,7 +184,7 @@
             </div>
             <picture class="m-mystery-shopper-point__image l-two-columns__right js-fade-up">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/point-3.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/point-3.jpg" alt="" width="400" height="300" loading="lazy">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/mystery-shopper/point-3.jpg" alt="パソコンを使いながら打ち合わせをするアパレルスタッフ" width="400" height="300" loading="lazy">
             </picture>
           </div>
         </div>

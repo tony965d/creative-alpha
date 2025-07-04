@@ -133,7 +133,7 @@
             <div class="m-profile-card l-two-columns__item">
               <picture class="m-profile-card__image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-1.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-1.jpg" alt="" width="216" height="231" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-1.jpg" alt="木目調の背景で笑顔の男性講師のプロフィール写真" width="216" height="231" loading="lazy">
               </picture>
               <div class="m-profile-card__body l-two-columns__right">
                 <div class="m-profile-card__name-unit js-fade-up">
@@ -164,7 +164,7 @@
             <div class="m-profile-card l-two-columns__item">
               <picture class="m-profile-card__image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-2.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-2.jpg" alt="" width="216" height="231" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-2.jpg" alt="明るい雰囲気の女性講師のプロフィール写真" width="216" height="231" loading="lazy">
               </picture>
               <div class="m-profile-card__body l-two-columns__right">
                 <div class="m-profile-card__name-unit js-fade-up">
@@ -197,7 +197,7 @@
             <div class="m-profile-card l-two-columns__item">
               <picture class="m-profile-card__image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-3.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-3.jpg" alt="" width="216" height="231" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-3.jpg" alt="白い服を着た女性講師のプロフィール写真" width="216" height="231" loading="lazy">
               </picture>
               <div class="m-profile-card__body l-two-columns__right">
                 <div class="m-profile-card__name-unit js-fade-up">
@@ -230,7 +230,7 @@
             <div class="m-profile-card l-two-columns__item">
               <picture class="m-profile-card__image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-4.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-4.jpg" alt="" width="216" height="231" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-4.jpg" alt="白いジャケットを着た女性講師のプロフィール写真" width="216" height="231" loading="lazy">
               </picture>
               <div class="m-profile-card__body l-two-columns__right">
                 <div class="m-profile-card__name-unit js-fade-up">
@@ -265,7 +265,7 @@
             <div class="m-profile-card l-two-columns__item">
               <picture class="m-profile-card__image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-5.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-5.jpg" alt="" width="216" height="231" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-5.jpg" alt="笑顔の女性講師のプロフィール写真" width="216" height="231" loading="lazy">
               </picture>
               <div class="m-profile-card__body l-two-columns__right">
                 <div class="m-profile-card__name-unit js-fade-up">
@@ -300,7 +300,7 @@
             <div class="m-profile-card l-two-columns__item">
               <picture class="m-profile-card__image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-6.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-6.jpg" alt="" width="216" height="231" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-6.jpg" alt="和装の女性講師のプロフィール写真" width="216" height="231" loading="lazy">
               </picture>
               <div class="m-profile-card__body l-two-columns__right">
                 <div class="m-profile-card__name-unit js-fade-up">
@@ -334,7 +334,7 @@
             <div class="m-profile-card l-two-columns__item">
               <picture class="m-profile-card__image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-7.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-7.jpg" alt="" width="216" height="231" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-7.jpg" alt="スーツ姿の男性講師のプロフィール写真" width="216" height="231" loading="lazy">
               </picture>
               <div class="m-profile-card__body l-two-columns__right">
                 <div class="m-profile-card__name-unit js-fade-up">
@@ -366,7 +366,7 @@
             <div class="m-profile-card l-two-columns__item">
               <picture class="m-profile-card__image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-8.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-8.jpg" alt="" width="216" height="231" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-8.jpg" alt="黒いジャケットを着た女性講師のプロフィール写真" width="216" height="231" loading="lazy">
               </picture>
               <div class="m-profile-card__body l-two-columns__right">
                 <div class="m-profile-card__name-unit js-fade-up">
