@@ -16,12 +16,12 @@
 
 .m-mv__body {
   position: absolute;
-  top: 26.6%;
+  top: 17.6%;
   left: 11%;
   z-index: 1;
 
   @include mq('lg') {
-    top: 20%;
+    top: 16%;
   }
 
   @include mq('md') {
@@ -35,7 +35,7 @@
   display: flex;
   flex-direction: column;
   gap: rem(6);
-  font-size: rem(50);
+  font-size: clamp(2.75rem, 1.8rem + 1.5vw, 50px);
   font-weight: 500;
   line-height: calc(79 / 50);
   background: var(--color__gradient-blue);
@@ -65,14 +65,36 @@
   }
 }
 
+.m-mv__title-middle {
+  font-size: rem(26);
+  font-weight: 700;
+  color: var(--color__white);
+  line-height: calc(41 / 26);
+  width: fit-content;
+  background: var(--color__gradient-blue);
+  padding-top: rem(3);
+  padding-bottom: rem(4);
+  padding-inline: rem(8);
+  margin-top: clamp(20px, 0.48rem + 1.2vw, 25px);
+
+  @include mq('lg') {
+    margin-top: rem(16);
+  }
+
+  @include mq('md') {
+    font-size: rem(20);
+  }
+}
+
 .m-mv__title-sub {
   font-size: rem(18);
   font-weight: 700;
   line-height: calc(29 / 18);
-  margin-top: rem(34);
+  margin-top: clamp(30px, 1.26rem + 0.96vw, 34px);
 
   @include mq('lg') {
     font-size: clamp(1rem, 0.625rem + 0.78vw, 1.125rem);
+    margin-top: rem(20);
   }
 
   @include mq('md') {
@@ -88,7 +110,11 @@
 .m-mv__body-button {
   display: flex;
   justify-content: center;
-  margin-top: rem(40);
+  margin-top: clamp(2.25rem, 1.6rem + 0.96vw, 2.5rem);
+
+  @include mq('lg') {
+    margin-top: rem(24);
+  }
 
   @include mq('md') {
     justify-content: flex-start;

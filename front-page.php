@@ -47,6 +47,7 @@
               <span>お客様に<strong class="m-mv__title-main-accent">感動</strong>を。</span>
               <span>スタッフに<strong class="m-mv__title-main-accent">やりがい</strong>を。</span>
             </h1>
+            <div class="m-mv__title-middle">店舗ビジネスに特化！<br class="u-only--sp">研修・覆面調査サービス</div>
             <p class="m-mv__title-sub">
               ショップスタッフが笑顔でやりがいを持ち、<br class="u-only--pc">
               お客様に更なる感動をご提供できるように私たちがお手伝いします。
