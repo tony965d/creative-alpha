@@ -161,59 +161,63 @@ jQuery(function ($) {
 
 });
 
-
-
-gsap.registerPlugin(ScrollTrigger);
-
 window.addEventListener('load', function() {
-  document.body.classList.add('loaded');
+    document.body.classList.add('loaded');
+  });
 
-  setTimeout(function() {
-    // 画面内に入っていない要素だけopacity: 0にする
-    document.querySelectorAll('.js-fade-up, .js-fade-up-parent > *').forEach(function(el) {
-      const rect = el.getBoundingClientRect();
-      // 画面下にある要素だけopacity: 0
-      if (rect.top > window.innerHeight) {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20%)';
-      }
-    });
 
-    // ScrollTriggerでアニメーション
-    ScrollTrigger.batch(".js-fade-up", {
-      onEnter: (elements, triggers) => {
-        gsap.to(elements, { 
-          y: 0, 
-          opacity: 1, 
-          duration: 1,
-          onComplete: function() {
-            elements.forEach(el => {
-              el.style.removeProperty('opacity');
-              el.style.removeProperty('transform');
-            });
-          }
-        });
-      },
-      start: "top 70%",
-      once: true,
-    });
 
-    ScrollTrigger.batch(".js-fade-up-parent > *", {
-      onEnter: (elements, triggers) => {
-        gsap.to(elements, { 
-          y: 0, 
-          opacity: 1, 
-          duration: 1,
-          onComplete: function() {
-            elements.forEach(el => {
-              el.style.removeProperty('opacity');
-              el.style.removeProperty('transform');
-            });
-          }
-        });
-      },
-      start: "top 70%",
-      once: true,
-    });
-  }, 800);
-});
+// gsap.registerPlugin(ScrollTrigger);
+
+// window.addEventListener('load', function() {
+//   document.body.classList.add('loaded');
+
+//   setTimeout(function() {
+//     // 画面内に入っていない要素だけopacity: 0にする
+//     document.querySelectorAll('.js-fade-up, .js-fade-up-parent > *').forEach(function(el) {
+//       const rect = el.getBoundingClientRect();
+//       // 画面下にある要素だけopacity: 0
+//       if (rect.top > window.innerHeight) {
+//         el.style.opacity = '0';
+//         el.style.transform = 'translateY(20%)';
+//       }
+//     });
+
+//     // ScrollTriggerでアニメーション
+//     ScrollTrigger.batch(".js-fade-up", {
+//       onEnter: (elements, triggers) => {
+//         gsap.to(elements, { 
+//           y: 0, 
+//           opacity: 1, 
+//           duration: 1,
+//           onComplete: function() {
+//             elements.forEach(el => {
+//               el.style.removeProperty('opacity');
+//               el.style.removeProperty('transform');
+//             });
+//           }
+//         });
+//       },
+//       start: "top 70%",
+//       once: true,
+//     });
+
+//     ScrollTrigger.batch(".js-fade-up-parent > *", {
+//       onEnter: (elements, triggers) => {
+//         gsap.to(elements, { 
+//           y: 0, 
+//           opacity: 1, 
+//           duration: 1,
+//           onComplete: function() {
+//             elements.forEach(el => {
+//               el.style.removeProperty('opacity');
+//               el.style.removeProperty('transform');
+//             });
+//           }
+//         });
+//       },
+//       start: "top 70%",
+//       once: true,
+//     });
+//   }, 800);
+// });
