@@ -72,17 +72,24 @@
                   <div class="m-card__body">
                     <ul class="m-card__items">
                       <?php
-                      $blocks = parse_blocks(get_the_content());
-                      foreach ($blocks as $block) {
-                        if ($block['blockName'] === 'lazyblock/training-service') {
-                          $trainingService_loop_json = urldecode($block['attrs']['training-service__loop']);
-                          $trainingService_loop = json_decode($trainingService_loop_json, true);
+                      // スラッグがyearlの投稿の場合
+                      if (get_post_field('post_name') === 'yearl') {
+                        echo '<li class="m-card__item">事例1）家具メーカー〔従業員：約420人、売上：76億〕</li>';
+                        echo '<li class="m-card__item">事例2）アパレル企業〔従業員：約3,000人、売上：625億〕</li>';
+                      } else {
+                        // 通常の処理
+                        $blocks = parse_blocks(get_the_content());
+                        foreach ($blocks as $block) {
+                          if ($block['blockName'] === 'lazyblock/training-service') {
+                            $trainingService_loop_json = urldecode($block['attrs']['training-service__loop']);
+                            $trainingService_loop = json_decode($trainingService_loop_json, true);
 
-                          if (!empty($trainingService_loop)) {
-                            foreach ($trainingService_loop as $trainingService_item) {
-                              $trainingService_title = isset($trainingService_item['training-service__title']) ? esc_html($trainingService_item['training-service__title']) : '';
-                              if (!empty($trainingService_title)) {
-                                echo '<li class="m-card__item">' . $trainingService_title . '</li>';
+                            if (!empty($trainingService_loop)) {
+                              foreach ($trainingService_loop as $trainingService_item) {
+                                $trainingService_title = isset($trainingService_item['training-service__title']) ? esc_html($trainingService_item['training-service__title']) : '';
+                                if (!empty($trainingService_title)) {
+                                  echo '<li class="m-card__item">' . $trainingService_title . '</li>';
+                                }
                               }
                             }
                           }

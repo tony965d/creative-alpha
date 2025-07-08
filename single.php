@@ -30,7 +30,7 @@
         <div class="m-single-training-service__inner l-inner">
           <?php
           $current_slug = get_post_field('post_name', get_post());
-          if ($current_slug === 'nps') :
+          if ($current_slug === 'nps' || $current_slug === 'yearl') :
           ?>
             <div class="m-single-training-service__body js-fade-up-parent">
               <?php the_content(); ?>

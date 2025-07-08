@@ -42,12 +42,12 @@
           </div>
         </div>
         <div class="m-mv__body">
+          <div class="m-mv__subtitle">店舗ビジネスに特化！<br class="u-only--sp">研修・覆面調査サービス</div>
           <hgroup class="m-mv__title js-fade-up-parent">
             <h1 class="m-mv__title-main">
               <span>お客様に<strong class="m-mv__title-main-accent">感動</strong>を。</span>
               <span>スタッフに<strong class="m-mv__title-main-accent">やりがい</strong>を。</span>
             </h1>
-            <div class="m-mv__title-middle">店舗ビジネスに特化！<br class="u-only--sp">研修・覆面調査サービス</div>
             <p class="m-mv__title-sub">
               ショップスタッフが笑顔でやりがいを持ち、<br class="u-only--pc">
               お客様に更なる感動をご提供できるように私たちがお手伝いします。
@@ -184,17 +184,24 @@
                   <div class="m-card__body">
                     <ul class="m-card__items">
                       <?php
-                      $blocks = parse_blocks(get_the_content());
-                      foreach ($blocks as $block) {
-                        if ($block['blockName'] === 'lazyblock/training-service') {
-                          $trainingService_loop_json = urldecode($block['attrs']['training-service__loop']);
-                          $trainingService_loop = json_decode($trainingService_loop_json, true);
+                      // スラッグがyearlの投稿の場合
+                      if (get_post_field('post_name') === 'yearl') {
+                        echo '<li class="m-card__item">事例1）家具メーカー〔従業員：約420人、売上：76億〕</li>';
+                        echo '<li class="m-card__item">事例2）アパレル企業〔従業員：約3,000人、売上：625億〕</li>';
+                      } else {
+                        // 通常の処理
+                        $blocks = parse_blocks(get_the_content());
+                        foreach ($blocks as $block) {
+                          if ($block['blockName'] === 'lazyblock/training-service') {
+                            $trainingService_loop_json = urldecode($block['attrs']['training-service__loop']);
+                            $trainingService_loop = json_decode($trainingService_loop_json, true);
 
-                          if (!empty($trainingService_loop)) {
-                            foreach ($trainingService_loop as $trainingService_item) {
-                              $trainingService_title = isset($trainingService_item['training-service__title']) ? esc_html($trainingService_item['training-service__title']) : '';
-                              if (!empty($trainingService_title)) {
-                                echo '<li class="m-card__item">' . $trainingService_title . '</li>';
+                            if (!empty($trainingService_loop)) {
+                              foreach ($trainingService_loop as $trainingService_item) {
+                                $trainingService_title = isset($trainingService_item['training-service__title']) ? esc_html($trainingService_item['training-service__title']) : '';
+                                if (!empty($trainingService_title)) {
+                                  echo '<li class="m-card__item">' . $trainingService_title . '</li>';
+                                }
                               }
                             }
                           }

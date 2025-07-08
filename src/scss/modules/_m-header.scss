@@ -36,9 +36,9 @@
 }
 
 .m-header__wrapper {
-  --_width__left: 756;
+  --_width__left: 850;
   --_width__right: 455;
-  --_column-gap: 149;
+  --_column-gap: 55;
 
   @include mq('lg') {
     display: flex;
@@ -73,8 +73,9 @@
 }
 
 .m-header__note {
-  font-size: rem(11);
-  line-height: calc(18 / 11);
+  font-size: rem(13);
+  font-weight: 500;
+  line-height: calc(21 / 13);
   margin-top: rem(4);
 
   @include mq('lg') {
