@@ -78,7 +78,7 @@
               <div class="m-home-about__top-right l-two-columns__right js-fade-up">
                 <picture class="m-home-about__top-image">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-1.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-1.jpg" alt="ショップスタッフが接客について話し合っている様子" width="520" height="376" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-1.png" alt="ショップスタッフが接客について話し合っている様子" width="520" height="376" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -87,7 +87,7 @@
             <div class="m-home-about__content-item l-two-columns__item">
               <picture class="m-home-about__content-image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-2.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-2.jpg" alt="会議でプレゼンテーションを行うビジネスマン" width="423" height="287" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/front-page/home-about-2.png" alt="会議でプレゼンテーションを行うビジネスマン" width="423" height="287" loading="lazy">
               </picture>
               <div class="m-home-about__content-body l-two-columns__right js-fade-up-parent">
                 <p class="m-base-text">

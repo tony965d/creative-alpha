@@ -51,7 +51,7 @@
               </div>
               <picture class="m-about-header__image l-two-columns__right js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/about/about-header.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-header.jpg" alt="前向きな姿勢で決意を示すビジネスパーソンたち" width="429" height="310" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-header.png" alt="前向きな姿勢で決意を示すビジネスパーソンたち" width="429" height="310" loading="lazy">
               </picture>
             </div>
           </div>
@@ -95,7 +95,7 @@
           <div class="m-about-contents__item l-two-columns__item">
             <picture class="m-about-contents__image l-two-columns__left js-fade-up">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/about/about-training-service-1.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-training-service-1.jpg" alt="飲食店スタッフが打ち合わせをしている様子" width="572" height="381" loading="lazy">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-training-service-1.png" alt="飲食店スタッフが打ち合わせをしている様子" width="572" height="381" loading="lazy">
             </picture>
             <div class="m-about-contents__body l-two-columns__right js-fade-up-parent">
               <h3 class="m-content-subtitle">自ら答えに気づき、現場ですぐに実践できる</h3>
@@ -111,7 +111,7 @@
           <div class="m-about-contents__item l-two-columns__item">
             <picture class="m-about-contents__image l-two-columns__left js-fade-up">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/about/about-training-service-2.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-training-service-2.jpg" alt="明るい雰囲気でミーティングをする若い女性たち" width="572" height="381" loading="lazy">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-training-service-2.png" alt="明るい雰囲気でミーティングをする若い女性たち" width="572" height="381" loading="lazy">
             </picture>
             <div class="m-about-contents__body l-two-columns__right js-fade-up-parent">
               <h3 class="m-content-subtitle">楽しく主体的に学べるので研修の定着率が高い</h3>
@@ -125,7 +125,7 @@
           <div class="m-about-contents__item l-two-columns__item">
             <picture class="m-about-contents__image l-two-columns__left js-fade-up">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/about/about-training-service-3.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-training-service-3.jpg" alt="飲食店スタッフが打ち合わせをしている様子" width="572" height="381" loading="lazy">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-training-service-3.png" alt="飲食店スタッフが打ち合わせをしている様子" width="572" height="381" loading="lazy">
             </picture>
             <div class="m-about-contents__body l-two-columns__right js-fade-up-parent">
               <h3 class="m-content-subtitle">課題やご要望に合った研修を企画してもらえる</h3>
@@ -157,7 +157,7 @@
           <div class="m-about-contents__item l-two-columns__item">
             <picture class="m-about-contents__image l-two-columns__left js-fade-up">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/about/about-mystery-shopper-1.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-mystery-shopper-1.jpg" alt="タブレットでメモを取るビジネスウーマン" width="572" height="381" loading="lazy">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-mystery-shopper-1.png" alt="タブレットでメモを取るビジネスウーマン" width="572" height="381" loading="lazy">
             </picture>
             <div class="m-about-contents__body l-two-columns__right js-fade-up-parent">
               <h3 class="m-content-subtitle">
@@ -174,7 +174,7 @@
           <div class="m-about-contents__item l-two-columns__item">
             <picture class="m-about-contents__image l-two-columns__left js-fade-up">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/about/about-mystery-shopper-2.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-mystery-shopper-2.jpg" alt="カフェでパソコン作業をする女性" width="572" height="381" loading="lazy">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-mystery-shopper-2.png" alt="カフェでパソコン作業をする女性" width="572" height="381" loading="lazy">
             </picture>
             <div class="m-about-contents__body l-two-columns__right js-fade-up-parent">
               <h3 class="m-content-subtitle">
@@ -189,7 +189,7 @@
           <div class="m-about-contents__item l-two-columns__item">
             <picture class="m-about-contents__image l-two-columns__left js-fade-up">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/about/about-mystery-shopper-3.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-mystery-shopper-3.jpg" alt="履歴書を前に面接を行う様子" width="572" height="381" loading="lazy">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/about/about-mystery-shopper-3.png" alt="履歴書を前に面接を行う様子" width="572" height="381" loading="lazy">
             </picture>
             <div class="m-about-contents__body l-two-columns__right js-fade-up-parent">
               <h3 class="m-content-subtitle">
