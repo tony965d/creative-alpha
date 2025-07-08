@@ -33,7 +33,7 @@
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.webp" type="image/webp">
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.png" alt="" width="57" height="50" loading="lazy">
             </picture>
-            <span class="m-section-title__text m-section-title__text--large">創業ストーリー＆ミッション</span>
+            <span class="m-section-title__text m-section-title__text--large">ミッション</span>
           </h2>
           <div class="m-about-header__contents l-two-columns">
             <div class="m-about-header__item l-two-columns__item">

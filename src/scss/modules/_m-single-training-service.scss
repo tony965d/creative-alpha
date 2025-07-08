@@ -39,6 +39,10 @@
   background-clip: text;
   line-height: calc(38 / 24);
   margin-top: rem(22);
+
+  @include mq('md') {
+    font-size: rem(22);
+  }
 }
 
 .m-single-training-service__body h2:first-child {
@@ -65,7 +69,11 @@
 
 .m-single-training-service__body > div {
   position: relative;
-  padding: rem(20);
+  padding: rem(64);
+
+  @include mq('md') {
+    padding: rem(32) rem(20);
+  }
 }
 
 .m-single-training-service__body > div:not(:first-child) {

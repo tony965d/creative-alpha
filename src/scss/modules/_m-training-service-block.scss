@@ -2,13 +2,10 @@
 
 .m-training-service-block {
   position: relative;
-  padding-top: rem(59);
-  padding-bottom: rem(17);
-  padding-left: rem(84);
-  padding-right: rem(83);
+  padding: rem(64);
 
   @include mq('md') {
-    padding-inline: rem(20);
+    padding: rem(40) rem(20);
   }
 }
 

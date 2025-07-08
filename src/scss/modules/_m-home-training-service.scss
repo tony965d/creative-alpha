@@ -54,6 +54,7 @@
   margin-top: rem(27);
 
   @include mq('md') {
+    row-gap: rem(30);
     grid-template-columns: 1fr;
   }
 }

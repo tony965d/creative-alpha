@@ -31,6 +31,14 @@
   --_width__left: 172;
   --_width__right: 820;
   --_column-gap: 53;
+
+  @include mq('lg') {
+    --_row-gap: 40;
+  }
+
+  @include mq('md') {
+    --_row-gap: 40;
+  }
 }
 
 .m-voice-contents__header-item {
@@ -40,6 +48,7 @@
 .m-voice-contents__image img {
   object-fit: cover;
   aspect-ratio: 172 / 187;
+  max-width: rem(172);
   height: 100%;
   border-radius: 20px;
 }
