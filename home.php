@@ -29,18 +29,27 @@
     <div class="m-archive-training-service l-outer">
       <div class="m-archive-training-service__inner l-inner">
         <div class="m-archive-training-service__wrapper">
-          <p class="m-base-text js-fade-up">
-            研修プログラムの内容は、各社様の課題やご要望に合わせてオーダーメイドで作成させて頂きます。<br>
-            ご予算に合わせてカスタマイズも可能ですので、先ずはお気軽にお問合せ下さい。なお、ヒアリングや企画書の作成は無料で承っております。
-          </p>
+          <h2 class="m-section-title js-fade-up-parent">
+            <picture class="m-section-title__icon">
+              <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.png" alt="" width="57" height="50" loading="lazy">
+            </picture>
+            <span class="m-section-title__text">お店の課題を解決する体感型研修をオーダーメイドで提供</span>
+          </h2>
+          <div class="m-archive-training-service__text-wrapper">
+            <p class="m-base-text js-fade-up">
+              研修プログラムの内容は、各社様の課題やご要望に合わせてオーダーメイドで作成させて頂きます。<br>
+              ご予算に合わせてカスタマイズも可能ですので、先ずはお気軽にお問合せ下さい。なお、ヒアリングや企画書の作成は無料で承っております。
+            </p>
+          </div>
           <div class="m-archive-training-service__title-wrapper">
-            <h2 class="m-section-title js-fade-up-parent">
-              <picture class="m-section-title__icon">
-                <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.png" alt="" width="57" height="50" loading="lazy">
+            <h3 class="m-service-training-title js-fade-up-parent">
+              <picture class="m-service-training-title__icon">
+                <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/  .webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/service-training-title-icon.png" alt="" width="57" height="50" loading="lazy">
               </picture>
-              <span class="m-section-title__text">お店の課題を解決する体感型研修をオーダーメイドで提供</span>
-            </h2>
+              <span class="m-service-training-title__text">サンプルプログラムのご紹介</span>
+            </h3>
           </div>
           <div class="m-archive-training-service__contents l-grid-two js-fade-up-parent">
             <?php
