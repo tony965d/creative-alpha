@@ -327,14 +327,6 @@
                   </figure>
                   <div class="m-column-card__header">
                     <time datetime="<?php the_time('Y-m-d'); ?>" class="m-column-card__date"><?php the_time('Y.m.d'); ?></time>
-                    <p class="m-column-card__category">
-                      <?php
-                      $terms = get_the_terms($post->ID, 'column_category');
-                      foreach ($terms as $term) {
-                        echo $term->name;
-                      }
-                      ?>
-                    </p>
                   </div>
                   <h3 class="m-column-card__title"><?php the_title(); ?></h3>
                 </a>
@@ -343,7 +335,7 @@
             <?php endif;  ?>
           </div>
           <div class="m-home-column__button js-fade-up">
-            <a href="<?php echo home_url('/column/'); ?>" class="m-button m-button--invert">一覧に戻る</a>
+            <a href="<?php echo home_url('/column/'); ?>" class="m-button m-button--invert">一覧を見る</a>
           </div>
         </div>
       </div>

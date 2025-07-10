@@ -161,8 +161,8 @@
             </picture>
             <div class="m-about-contents__body l-two-columns__right js-fade-up-parent">
               <h3 class="m-content-subtitle">
-                調査員は店舗ビジネスを<br>
-                熟知する現役講師！課題解決まで 丁寧にサポート
+                調査員は店舗ビジネスを熟知する現役講師！<br>
+                課題解決まで 丁寧にサポート
               </h3>
               <p class="m-base-text">
                 調査員は、店舗ビジネスを熟知したエキスパートで、
