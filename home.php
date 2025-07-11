@@ -76,7 +76,7 @@
                     <?php } ?>
                   </figure>
                   <div class="m-card__header">
-                    <h3 class="m-card__title"><?php the_title(); ?></h3>
+                    <h4 class="m-card__title"><?php the_title(); ?></h4>
                   </div>
                   <div class="m-card__body">
                     <ul class="m-card__items">

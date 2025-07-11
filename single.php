@@ -37,13 +37,13 @@
             </div>
           <?php else : ?>
             <div class="m-single-training-service__wrapper">
-              <h3 class="m-service-training-title js-fade-up-parent">
+              <h2 class="m-service-training-title js-fade-up-parent">
                 <picture class="m-service-training-title__icon">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/  .webp" type="image/webp">
                   <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/service-training-title-icon.png" alt="" width="57" height="50" loading="lazy">
                 </picture>
                 <span class="m-service-training-title__text">サンプルプログラムのご紹介</span>
-              </h3>
+              </h2>
               <div class="m-single-training-service__contents js-fade-up-parent">
                 <?php $blocks = parse_blocks(get_the_content());
                 foreach ($blocks as $block) {
@@ -75,7 +75,7 @@
                         if ($has_content) :
                 ?>
                           <div class="m-training-service-block ">
-                            <h4 class="m-training-service-block__title js-fade-up"><?php echo $trainingService_title; ?></h4>
+                            <h3 class="m-training-service-block__title js-fade-up"><?php echo $trainingService_title; ?></h3>
                             <div class="m-training-service-block__wrapper">
                               <dl class="m-definition-list">
                                 <?php if (!empty($trainingService_purpose)) : ?>
