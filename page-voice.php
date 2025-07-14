@@ -31,7 +31,7 @@
           <a href="#voice-training-service" class="m-square-button m-square-button--voice-training-service u-hover js-fade-up">
             <picture class="m-square-button__icon m-square-button__icon--training-service">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-1.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-1.jpg" alt="" width="109" height="61" loading="lazy">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-1.jpg" alt="活発に議論しているビジネス会議のイラスト" width="109" height="61" loading="lazy">
             </picture>
             <span class="m-square-button__text">研修を受けたお客様の声</span>
             <span class="u-triangle--right"></span>
@@ -39,7 +39,7 @@
           <a href="#voice-mystery-shopper" class="m-square-button m-square-button--voice-mystery-shopper u-hover js-fade-up">
             <picture class="m-square-button__icon m-square-button__icon--mystery-shopper">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-2.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-2.jpg" alt="" width="42" height="63" loading="lazy">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-2.jpg" alt="虫眼鏡を持って調査するビジネスマンのイラスト" width="42" height="63" loading="lazy">
             </picture>
             <span class="m-square-button__text">覆面調査を実施したお客様の声</span>
           </a>
@@ -435,7 +435,7 @@
               <div class="m-voice-contents__header-item l-two-columns__item">
                 <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-14.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-14.jpg" alt="アパレルショップの店内とマネキン" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-14.jpg" alt="白を基調としたアパレルショップの店内にディスプレイされたカラフルな洋服" width="300" height="300" loading="lazy">
                 </picture>
                 <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">アドバイスから実際に売上アップにつながった店舗も</h3>

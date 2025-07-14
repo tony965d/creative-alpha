@@ -74,11 +74,11 @@
                     <a href="<?php the_permalink() ?>" class="m-column-card u-hover">
                       <figure class="m-column-card__thumbnail m-column-card__thumbnail--archive">
                         <?php if (has_post_thumbnail()) { ?>
-                          <?php the_post_thumbnail('full'); ?>
+                          <?php the_post_thumbnail('full', array('alt' => get_the_title())); ?>
                         <?php } else { ?>
                           <picture>
                             <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy.webp" type="image/webp">
-                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy.png" alt="ダミー画像" width="337" height="170" loading="lazy">
+                            <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy.png" alt="<?php echo esc_attr(get_the_title()); ?>" width="337" height="170" loading="lazy">
                           </picture>
                         <?php } ?>
                       </figure>

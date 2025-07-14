@@ -106,14 +106,14 @@
               <a href="#home-training-service" class="m-square-button m-square-button--training-service u-hover">
                 <picture class="m-square-button__icon m-square-button__icon--training-service">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-1.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-1.jpg" alt="" width="109" height="61" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-1.jpg" alt="活発に議論しているビジネス会議のイラスト" width="109" height="61" loading="lazy">
                 </picture>
                 <span class="m-square-button__text">研修サービス</span>
               </a>
               <a href="#home-mystery-shopper" class="m-square-button m-square-button--mystery-shopper u-hover">
                 <picture class="m-square-button__icon m-square-button__icon--mystery-shopper">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-2.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-2.jpg" alt="" width="42" height="63" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-2.jpg" alt="虫眼鏡を持って調査するビジネスマンのイラスト" width="42" height="63" loading="lazy">
                 </picture>
                 <span class="m-square-button__text">覆面調査<span class="m-square-button__text-sub">（ミステリーショッパー）</span></span>
               </a>
@@ -170,11 +170,11 @@
                 <a href="<?php the_permalink(); ?>" class="m-card u-hover">
                   <figure class="m-card__thumbnail">
                     <?php if (has_post_thumbnail()) { ?>
-                      <?php the_post_thumbnail('full'); ?>
+                      <?php the_post_thumbnail('full', array('alt' => get_the_title())); ?>
                     <?php } else { ?>
                       <picture>
                         <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy.webp" type="image/webp">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy.png" alt="ダミー画像" width="524" height="280" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy.png" alt="<?php echo esc_attr(get_the_title()); ?>" width="524" height="280" loading="lazy">
                       </picture>
                     <?php } ?>
                   </figure>
@@ -230,7 +230,7 @@
               </div>
               <picture class="m-voice-block__image m-voice-block__image--service-training">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/voice-block-service-training.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/voice-block-service-training.png" alt="" width="272" height="152" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/voice-block-service-training.png" alt="活発に議論しているビジネス会議のイラスト" width="272" height="152" loading="lazy">
               </picture>
             </div>
           </div>
@@ -281,7 +281,7 @@
                 </div>
                 <picture class="m-voice-block__image m-voice-block__image--mystery-shopper">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/voice-block-mystery-shopper.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/voice-block-mystery-shopper.png" alt="" width="138" height="209" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/voice-block-mystery-shopper.png" alt="虫眼鏡を持って調査するビジネスマンのイラスト" width="138" height="209" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -317,11 +317,11 @@
                 <a href="<?php the_permalink() ?>" class="m-column-card u-hover">
                   <figure class="m-column-card__thumbnail">
                     <?php if (has_post_thumbnail()) { ?>
-                      <?php the_post_thumbnail('full'); ?>
+                      <?php the_post_thumbnail('full', array('alt' => get_the_title())); ?>
                     <?php } else { ?>
                       <picture>
                         <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy.webp" type="image/webp">
-                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy.png" alt="ダミー画像" width="300" height="168" loading="lazy">
+                        <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy.png" alt="<?php echo esc_attr(get_the_title()); ?>" width="300" height="168" loading="lazy">
                       </picture>
                     <?php } ?>
                   </figure>

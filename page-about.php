@@ -60,7 +60,7 @@
               <a href="#about-training-service" class="m-square-button m-square-button--about-training-service u-hover js-fade-up">
                 <picture class="m-square-button__icon m-square-button__icon--training-service">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-1.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-1.jpg" alt="" width="109" height="61" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-1.jpg" alt="活発に議論しているビジネス会議のイラスト" width="109" height="61" loading="lazy">
                 </picture>
                 <span class="m-square-button__text">研修サービスが選ばれる理由</span>
                 <span class="u-triangle--right"></span>
@@ -68,7 +68,7 @@
               <a href="#about-mystery-shopper" class="m-square-button m-square-button--about-mystery-shopper u-hover js-fade-up">
                 <picture class="m-square-button__icon m-square-button__icon--mystery-shopper">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-2.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-2.jpg" alt="" width="42" height="63" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-2.jpg" alt="虫眼鏡を持って調査するビジネスマンのイラスト" width="42" height="63" loading="lazy">
                 </picture>
                 <span class="m-square-button__text">覆面調査サービスが選ばれる理由</span>
               </a>
