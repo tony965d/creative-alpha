@@ -156,8 +156,21 @@ jQuery(function ($) {
     });
   });
 
-
-
+  // Google Analytics スクロール追跡エラーハンドリング
+  $(function() {
+    // スクロール追跡のエラーをキャッチ
+    if (window.dataLayer) {
+      const originalPush = window.dataLayer.push;
+      window.dataLayer.push = function(...args) {
+        try {
+          return originalPush.apply(this, args);
+        } catch (error) {
+          console.warn('Google Analytics イベント送信エラー:', error);
+          // エラーが発生しても処理を継続
+        }
+      };
+    }
+  });
 
 });
 
