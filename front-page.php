@@ -42,17 +42,17 @@
           </div>
         </div>
         <div class="m-mv__body">
-          <div class="m-mv__subtitle">店舗ビジネスに特化！<br class="u-only--sp">研修・覆面調査サービス</div>
-          <hgroup class="m-mv__title js-fade-up-parent">
-            <h1 class="m-mv__title-main">
+          <h1 class="m-mv__subtitle">店舗ビジネスに特化！<br class="u-only--sp">研修・覆面調査サービス</h1>
+          <div class="m-mv__title js-fade-up-parent">
+            <div class="m-mv__title-main">
               <span>お客様に<strong class="m-mv__title-main-accent">感動</strong>を。</span>
               <span>スタッフに<strong class="m-mv__title-main-accent">やりがい</strong>を。</span>
-            </h1>
+            </div>
             <p class="m-mv__title-sub">
               ショップスタッフが笑顔でやりがいを持ち、<br class="u-only--pc">
               お客様に更なる感動をご提供できるように私たちがお手伝いします。
             </p>
-          </hgroup>
+          </div>
           <div class="m-mv__body-button js-fade-up">
             <a href="<?php echo home_url('/contact/'); ?>" class="m-contact-button m-contact-button--mv"><i class="fa-solid fa-envelope"></i>お問い合わせ<i class="fa-solid fa-angle-right"></i></a>
           </div>
