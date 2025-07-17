@@ -269,7 +269,7 @@
               </picture>
               <div class="m-profile-card__body l-two-columns__right">
                 <div class="m-profile-card__name-unit js-fade-up">
-                  <p class="m-profile-card__name">室谷 佳子</p>
+                  <p class="m-profile-card__name">室屋 佳子</p>
                   <p class="m-profile-card__kana">むろや よしこ</p>
                 </div>
                 <div class="m-profile-card__content-wrapper js-fade-up-parent">
