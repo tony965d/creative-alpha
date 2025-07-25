@@ -138,5 +138,14 @@
 }
 
 .m-section-header__subtitle.m-section-header__subtitle--contact::before {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   background: var(--color__white);
+}
+
+.m-section-header__subtitle.m-section-header__subtitle--column::before {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
 }

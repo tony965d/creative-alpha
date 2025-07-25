@@ -2,7 +2,7 @@
 
 <div class="m-contact-form l-two-columns">
   <div class="m-contact-form__group l-two-columns__item">
-    <label for="your-last-name" class="m-contact-form__label l-two-columns__left">
+    <label for="your-company" class="m-contact-form__label l-two-columns__left">
       会社名<span class="m-contact-form__required">必須</span>
     </label>
     <div class="m-contact-form__field l-two-columns__right">
@@ -10,13 +10,13 @@
     </div>
   </div>
   <div class="m-contact-form__group l-two-columns__item">
-    <label for="your-last-name" class="m-contact-form__label l-two-columns__left">部署名</label>
+    <label for="department-name" class="m-contact-form__label l-two-columns__left">部署名</label>
     <div class="m-contact-form__field l-two-columns__right">
       [text department-name id:department-name class:m-contact-form__input placeholder "例）○○事業部"]
     </div>
   </div>
   <div class="m-contact-form__group l-two-columns__item">
-    <label for="your-last-name" class="m-contact-form__label l-two-columns__left">
+    <label for="your-name" class="m-contact-form__label l-two-columns__left">
       お名前<span class="m-contact-form__required">必須</span>
     </label>
     <div class="m-contact-form__field l-two-columns__right">
@@ -24,13 +24,13 @@
     </div>
   </div>
   <div class="m-contact-form__group l-two-columns__item">
-    <label for="your-last-name" class="m-contact-form__label l-two-columns__left">お名前（フリガナ）</label>
+    <label for="your-kana" class="m-contact-form__label l-two-columns__left">お名前（フリガナ）</label>
     <div class="m-contact-form__field l-two-columns__right">
       [text your-kana id:your-kana class:m-contact-form__input placeholder "例）ヤマダ　タロウ"]
     </div>
   </div>
   <div class="m-contact-form__group l-two-columns__item">
-    <label for="your-email" class="m-contact-form__label l-two-columns__left">
+    <label for="your-tel" class="m-contact-form__label l-two-columns__left">
       電話番号<span class="m-contact-form__required">必須</span>
     </label>
     <div class="m-contact-form__field l-two-columns__right">
@@ -55,7 +55,7 @@
   </div>
   <div class="m-contact-form__acceptance">
     [acceptance acceptance class:m-contact-form__acceptance-text]
-    <a href="<?php echo esc_url(home_url('/privacy-policy')); ?>" class="m-contact-form__acceptance-link" target="_blank" rel="noopener">プライバシーポリシー</a>に同意する
+    <a href="/privacy" class="m-contact-form__acceptance-link" target="_blank" rel="noopener">プライバシーポリシー</a>に同意する
     [/acceptance]
   </div>
 </div>

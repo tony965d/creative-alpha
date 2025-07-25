@@ -17,6 +17,10 @@
   z-index: -1;
 }
 
+.m-mystery-shopper-faq--bg-white::before {
+  background-color: var(--color__white);
+}
+
 .m-mystery-shopper-faq__contents {
   margin-top: rem(41);
 }

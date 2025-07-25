@@ -23,4 +23,12 @@
   --_width__right: 739;
   --_column-gap: 43;
   margin-top: rem(41);
+
+  @include mq('lg') {
+    --_row-gap: 40;
+  }
+
+  @include mq('md') {
+    --_row-gap: 40;
+  }
 }

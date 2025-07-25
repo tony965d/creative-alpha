@@ -1,29 +1,5 @@
 <aside class="m-sidebar">
   <div class="m-sidebar__block">
-    <h3 class="m-sidebar__title">カテゴリー</h3>
-    <div class="m-sidebar__body">
-      <ul class="m-sidebar__category-group">
-        <?php
-        $terms = get_terms(array(
-          'taxonomy' => 'column_category',
-          'hide_empty' => false,
-        ));
-        if (!empty($terms) && !is_wp_error($terms)) :
-          foreach ($terms as $term) :
-        ?>
-            <li class="m-sidebar__category">
-              <a class="m-sidebar__category-link u-hover" href="<?php echo esc_url(get_term_link($term)); ?>">
-                <?php echo esc_html($term->name); ?>
-              </a>
-            </li>
-        <?php
-          endforeach;
-        endif;
-        ?>
-      </ul>
-    </div>
-  </div>
-  <div class="m-sidebar__block">
     <h3 class="m-sidebar__title m-sidebar__title--recent-article">新着記事</h3>
     <div class="m-sidebar__body">
       <ul class="m-sidebar__recent-article-group">
@@ -60,7 +36,7 @@
 
       <ul class="m-sidebar__monthly-archive-group">
         <?php
-        $archive_query = new WP_Query(array(
+        $posts = get_posts(array(
           'post_type' => 'column',
           'posts_per_page' => -1,
           'orderby' => 'date',
@@ -68,35 +44,30 @@
         ));
         $archives = array();
 
-        if ($archive_query->have_posts()) {
-          while ($archive_query->have_posts()) {
-            $archive_query->the_post();
-            $year = get_the_date('Y');
-            $month = get_the_date('n');
-            $key = $year . '-' . $month;
-            if (!isset($archives[$key])) {
-              $archives[$key] = array(
-                'year' => $year,
-                'month' => $month,
-                'count' => 0,
-              );
-            }
-            $archives[$key]['count']++;
+        foreach ($posts as $post) {
+          $year = get_the_date('Y', $post->ID);
+          $month = get_the_date('n', $post->ID);
+          if (!isset($archives[$year])) {
+            $archives[$year] = array();
           }
-          wp_reset_postdata();
+          if (!isset($archives[$year][$month])) {
+            $archives[$year][$month] = 0;
+          }
+          $archives[$year][$month]++;
         }
-        krsort($archives);
 
-        foreach ($archives as $archive) {
-          $year = $archive['year'];
-          $month = $archive['month'];
-          $count = $archive['count'];
-          $url = get_post_type_archive_link('column') . "?archive={$year}-{$month}";
-          echo '<li class="m-sidebar__monthly-archive">';
-          echo '<a class="m-sidebar__monthly-archive-link u-hover" href="' . esc_url($url) . '">';
-          echo esc_html("{$year}年{$month}月") . '　(' . $count . ')';
-          echo '</a>';
-          echo '</li>';
+        // 年・月を降順で表示
+        krsort($archives);
+        foreach ($archives as $year => $months) {
+          krsort($months);
+          foreach ($months as $month => $count) {
+            $url = get_post_type_archive_link('column') . "?archive={$year}-{$month}";
+            echo '<li class="m-sidebar__monthly-archive">';
+            echo '<a class="m-sidebar__monthly-archive-link u-hover" href="' . esc_url($url) . '">';
+            echo esc_html("{$year}年{$month}月") . '　(' . $count . ')';
+            echo '</a>';
+            echo '</li>';
+          }
         }
         ?>
       </ul>

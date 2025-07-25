@@ -62,6 +62,13 @@
   }
 }
 
+.m-home-about__content-image img {
+  object-fit: cover;
+  aspect-ratio: 423 / 287;
+  height: 100%;
+  border-radius: 20px;
+}
+
 .m-home-about__button-unit-wrapper {
   margin-top: rem(80);
 }

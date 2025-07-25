@@ -38,6 +38,7 @@
   }
 
   @include mq('md') {
+    row-gap: rem(20);
     padding: rem(20);
   }
 }

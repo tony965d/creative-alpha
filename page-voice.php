@@ -6,7 +6,7 @@
     <div class="m-sub-mv">
       <div class="m-sub-mv__inner l-inner">
         <div class="m-sub-mv__wrapper">
-          <h1 class="m-page-title m-page-title--large">お客様の声</h1>
+          <h1 class="m-page-title m-page-title--large js-fade-up">お客様の声</h1>
         </div>
       </div>
     </div>
@@ -17,7 +17,7 @@
     <!-- パンくず -->
     <div class="m-breadcrumb">
       <div class="m-breadcrumb__inner l-inner">
-        <div class="wp-breadcrumb">
+        <div class="wp-breadcrumb js-fade-up">
           <?php if (function_exists('bcn_display')) {
             bcn_display();
           } ?>
@@ -28,18 +28,18 @@
     <div class="m-voice-header l-outer">
       <div class="m-voice-header__inner l-inner">
         <div class="m-square-button-unit m-square-button-unit--max">
-          <a href="#voice-training-service" class="m-square-button m-square-button--voice-training-service u-hover">
+          <a href="#voice-training-service" class="m-square-button m-square-button--voice-training-service u-hover js-fade-up">
             <picture class="m-square-button__icon m-square-button__icon--training-service">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-1.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-1.jpg" alt="" width="109" height="61" loading="lazy">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-1.jpg" alt="活発に議論しているビジネス会議のイラスト" width="109" height="61" loading="lazy">
             </picture>
             <span class="m-square-button__text">研修を受けたお客様の声</span>
             <span class="u-triangle--right"></span>
           </a>
-          <a href="#voice-mystery-shopper" class="m-square-button m-square-button--voice-mystery-shopper u-hover">
+          <a href="#voice-mystery-shopper" class="m-square-button m-square-button--voice-mystery-shopper u-hover js-fade-up">
             <picture class="m-square-button__icon m-square-button__icon--mystery-shopper">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-2.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-2.jpg" alt="" width="42" height="63" loading="lazy">
+              <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/square-button-icon-2.jpg" alt="虫眼鏡を持って調査するビジネスマンのイラスト" width="42" height="63" loading="lazy">
             </picture>
             <span class="m-square-button__text">覆面調査を実施したお客様の声</span>
           </a>
@@ -54,24 +54,24 @@
     <div class="m-voice-training-service">
       <div class="m-voice-training-service__inner l-inner">
         <h2 class="m-section-title m-section-title--center">
-          <span class="m-section-title__text m-section-title__text--large">研修を受けたお客様の声</span>
+          <span class="m-section-title__text m-section-title__text--large js-fade-up">研修を受けたお客様の声</span>
         </h2>
         <div class="m-voice-training-service__wrapper">
           <div class="m-voice-contents">
             <div class="m-voice-contents__header l-two-columns">
               <div class="m-voice-contents__header-item l-two-columns__item">
-                <picture class="m-voice-contents__image l-two-columns__left">
+                <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-1.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-1.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-1.jpg" alt="笑顔の女性のプロフィール写真" width="300" height="300" loading="lazy">
                 </picture>
-                <div class="m-voice-contents__heading l-two-columns__right">
+                <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">良い結果が得られていると感じております。</h3>
                   <p class="m-voice-contents__name">株式会社ジュン　人見さま</p>
                 </div>
               </div>
             </div>
             <div class="m-voice-contents__body">
-              <div class="m-voice-contents__description">
+              <div class="m-voice-contents__description js-fade-up-parent">
                 <h4 class="m-voice-contents__description-title">研修を導入するきっかけ</h4>
                 <p class="m-base-text">
                   常に変化する小売業界の中で、人材教育に関しては今あるものではない「何か」を求めていた社内の背景がありました。
@@ -82,7 +82,7 @@
                   今後良いパートナーシップを構築していけそうだと感じた部分が導入を決めた要因の1つです。
                 </p>
               </div>
-              <div class="m-voice-contents__description">
+              <div class="m-voice-contents__description js-fade-up-parent">
                 <h4 class="m-voice-contents__description-title">研修を受けた感想</h4>
                 <p class="m-base-text">
                   短い時間の中で多くの気付きを体感でき、受講した店長たちの、「早くお店に戻ってスタッフ達に伝えたい！」というワクワク感や、
@@ -95,18 +95,18 @@
           <div class="m-voice-contents">
             <div class="m-voice-contents__header l-two-columns">
               <div class="m-voice-contents__header-item l-two-columns__item">
-                <picture class="m-voice-contents__image l-two-columns__left">
+                <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-2.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-2.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-2.jpg" alt="笑顔の女性のプロフィール写真" width="300" height="300" loading="lazy">
                 </picture>
-                <div class="m-voice-contents__heading l-two-columns__right">
+                <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">今回研修に参加できて本当に良かったと感じています。</h3>
                   <p class="m-voice-contents__name">株式会社バーズ・アソシエーション　石田さま</p>
                 </div>
               </div>
             </div>
             <div class="m-voice-contents__body">
-              <div class="m-voice-contents__description">
+              <div class="m-voice-contents__description js-fade-up-parent">
                 <h4 class="m-voice-contents__description-title">研修を導入するきっかけ</h4>
                 <p class="m-base-text">
                   日常の業務の中で自身が一販売スタッフとして、常に「1人1人のお客様に合わせたベストな接客（おもてなし）」を求めていました。
@@ -114,7 +114,7 @@
                   その“答”を求めて、今回の研修を決めました。
                 </p>
               </div>
-              <div class="m-voice-contents__description">
+              <div class="m-voice-contents__description js-fade-up-parent">
                 <h4 class="m-voice-contents__description-title">研修を受けた感想</h4>
                 <p class="m-base-text">
                   研修を終えた今、内容はもちろんですが、お店として「お客様とどう向き合ってゆくか」の共通テーマに対し、
@@ -131,18 +131,18 @@
           <div class="m-voice-contents">
             <div class="m-voice-contents__header l-two-columns">
               <div class="m-voice-contents__header-item l-two-columns__item">
-                <picture class="m-voice-contents__image l-two-columns__left">
+                <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-3.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-3.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-3.jpg" alt="ファッションショーでランウェイを歩くモデル" width="300" height="300" loading="lazy">
                 </picture>
-                <div class="m-voice-contents__heading l-two-columns__right">
+                <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">参加した店長達は終始集中力も高く、盛り上がった研修の場となりました。</h3>
                   <p class="m-voice-contents__name">老舗アパレルブランド</p>
                 </div>
               </div>
             </div>
             <div class="m-voice-contents__body">
-              <div class="m-voice-contents__description">
+              <div class="m-voice-contents__description js-fade-up-parent">
                 <h4 class="m-voice-contents__description-title">研修を導入するきっかけ</h4>
                 <p class="m-base-text">
                   私どもの企業は、大きな方向転換を終えたばかりで、運営する全国の店長には戸惑いや動揺、中にはモチベーションが下がったり、
@@ -150,7 +150,7 @@
                   その新しいマインドセットで活き活きとお店で頑張ってくれるような、そんな研修が必要でした。
                 </p>
               </div>
-              <div class="m-voice-contents__description">
+              <div class="m-voice-contents__description js-fade-up-parent">
                 <h4 class="m-voice-contents__description-title">研修を受けた感想</h4>
                 <p class="m-base-text">
                   研修を実施するまでのプロセスでも、プログラムを構築するにあたって私どものマネージャー達から生の相談を受けたり、
@@ -166,25 +166,25 @@
           <div class="m-voice-contents">
             <div class="m-voice-contents__header l-two-columns">
               <div class="m-voice-contents__header-item l-two-columns__item">
-                <picture class="m-voice-contents__image l-two-columns__left">
+                <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-4.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-4.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-4.jpg" alt="ショッピングバッグを持って歩く人" width="300" height="300" loading="lazy">
                 </picture>
-                <div class="m-voice-contents__heading l-two-columns__right">
+                <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">多くの気付きと学びの反響がありました。</h3>
                   <p class="m-voice-contents__name">全国展開の商業施設　 テナント運営部</p>
                 </div>
               </div>
             </div>
             <div class="m-voice-contents__body">
-              <div class="m-voice-contents__description">
+              <div class="m-voice-contents__description js-fade-up-parent">
                 <h4 class="m-voice-contents__description-title">研修を導入するきっかけ</h4>
                 <p class="m-base-text">
                   めまぐるしく変わる全国のファッションビル勢力図の中で、私たちの施設には他には無い「価値」の創造を求めていました。
                   そんな中、各テナントの「CS（顧客満足）」に関する意識強化と「お店づくり」のクオリティ向上を同時に図る研修が必要だったのです。
                 </p>
               </div>
-              <div class="m-voice-contents__description">
+              <div class="m-voice-contents__description js-fade-up-parent">
                 <h4 class="m-voice-contents__description-title">研修を受けた感想</h4>
                 <p class="m-base-text">
                   CS意識からVMDまで、「お客様が楽しい」お店づくりが大きなテーマだったのですが、最終のワークショップでの店舗レイアウトの落とし込みまで、
@@ -198,25 +198,25 @@
           <div class="m-voice-contents">
             <div class="m-voice-contents__header l-two-columns">
               <div class="m-voice-contents__header-item l-two-columns__item">
-                <picture class="m-voice-contents__image l-two-columns__left">
+                <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-5.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-5.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-5.jpg" alt="メイクブラシとアイシャドウパレットが並ぶコスメカウンター" width="300" height="300" loading="lazy">
                 </picture>
-                <div class="m-voice-contents__heading l-two-columns__right">
+                <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">早くお店で活用したいと笑顔で答えてくれたことが印象に残っています。</h3>
                   <p class="m-voice-contents__name">国内大手コスメブランド 営業本部</p>
                 </div>
               </div>
             </div>
             <div class="m-voice-contents__body">
-              <div class="m-voice-contents__description">
+              <div class="m-voice-contents__description js-fade-up-parent">
                 <h4 class="m-voice-contents__description-title">研修を導入するきっかけ</h4>
                 <p class="m-base-text">
                   日々の営業の中で、売上やクレーム、チームワークなど様々な問題に対して危機意識の高い店長育成を求めていました。
                   チームを率いる店長としての自身の役割りに対する責任感を引き出し、それを具体的アクションとして、お店に定着させる様な研修を考えていました。
                 </p>
               </div>
-              <div class="m-voice-contents__description">
+              <div class="m-voice-contents__description js-fade-up-parent">
                 <h4 class="m-voice-contents__description-title">研修を受けた感想</h4>
                 <p class="m-base-text">
                   研修を終えての感想として、まず驚いたのが短い時間の中での参加者たちの気付きの多さです。実践的なワークショップと事例を交えた講義は、
@@ -231,18 +231,18 @@
           <div class="m-voice-contents">
             <div class="m-voice-contents__header l-two-columns">
               <div class="m-voice-contents__header-item l-two-columns__item">
-                <picture class="m-voice-contents__image l-two-columns__left">
+                <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-6.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-6.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-6.jpg" alt="レストランで提供されるラムチョップの料理" width="300" height="300" loading="lazy">
                 </picture>
-                <div class="m-voice-contents__heading l-two-columns__right">
+                <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">各々の心にしっかり届く研修として今後も期待しています。</h3>
                   <p class="m-voice-contents__name">一等地に展開する飲食チェーン店 経営者様 営業本部</p>
                 </div>
               </div>
             </div>
             <div class="m-voice-contents__body">
-              <div class="m-voice-contents__description">
+              <div class="m-voice-contents__description js-fade-up-parent">
                 <h4 class="m-voice-contents__description-title">研修を導入するきっかけ</h4>
                 <p class="m-base-text">
                   飲食店をチェーン展開している中で様々なポジションのスタッフ１人１人を「人」として、「家族」として常に大切に経営にあたっていました。
@@ -250,7 +250,7 @@
                   仕事に対しての自主性やモチベーションそしてチームワークの強化と活性化を可能とする研修を考えていたのです。
                 </p>
               </div>
-              <div class="m-voice-contents__description">
+              <div class="m-voice-contents__description js-fade-up-parent">
                 <h4 class="m-voice-contents__description-title">研修を受けた感想</h4>
                 <p class="m-base-text">
                   研修は定期的にお願いしていますが、楽しいワークショップなどを交えながら短い時間の中でスタッフが楽しみながら
@@ -272,23 +272,23 @@
     <div class="m-voice-mystery-shopper">
       <div class="m-voice-mystery-shopper__inner l-inner">
         <h2 class="m-section-title m-section-title--center">
-          <span class="m-section-title__text m-section-title__text--large">覆面調査 (ミステリーショッパー)を実施した、お客様の声</span>
+          <span class="m-section-title__text m-section-title__text--large js-fade-up">覆面調査 (ミステリーショッパー)を実施した、お客様の声</span>
         </h2>
         <div class="m-voice-mystery-shopper__wrapper">
           <div class="m-voice-contents m-voice-contents--mystery-shopper">
             <div class="m-voice-contents__header l-two-columns">
               <div class="m-voice-contents__header-item l-two-columns__item">
-                <picture class="m-voice-contents__image l-two-columns__left">
+                <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-7.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-7.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-7.jpg" alt="ショッピングモールの外観と通路を歩く人々" width="300" height="300" loading="lazy">
                 </picture>
-                <div class="m-voice-contents__heading l-two-columns__right">
+                <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">プロのショップアドバイザーの意見を聞けて良かったと思います</h3>
                   <p class="m-voice-contents__name">商業施設様</p>
                 </div>
               </div>
             </div>
-            <div class="m-voice-contents__description">
+            <div class="m-voice-contents__description js-fade-up-parent">
               <p class="m-base-text">
                 これまでは一般の方に覆面調査をお願いしていたのですが、
                 クリエイティブアルファさんの覆面調査はプロのショップアドバイザーが覆面調査をしてくださるということで、
@@ -301,17 +301,17 @@
           <div class="m-voice-contents m-voice-contents--mystery-shopper">
             <div class="m-voice-contents__header l-two-columns">
               <div class="m-voice-contents__header-item l-two-columns__item">
-                <picture class="m-voice-contents__image l-two-columns__left">
+                <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-8.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-8.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-8.jpg" alt="アパレルショップのマネキンと店内の様子" width="300" height="300" loading="lazy">
                 </picture>
-                <div class="m-voice-contents__heading l-two-columns__right">
+                <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">覆面調査の結果、スタッフのCXの意識が十分でないことがわかりました</h3>
                   <p class="m-voice-contents__name">アパレルブランド様</p>
                 </div>
               </div>
             </div>
-            <div class="m-voice-contents__description">
+            <div class="m-voice-contents__description js-fade-up-parent">
               <p class="m-base-text">
                 覆面調査の結果、スタッフのCXの意識が十分でないことがわかりました。今後は単に接客しているだけでは差別化ができないので、
                 顧客体験を意識し、お客様に感動してもらえるような接客をする必要があると考えています。
@@ -323,17 +323,17 @@
           <div class="m-voice-contents m-voice-contents--mystery-shopper">
             <div class="m-voice-contents__header l-two-columns">
               <div class="m-voice-contents__header-item l-two-columns__item">
-                <picture class="m-voice-contents__image l-two-columns__left">
+                <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-9.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-9.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-9.jpg" alt="高級ブランドバッグが並ぶショーウィンドウ" width="300" height="300" loading="lazy">
                 </picture>
-                <div class="m-voice-contents__heading l-two-columns__right">
+                <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">スタッフをどう教育すれば良いかということまでアドバイスしてもらえた</h3>
                   <p class="m-voice-contents__name">服飾雑貨店様</p>
                 </div>
               </div>
             </div>
-            <div class="m-voice-contents__description">
+            <div class="m-voice-contents__description js-fade-up-parent">
               <p class="m-base-text">
                 覆面調査の後の面談で、改善点だけではなく、スタッフをどう教育すれば良いかということまでアドバイスしてもらえたのは良かったです。
                 これまでスタッフ育成のために様々な研修をおこなっていたのですが「このような点を改善する」といった目的意識が希薄だったような気がします。
@@ -344,17 +344,17 @@
           <div class="m-voice-contents m-voice-contents--mystery-shopper">
             <div class="m-voice-contents__header l-two-columns">
               <div class="m-voice-contents__header-item l-two-columns__item">
-                <picture class="m-voice-contents__image l-two-columns__left">
+                <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-10.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-10.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-10.jpg" alt="宝石やアクセサリーが並ぶジュエリーのディスプレイ" width="300" height="300" loading="lazy">
                 </picture>
-                <div class="m-voice-contents__heading l-two-columns__right">
+                <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">自社に合わせて内容をしっかりと練っていただけた</h3>
                   <p class="m-voice-contents__name">ジュエリーブランド様</p>
                 </div>
               </div>
             </div>
-            <div class="m-voice-contents__description">
+            <div class="m-voice-contents__description js-fade-up-parent">
               <p class="m-base-text">
                 覆面調査とスタッフ研修を実施していただきありがとうございました。覆面調査も研修も全てお任せできるので良かったです。
                 最初にヒアリングしていただき、自社に合わせて内容をしっかりと練っていただけたので、安心してお任せすることができました。
@@ -365,17 +365,17 @@
           <div class="m-voice-contents m-voice-contents--mystery-shopper">
             <div class="m-voice-contents__header l-two-columns">
               <div class="m-voice-contents__header-item l-two-columns__item">
-                <picture class="m-voice-contents__image l-two-columns__left">
+                <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-11.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-11.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-11.jpg" alt="ハンドドリップでコーヒーを淹れている様子" width="300" height="300" loading="lazy">
                 </picture>
-                <div class="m-voice-contents__heading l-two-columns__right">
+                <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">色々と融通をきかせていただきありがとうございました</h3>
                   <p class="m-voice-contents__name">カフェチェーン店様</p>
                 </div>
               </div>
             </div>
-            <div class="m-voice-contents__description">
+            <div class="m-voice-contents__description js-fade-up-parent">
               <p class="m-base-text">
                 複数の覆面調査の会社に見積りを依頼したのですが、予算内で覆面調査を実施できる会社はありませんでした。
                 しかし、クリエイティブアルファさんに費用について相談したところ、予算内になるよう対象店舗数や内容を変更していただき、
@@ -387,17 +387,17 @@
           <div class="m-voice-contents m-voice-contents--mystery-shopper">
             <div class="m-voice-contents__header l-two-columns">
               <div class="m-voice-contents__header-item l-two-columns__item">
-                <picture class="m-voice-contents__image l-two-columns__left">
+                <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-12.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-12.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-12.jpg" alt="家具やインテリアが並ぶ明るい店内" width="300" height="300" loading="lazy">
                 </picture>
-                <div class="m-voice-contents__heading l-two-columns__right">
+                <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">テナントの店長様からも好評な調査で現場の成長につながっている</h3>
                   <p class="m-voice-contents__name">商業施設様</p>
                 </div>
               </div>
             </div>
-            <div class="m-voice-contents__description">
+            <div class="m-voice-contents__description js-fade-up-parent">
               <p class="m-base-text">
                 以前までは覆面調査に関しては、テナントの店長様からも、
                 「その瞬間を切り取っただけの、現状のほんの一部分しか可視化されない」とあまり好評ではありませんでした。
@@ -410,17 +410,17 @@
           <div class="m-voice-contents m-voice-contents--mystery-shopper">
             <div class="m-voice-contents__header l-two-columns">
               <div class="m-voice-contents__header-item l-two-columns__item">
-                <picture class="m-voice-contents__image l-two-columns__left">
+                <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-13.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-13.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-13.jpg" alt="カラフルなバッグが並ぶ店内の売り場" width="300" height="300" loading="lazy">
                 </picture>
-                <div class="m-voice-contents__heading l-two-columns__right">
+                <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">テナントスタッフの「やる気」に繋がる フォローが大変心強い</h3>
                   <p class="m-voice-contents__name">商業施設様</p>
                 </div>
               </div>
             </div>
-            <div class="m-voice-contents__description">
+            <div class="m-voice-contents__description js-fade-up-parent">
               <p class="m-base-text">
                 クリエイティブアルファさんの「個店別調査報告シート」は仮に調査結果内容が悪かった場合でも、
                 基本的に文章のアプローチが「現場を応援する姿勢を重視」しているので、
@@ -433,17 +433,17 @@
           <div class="m-voice-contents m-voice-contents--mystery-shopper">
             <div class="m-voice-contents__header l-two-columns">
               <div class="m-voice-contents__header-item l-two-columns__item">
-                <picture class="m-voice-contents__image l-two-columns__left">
+                <picture class="m-voice-contents__image l-two-columns__left js-fade-up">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-14.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-14.jpg" alt="" width="300" height="300" loading="lazy">
+                  <img src="<?php echo get_template_directory_uri() ?>/assets/images/voice/voice-contents-14.jpg" alt="白を基調としたアパレルショップの店内にディスプレイされたカラフルな洋服" width="300" height="300" loading="lazy">
                 </picture>
-                <div class="m-voice-contents__heading l-two-columns__right">
+                <div class="m-voice-contents__heading l-two-columns__right js-fade-up-parent">
                   <h3 class="m-content-subtitle">アドバイスから実際に売上アップにつながった店舗も</h3>
                   <p class="m-voice-contents__name">商業施設様</p>
                 </div>
               </div>
             </div>
-            <div class="m-voice-contents__description">
+            <div class="m-voice-contents__description js-fade-up-parent">
               <p class="m-base-text">
                 クリエイティブアルファさんの覆面調査は「おもてなし面」「環境面」「CX＝顧客体験価値面」において、
                 「店舗運営のプロである、全国の商業施設を熟知された調査員（専門講師の方）」が、

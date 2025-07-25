@@ -51,18 +51,6 @@
   letter-spacing: 0.08em;
 }
 
-.m-column-card__date::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: rem(-12);
-  transform: translateY(-50%);
-  background-color: #cacaca;
-  width: 1px;
-  height: rem(13);
-  z-index: -1;
-}
-
 .m-column-card__category {
   font-size: rem(16);
   line-height: 1;

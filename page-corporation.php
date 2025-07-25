@@ -6,7 +6,7 @@
     <div class="m-sub-mv">
       <div class="m-sub-mv__inner l-inner">
         <div class="m-sub-mv__wrapper">
-          <h1 class="m-page-title">会社概要・講師紹介</h1>
+          <h1 class="m-page-title js-fade-up">会社概要・講師紹介</h1>
         </div>
       </div>
     </div>
@@ -17,7 +17,7 @@
     <!-- パンくず -->
     <div class="m-breadcrumb">
       <div class="m-breadcrumb__inner l-inner">
-        <div class="wp-breadcrumb">
+        <div class="wp-breadcrumb js-fade-up">
           <?php if (function_exists('bcn_display')) {
             bcn_display();
           } ?>
@@ -28,7 +28,7 @@
     <div class="m-company-about l-outer">
       <div class="m-company-about__inner l-inner">
         <div class="m-company-about__wrapper">
-          <h2 class="m-section-title m-section-title--center">
+          <h2 class="m-section-title m-section-title--center js-fade-up-parent">
             <picture class="m-section-title__icon">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.webp" type="image/webp">
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.png" alt="" width="57" height="50" loading="lazy">
@@ -36,7 +36,7 @@
             <span class="m-section-title__text m-section-title__text--middle">会社概要</span>
           </h2>
           <div class="m-company-about__contents">
-            <dl class="m-definition-list">
+            <dl class="m-definition-list js-fade-up-parent">
               <div class="m-definition-list__item">
                 <dt class="m-definition-list__term m-definition-list__term--company">会社名</dt>
                 <dd class="m-definition-list__description m-definition-list__description--company">株式会社クリエイティブアルファ</dd>
@@ -107,7 +107,7 @@
               </div>
             </dl>
           </div>
-          <div class="m-company-about__map">
+          <div class="m-company-about__map js-fade-up">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6483.405625848519!2d139.75620400000003!3d35.659693!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bc13817d4a9%3A0xf72b81ee33d0be99!2z44ix44Kv44Oq44Ko44Kk44OG44Kj44OW44Ki44Or44OV44Kh!5e0!3m2!1sja!2sjp!4v1750501209573!5m2!1sja!2sjp" width="810" height="479" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
@@ -122,7 +122,7 @@
     <div class="m-company-profile">
       <div class="m-company-profile__inner l-inner">
         <div class="m-company-profile__wrapper">
-          <h2 class="m-section-title m-section-title--center">
+          <h2 class="m-section-title m-section-title--center js-fade-up-parent">
             <picture class="m-section-title__icon">
               <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.webp" type="image/webp">
               <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/section-title-icon.png" alt="" width="57" height="50" loading="lazy">
@@ -131,16 +131,16 @@
           </h2>
           <div class="m-company-profile__card-group l-two-columns">
             <div class="m-profile-card l-two-columns__item">
-              <picture class="m-profile-card__image l-two-columns__left">
+              <picture class="m-profile-card__image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-1.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-1.jpg" alt="" width="216" height="231" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-1.jpg" alt="木目調の背景で笑顔の男性講師のプロフィール写真" width="216" height="231" loading="lazy">
               </picture>
               <div class="m-profile-card__body l-two-columns__right">
-                <div class="m-profile-card__name-unit">
+                <div class="m-profile-card__name-unit js-fade-up">
                   <p class="m-profile-card__name">山之口 吉樹</p>
                   <p class="m-profile-card__kana">やまのくち よしき</p>
                 </div>
-                <div class="m-profile-card__content-wrapper">
+                <div class="m-profile-card__content-wrapper js-fade-up-parent">
                   <div class="m-profile-card__content">
                     <div class="m-profile-card__title">プロフィール</div>
                     <p class="m-base-text">
@@ -162,16 +162,16 @@
               </div>
             </div>
             <div class="m-profile-card l-two-columns__item">
-              <picture class="m-profile-card__image l-two-columns__left">
+              <picture class="m-profile-card__image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-2.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-2.jpg" alt="" width="216" height="231" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-2.jpg" alt="明るい雰囲気の女性講師のプロフィール写真" width="216" height="231" loading="lazy">
               </picture>
               <div class="m-profile-card__body l-two-columns__right">
-                <div class="m-profile-card__name-unit">
+                <div class="m-profile-card__name-unit js-fade-up">
                   <p class="m-profile-card__name">広瀬 友里</p>
                   <p class="m-profile-card__kana">ひろせ ゆり</p>
                 </div>
-                <div class="m-profile-card__content-wrapper">
+                <div class="m-profile-card__content-wrapper js-fade-up-parent">
                   <div class="m-profile-card__content">
                     <div class="m-profile-card__title">プロフィール</div>
                     <p class="m-base-text">
@@ -195,16 +195,16 @@
               </div>
             </div>
             <div class="m-profile-card l-two-columns__item">
-              <picture class="m-profile-card__image l-two-columns__left">
+              <picture class="m-profile-card__image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-3.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-3.jpg" alt="" width="216" height="231" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-3.jpg" alt="白い服を着た女性講師のプロフィール写真" width="216" height="231" loading="lazy">
               </picture>
               <div class="m-profile-card__body l-two-columns__right">
-                <div class="m-profile-card__name-unit">
+                <div class="m-profile-card__name-unit js-fade-up">
                   <p class="m-profile-card__name">越智 由美</p>
                   <p class="m-profile-card__kana">おち ゆみ</p>
                 </div>
-                <div class="m-profile-card__content-wrapper">
+                <div class="m-profile-card__content-wrapper js-fade-up-parent">
                   <div class="m-profile-card__content">
                     <div class="m-profile-card__title">プロフィール</div>
                     <p class="m-base-text">
@@ -228,16 +228,16 @@
               </div>
             </div>
             <div class="m-profile-card l-two-columns__item">
-              <picture class="m-profile-card__image l-two-columns__left">
+              <picture class="m-profile-card__image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-4.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-4.jpg" alt="" width="216" height="231" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-4.jpg" alt="白いジャケットを着た女性講師のプロフィール写真" width="216" height="231" loading="lazy">
               </picture>
               <div class="m-profile-card__body l-two-columns__right">
-                <div class="m-profile-card__name-unit">
+                <div class="m-profile-card__name-unit js-fade-up">
                   <p class="m-profile-card__name">松下 由樹</p>
                   <p class="m-profile-card__kana">まつした ゆき</p>
                 </div>
-                <div class="m-profile-card__content-wrapper">
+                <div class="m-profile-card__content-wrapper js-fade-up-parent">
                   <div class="m-profile-card__content">
                     <div class="m-profile-card__title">プロフィール</div>
                     <p class="m-base-text">
@@ -263,16 +263,16 @@
               </div>
             </div>
             <div class="m-profile-card l-two-columns__item">
-              <picture class="m-profile-card__image l-two-columns__left">
+              <picture class="m-profile-card__image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-5.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-5.jpg" alt="" width="216" height="231" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-5.jpg" alt="笑顔の女性講師のプロフィール写真" width="216" height="231" loading="lazy">
               </picture>
               <div class="m-profile-card__body l-two-columns__right">
-                <div class="m-profile-card__name-unit">
-                  <p class="m-profile-card__name">室谷 佳子</p>
+                <div class="m-profile-card__name-unit js-fade-up">
+                  <p class="m-profile-card__name">室屋 佳子</p>
                   <p class="m-profile-card__kana">むろや よしこ</p>
                 </div>
-                <div class="m-profile-card__content-wrapper">
+                <div class="m-profile-card__content-wrapper js-fade-up-parent">
                   <div class="m-profile-card__content">
                     <div class="m-profile-card__title">プロフィール</div>
                     <p class="m-base-text">
@@ -298,16 +298,16 @@
               </div>
             </div>
             <div class="m-profile-card l-two-columns__item">
-              <picture class="m-profile-card__image l-two-columns__left">
+              <picture class="m-profile-card__image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-6.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-6.jpg" alt="" width="216" height="231" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-6.jpg" alt="和装の女性講師のプロフィール写真" width="216" height="231" loading="lazy">
               </picture>
               <div class="m-profile-card__body l-two-columns__right">
-                <div class="m-profile-card__name-unit">
+                <div class="m-profile-card__name-unit js-fade-up">
                   <p class="m-profile-card__name">金子 理恵</p>
                   <p class="m-profile-card__kana">かねこ りえ</p>
                 </div>
-                <div class="m-profile-card__content-wrapper">
+                <div class="m-profile-card__content-wrapper js-fade-up-parent">
                   <div class="m-profile-card__content">
                     <div class="m-profile-card__title">プロフィール</div>
                     <p class="m-base-text">
@@ -332,16 +332,16 @@
               </div>
             </div>
             <div class="m-profile-card l-two-columns__item">
-              <picture class="m-profile-card__image l-two-columns__left">
+              <picture class="m-profile-card__image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-7.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-7.jpg" alt="" width="216" height="231" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-7.jpg" alt="スーツ姿の男性講師のプロフィール写真" width="216" height="231" loading="lazy">
               </picture>
               <div class="m-profile-card__body l-two-columns__right">
-                <div class="m-profile-card__name-unit">
+                <div class="m-profile-card__name-unit js-fade-up">
                   <p class="m-profile-card__name">和田 勉</p>
                   <p class="m-profile-card__kana">わだ つとむ</p>
                 </div>
-                <div class="m-profile-card__content-wrapper">
+                <div class="m-profile-card__content-wrapper js-fade-up-parent">
                   <div class="m-profile-card__content">
                     <div class="m-profile-card__title">プロフィール</div>
                     <p class="m-base-text">
@@ -364,16 +364,16 @@
               </div>
             </div>
             <div class="m-profile-card l-two-columns__item">
-              <picture class="m-profile-card__image l-two-columns__left">
+              <picture class="m-profile-card__image l-two-columns__left js-fade-up">
                 <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-8.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-8.jpg" alt="" width="216" height="231" loading="lazy">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/images/profile/instructor-8.jpg" alt="黒いジャケットを着た女性講師のプロフィール写真" width="216" height="231" loading="lazy">
               </picture>
               <div class="m-profile-card__body l-two-columns__right">
-                <div class="m-profile-card__name-unit">
+                <div class="m-profile-card__name-unit js-fade-up">
                   <p class="m-profile-card__name">大和田 弘美</p>
                   <p class="m-profile-card__kana">おおわだ ひろみ</p>
                 </div>
-                <div class="m-profile-card__content-wrapper">
+                <div class="m-profile-card__content-wrapper js-fade-up-parent">
                   <div class="m-profile-card__content">
                     <div class="m-profile-card__title">プロフィール</div>
                     <p class="m-base-text">

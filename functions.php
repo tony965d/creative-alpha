@@ -26,7 +26,7 @@ require_once get_template_directory() . '/inc/theme-customizer.php';
 require_once get_template_directory() . '/inc/templates-tags.php';
 
 // 各リンク先を読み込む
-require_once get_template_directory() . '/inc/links.php';
+require_once get_template_directory() . '/inc/social-links.php';
 
 // ショートコードを読み込む
 require_once get_template_directory() . '/inc/shortcodes.php';
@@ -42,3 +42,6 @@ require_once get_template_directory() . '/inc/disable-auto-updates.php';
 
 // Contact Form 7のカスタマイズを読み込む
 require_once get_template_directory() . '/inc/contact-form.php';
+
+// 管理画面から「表示」リンクを非表示にする
+require_once get_template_directory() . '/inc/admin.php';

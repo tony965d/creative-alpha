@@ -6,7 +6,7 @@
     <!-- パンくず -->
     <div class="m-breadcrumb">
       <div class="m-breadcrumb__inner l-inner">
-        <div class="wp-breadcrumb">
+        <div class="wp-breadcrumb js-fade-up">
           <?php if (function_exists('bcn_display')) {
             bcn_display();
           } ?>
@@ -22,29 +22,16 @@
               <div class="m-single-column__header">
                 <div class="m-single-column__header-unit">
                   <time datetime="<?php the_time('Y-m-d'); ?>" class="m-single-column__date"><?php the_time('Y.m.d'); ?></time>
-                  <?php
-                  $terms = get_the_terms($post->ID, 'column_category');
-                  if ($terms && !is_wp_error($terms)) {
-                    foreach ($terms as $term) {
-                      $term_link = get_term_link($term);
-                      if (!is_wp_error($term_link)) {
-                        echo '<a href="' . esc_url($term_link) . '" class="m-single-column__category">' . $term->name . '</a>';
-                      } else {
-                        echo '<span class="m-single-column__category">' . $term->name . '</span>';
-                      }
-                    }
-                  }
-                  ?>
                 </div>
                 <h1 class="m-single-column__title"><?php the_title(); ?></h1>
               </div>
               <figure class="m-single-column__thumbnail">
                 <?php if (has_post_thumbnail()) { ?>
-                  <?php the_post_thumbnail('full'); ?>
+                  <?php the_post_thumbnail('full', array('alt' => get_the_title())); ?>
                 <?php } else { ?>
                   <picture>
                     <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy.webp" type="image/webp">
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy.png" alt="ダミー画像" width="337" height="170" loading="lazy">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/dummy.png" alt="<?php echo esc_attr(get_the_title()); ?>" width="337" height="170" loading="lazy">
                   </picture>
                 <?php } ?>
               </figure>
@@ -52,7 +39,7 @@
                 <?php the_content(); ?>
               </div>
               <div class="m-single-column__button">
-                <a href="<?php echo home_url('/column'); ?>" class="m-button m-button--invert">一覧に戻る</a>
+                <a href="<?php echo home_url('/column/'); ?>" class="m-button m-button--invert">一覧に戻る</a>
               </div>
             </div>
             <!-- サイドバー -->

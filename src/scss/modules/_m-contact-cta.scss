@@ -3,6 +3,10 @@
 .m-contact-cta {
   position: relative;
   padding-block: rem(100);
+
+  @include mq('lg') {
+    padding-block: rem(60);
+  }
 }
 
 .m-contact-cta::before {
