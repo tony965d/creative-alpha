@@ -66,19 +66,19 @@
               <?php endif; ?>
             </div>
             <div class="m-single-training-service__wrapper">
-              <h2 class="m-service-training-title js-fade-up-parent">
+              <h3 class="m-service-training-title js-fade-up-parent">
                 <picture class="m-service-training-title__icon">
                   <source srcset="<?php echo get_template_directory_uri() ?>/assets/images/common/  .webp" type="image/webp">
                   <img src="<?php echo get_template_directory_uri() ?>/assets/images/common/service-training-title-icon.png" alt="" width="57" height="50" loading="lazy">
                 </picture>
                 <span class="m-service-training-title__text">サンプルプログラムのご紹介</span>
-              </h2>
+              </h3>
               <div class="m-single-training-service__contents js-fade-up-parent">
                 <?php $blocks = parse_blocks(get_the_content());
                 foreach ($blocks as $block) {
                   if ($block['blockName'] === 'lazyblock/training-service') {
-                    $trainingService_loop_json = urldecode($block['attrs']['training-service__loop']);
-                    $trainingService_loop = json_decode($trainingService_loop_json, true);
+                    $trainingService_loop_json = isset($block['attrs']['training-service__loop']) ? urldecode($block['attrs']['training-service__loop']) : '';
+                    $trainingService_loop = !empty($trainingService_loop_json) ? json_decode($trainingService_loop_json, true) : array();
 
                     if (!empty($trainingService_loop)) {
                       foreach ($trainingService_loop as $trainingService_item) {
@@ -104,7 +104,7 @@
                         if ($has_content) :
                 ?>
                           <div class="m-training-service-block ">
-                            <h3 class="m-training-service-block__title js-fade-up"><?php echo $trainingService_title; ?></h3>
+                            <h4 class="m-training-service-block__title js-fade-up"><?php echo $trainingService_title; ?></h4>
                             <div class="m-training-service-block__wrapper">
                               <dl class="m-definition-list">
                                 <?php if (!empty($trainingService_purpose)) : ?>
@@ -234,8 +234,8 @@
       $has_point_content = true;
 
       // ブロック内に実際のコンテンツがあるかチェック
-      $point_loop_json = urldecode($block['attrs']['training-service-point__loop']);
-      $point_loop = json_decode($point_loop_json, true);
+      $point_loop_json = isset($block['attrs']['training-service-point__loop']) ? urldecode($block['attrs']['training-service-point__loop']) : '';
+      $point_loop = !empty($point_loop_json) ? json_decode($point_loop_json, true) : array();
 
       if (!empty($point_loop)) {
         foreach ($point_loop as $point_item) {
@@ -280,8 +280,8 @@
             <?php
             foreach ($point_blocks as $block) {
               if ($block['blockName'] === 'lazyblock/training-service-point') {
-                $point_loop_json = urldecode($block['attrs']['training-service-point__loop']);
-                $point_loop = json_decode($point_loop_json, true);
+                $point_loop_json = isset($block['attrs']['training-service-point__loop']) ? urldecode($block['attrs']['training-service-point__loop']) : '';
+                $point_loop = !empty($point_loop_json) ? json_decode($point_loop_json, true) : array();
 
                 if (!empty($point_loop)) {
                   foreach ($point_loop as $index => $point_item) {
@@ -360,8 +360,8 @@
       $has_faq_content = true;
 
       // ブロック内に実際のコンテンツがあるかチェック
-      $faq_loop_json = urldecode($block['attrs']['training-service-faq__loop']);
-      $faq_loop = json_decode($faq_loop_json, true);
+      $faq_loop_json = isset($block['attrs']['training-service-faq__loop']) ? urldecode($block['attrs']['training-service-faq__loop']) : '';
+      $faq_loop = !empty($faq_loop_json) ? json_decode($faq_loop_json, true) : array();
 
       if (!empty($faq_loop)) {
         foreach ($faq_loop as $faq_item) {
@@ -397,8 +397,8 @@
                 <?php
                 foreach ($faq_blocks as $block) {
                   if ($block['blockName'] === 'lazyblock/training-service-faq') {
-                    $faq_loop_json = urldecode($block['attrs']['training-service-faq__loop']);
-                    $faq_loop = json_decode($faq_loop_json, true);
+                    $faq_loop_json = isset($block['attrs']['training-service-faq__loop']) ? urldecode($block['attrs']['training-service-faq__loop']) : '';
+                    $faq_loop = !empty($faq_loop_json) ? json_decode($faq_loop_json, true) : array();
 
                     if (!empty($faq_loop)) {
                       foreach ($faq_loop as $faq_item) {
@@ -444,8 +444,8 @@
 
     foreach ($faq_blocks as $block) {
       if ($block['blockName'] === 'lazyblock/training-service-faq') {
-        $faq_loop_json = urldecode($block['attrs']['training-service-faq__loop']);
-        $faq_loop = json_decode($faq_loop_json, true);
+        $faq_loop_json = isset($block['attrs']['training-service-faq__loop']) ? urldecode($block['attrs']['training-service-faq__loop']) : '';
+        $faq_loop = !empty($faq_loop_json) ? json_decode($faq_loop_json, true) : array();
 
         if (!empty($faq_loop)) {
           foreach ($faq_loop as $faq_item) {
