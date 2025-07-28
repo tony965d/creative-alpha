@@ -89,7 +89,6 @@
                         $trainingService_voice = isset($trainingService_item['training-service__voice']) ? esc_html($trainingService_item['training-service__voice']) : '';
                         $trainingService_time = isset($trainingService_item['training-service__time']) ? esc_html($trainingService_item['training-service__time']) : '';
                         $trainingService_price = isset($trainingService_item['training-service__price']) ? esc_html($trainingService_item['training-service__price']) : '';
-                        $trainingService_note = isset($trainingService_item['training-service__note']) ? esc_html($trainingService_item['training-service__note']) : '';
 
                         // すべての項目が未入力かチェック
                         $has_content = !empty($trainingService_title) ||
@@ -98,8 +97,7 @@
                           !empty($trainingService_content) ||
                           !empty($trainingService_voice) ||
                           !empty($trainingService_time) ||
-                          !empty($trainingService_price) ||
-                          !empty($trainingService_note);
+                          !empty($trainingService_price);
 
                         if ($has_content) :
                 ?>
@@ -206,8 +204,25 @@
                                   </div>
                                 <?php endif; ?>
                               </dl>
+                              <div class="m-single-training-service__button">
+                                <?php
+                                // ブロックデータを取得
+                                $blocks = parse_blocks(get_the_content());
+                                foreach ($blocks as $block) {
+                                  if ($block['blockName'] === 'lazyblock/training-service') {
+                                    // ボタンテキストの取得（キーの存在をチェック）
+                                    $trainingService_button = isset($block['attrs']['training-service__button']) ? $block['attrs']['training-service__button'] : '';
+                                    if (!empty($trainingService_button)) {
+                                      echo '<a href="' . home_url('/contact/') . '" class="m-button m-button--training-service">';
+                                      echo esc_html($trainingService_button); // 変数を正しく出力
+                                      echo '</a>';
+                                    }
+                                    break; // 最初の該当するブロックだけを処理したい場合
+                                  }
+                                }
+                                ?>
+                              </div>
                             </div>
-                            <p class="m-training-service-block__note js-fade-up"><?php echo nl2br($trainingService_note); ?></p>
                           </div>
                 <?php
                         endif;
@@ -482,7 +497,5 @@
   </section>
   <!-- /お問い合わせ -->
 </main>
-
-
 
 <?php get_footer();
