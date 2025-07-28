@@ -25,21 +25,21 @@
                     </div>
                   </div>
                 </div>
-				<script type="application/ld+json">
-                    {
-                        "@context": "https://schema.org",
-                        "@type": "LocalBusiness",
-                        "name": "株式会社クリエイティブアルファ",
-                        "address": {
-                            "@type": "PostalAddress",
-                            "streetAddress": "港区浜松町1-2-14　ユーデン浜松町ビル2F",
-                            "addressLocality": "東京都",
-                            "postalCode": "105-0013",
-                            "addressCountry": "JP"
-                        },
-                        "telephone": "+81-3-6402-7573",
-                        "url": "https://www.cafc.jp/",
-                    }
+                <script type="application/ld+json">
+                  {
+                    "@context": "https://schema.org",
+                    "@type": "LocalBusiness",
+                    "name": "株式会社クリエイティブアルファ",
+                    "address": {
+                      "@type": "PostalAddress",
+                      "streetAddress": "港区浜松町1-2-14　ユーデン浜松町ビル2F",
+                      "addressLocality": "東京都",
+                      "postalCode": "105-0013",
+                      "addressCountry": "JP"
+                    },
+                    "telephone": "+81-3-6402-7573",
+                    "url": "https://www.cafc.jp/",
+                  }
                 </script>
                 <div class="m-footer__right l-two-columns__right">
                   <nav class="m-footer-nav">
@@ -48,45 +48,23 @@
                         <li class="m-footer-nav__item">
                           <a href="<?php echo get_esc_home_url('/menu/'); ?>" class="m-footer-nav__menu u-hover">研修サービス</a>
                           <ul class="m-footer-nav__sub-items">
-                            <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/sekkyaku/'); ?>" class="m-footer-nav__sub-menu u-hover">接客研修</a>
-                            </li>
-                            <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/store/'); ?>" class="m-footer-nav__sub-menu u-hover">店舗運営</a>
-                            </li>
-                            <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/vmd/'); ?>" class="m-footer-nav__sub-menu u-hover">売場づくり(VMD研修)</a>
-                            </li>
-                            <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/value/'); ?>" class="m-footer-nav__sub-menu u-hover">リアル店舗価値向上</a>
-                            </li>
-                            <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/loyalty/'); ?>" class="m-footer-nav__sub-menu u-hover">顧客ロイヤルティ向上</a>
-                            </li>
-                            <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/strategy/'); ?>" class="m-footer-nav__sub-menu u-hover">商圏戦略</a>
-                            </li>
-                            <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/ojt/'); ?>" class="m-footer-nav__sub-menu u-hover">現場指導型研修(OJT研修)</a>
-                            </li>
-                            <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/management/'); ?>" class="m-footer-nav__sub-menu u-hover">マネジメント・リーダ・育成</a>
-                            </li>
-                            <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/claim/'); ?>" class="m-footer-nav__sub-menu u-hover">クレーム・カスタマーハラスメント</a>
-                            </li>
-                            <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/inbound/'); ?>" class="m-footer-nav__sub-menu u-hover">インバウンド</a>
-                            </li>
-                            <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/ropeplay/'); ?>" class="m-footer-nav__sub-menu u-hover">接客ロープレコンテスト</a>
-                            </li>
-                            <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/yearl/'); ?>" class="m-footer-nav__sub-menu u-hover">年間プログラム研修</a>
-                            </li>
-                            <li class="m-footer-nav__sub-item">
-                              <a href="<?php echo get_esc_home_url('/nps/'); ?>" class="m-footer-nav__sub-menu u-hover">NPS調査・eNPS調査</a>
-                            </li>
+                            <?php
+                            $trainingService_query = new WP_Query(
+                              array(
+                                'post_type'      => 'post',
+                                'posts_per_page' => -1,
+                              )
+                            );
+                            ?>
+                            <?php if ($trainingService_query->have_posts()) : ?>
+                              <?php while ($trainingService_query->have_posts()) : ?>
+                                <?php $trainingService_query->the_post(); ?>
+                                <li class="m-footer-nav__sub-item">
+                                  <a href="<?php echo get_permalink(); ?>" class="m-footer-nav__sub-menu u-hover"><?php the_title(); ?></a>
+                                </li>
+                              <?php endwhile; ?>
+                              <?php wp_reset_postdata(); ?>
+                            <?php endif;  ?>
                           </ul>
                         </li>
                       </ul>
