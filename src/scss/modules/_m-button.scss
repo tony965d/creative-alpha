@@ -69,3 +69,14 @@
   --_color__main-default: var(--color__secondary);
   --_color__sub-default: var(--color__white);
 }
+
+.m-button--training-service {
+  --_color__main: var(--_color__sub-default);
+  --_color__sub: var(--_color__main-default);
+
+  font-size: rem(18);
+  width: fit-content;
+  max-width: 100%;
+  border-color: var(--_color__main);
+  padding: rem(18) rem(67);
+}
