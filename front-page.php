@@ -258,7 +258,8 @@
                 </hgroup>
                 <div class="m-home-mystery-shopper__text">
                   <p class="m-base-text">
-                    売上に直結するCX視点の覆面調査で顧客ロイヤルティやリアル店舗の価値向上など、店舗の商売力を総合的に強化致します！
+                    売上に直結するCX視点の覆面調査で顧客ロイヤルティや<br>
+                    リアル店舗の価値向上など、店舗の商売力を総合的に強化致します！
                   </p>
                 </div>
                 <div class="m-home-mystery-shopper__button">
