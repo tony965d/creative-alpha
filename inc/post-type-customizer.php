@@ -102,8 +102,31 @@ function custom_post_type_rewrite_rules()
     'index.php?post_type=post&name=$matches[1]',
     'top'
   );
+
+  // コラムの月別アーカイブルールを追加
+  add_rewrite_rule(
+    'column/([0-9]{4})/([0-9]{1,2})/?$',
+    'index.php?post_type=column&archive_year=$matches[1]&archive_month=$matches[2]',
+    'top'
+  );
+
+  // コラムの月別アーカイブのページネーションルールを追加
+  add_rewrite_rule(
+    'column/([0-9]{4})/([0-9]{1,2})/page/([0-9]+)/?$',
+    'index.php?post_type=column&archive_year=$matches[1]&archive_month=$matches[2]&paged=$matches[3]',
+    'top'
+  );
 }
 add_action('init', 'custom_post_type_rewrite_rules');
+
+// クエリ変数を追加
+function add_archive_query_vars($vars)
+{
+  $vars[] = 'archive_year';
+  $vars[] = 'archive_month';
+  return $vars;
+}
+add_filter('query_vars', 'add_archive_query_vars');
 
 function custom_post_type_link($permalink, $post)
 {
