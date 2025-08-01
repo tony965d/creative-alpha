@@ -34,28 +34,26 @@
               <?php
               $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-              // 月別アーカイブの処理（クエリパラメータ方式）
-              if (isset($_GET['archive']) && !empty($_GET['archive'])) {
-                $archive_date = sanitize_text_field($_GET['archive']);
-                $date_parts = explode('-', $archive_date);
+              // 月別アーカイブの処理（URLパス方式）
+              $archive_year = get_query_var('archive_year');
+              $archive_month = get_query_var('archive_month');
 
-                if (count($date_parts) === 2) {
-                  $year = intval($date_parts[0]);
-                  $month = intval($date_parts[1]);
+              if (!empty($archive_year) && !empty($archive_month)) {
+                $year = intval($archive_year);
+                $month = intval($archive_month);
 
-                  if ($year > 0 && $month >= 1 && $month <= 12) {
-                    $column_query = new WP_Query(array(
-                      'post_type' => 'column',
-                      'posts_per_page' => 8,
-                      'paged' => $paged,
-                      'date_query' => array(
-                        array(
-                          'year' => $year,
-                          'month' => $month,
-                        ),
+                if ($year > 0 && $month >= 1 && $month <= 12) {
+                  $column_query = new WP_Query(array(
+                    'post_type' => 'column',
+                    'posts_per_page' => 8,
+                    'paged' => $paged,
+                    'date_query' => array(
+                      array(
+                        'year' => $year,
+                        'month' => $month,
                       ),
-                    ));
-                  }
+                    ),
+                  ));
                 }
               } else {
                 // 通常時は標準のクエリを使用
@@ -92,11 +90,11 @@
                 <?php if ($column_query->max_num_pages > 1) : ?>
                   <div class="m-archive-column__page-nav js-fade-up">
                     <?php
-                    if (isset($_GET['archive']) && !empty($_GET['archive'])) {
-                      // 月別アーカイブ時：クエリパラメータ形式
-                      $base_url = add_query_arg('archive', sanitize_text_field($_GET['archive']), get_post_type_archive_link('column'));
+                    if (!empty($archive_year) && !empty($archive_month)) {
+                      // 月別アーカイブ時：URLパス形式
+                      $base_url = home_url("/column/{$archive_year}/{$archive_month}/");
                       echo paginate_links(array(
-                        'base' => add_query_arg('paged', '%#%', $base_url),
+                        'base' => $base_url . 'page/%#%/',
                         'format' => '',
                         'current' => $paged,
                         'total' => $column_query->max_num_pages,
