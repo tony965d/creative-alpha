@@ -61,7 +61,7 @@
         foreach ($archives as $year => $months) {
           krsort($months);
           foreach ($months as $month => $count) {
-            $url = get_post_type_archive_link('column') . "?archive={$year}-{$month}";
+            $url = home_url("/column/{$year}/{$month}/");
             echo '<li class="m-sidebar__monthly-archive">';
             echo '<a class="m-sidebar__monthly-archive-link u-hover" href="' . esc_url($url) . '">';
             echo esc_html("{$year}年{$month}月") . '　(' . $count . ')';
