@@ -1,0 +1,151 @@
+@use '../_global' as *;
+
+.m-square-button {
+  --_color__main-default: var(--color__white);
+  --_color__sub-default: var(--color__blue);
+  --_color__main: var(--_color__main-default);
+  --_color__sub: var(--_color__sub-default);
+  --_max-width: 428;
+  --_duration: 0.3s;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: calc(var(--_max-width) * 1rem / var(--font-size__base));
+  min-height: rem(105);
+  color: var(--_color__sub);
+  background-color: var(--_color__main);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--_color__sub);
+  border-radius: 20px;
+  transition:
+    color var(--_duration),
+    background-color var(--_duration),
+    border-color var(--_duration),
+    filter var(--_duration);
+  touch-action: manipulation;
+  padding-right: rem(20);
+
+  @include mq('md') {
+    flex-direction: column;
+    gap: rem(10);
+    padding-left: rem(20);
+    padding-block: rem(20);
+  }
+}
+
+.m-square-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: rem(20);
+  transform: translateY(-50%);
+  width: rem(14);
+  height: rem(11);
+  background: var(--color__gradient-blue);
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+
+  @include mq('md') {
+    top: 45%;
+  }
+}
+
+.m-square-button--about-mystery-shopper::before {
+  width: rem(16);
+  height: rem(11);
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+}
+
+.m-square-button--about-training-service::before {
+  width: rem(16);
+  height: rem(11);
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+}
+
+.m-square-button--voice-mystery-shopper::before {
+  width: rem(16);
+  height: rem(11);
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+}
+
+.m-square-button--voice-training-service::before {
+  width: rem(16);
+  height: rem(11);
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+}
+
+.m-square-button--training-service {
+  gap: clamp(12px, -1.72rem + 3.86vw, 28px);
+  max-width: 100%;
+  padding-left: rem(25);
+}
+
+.m-square-button--mystery-shopper {
+  gap: clamp(12px, -1.257rem + 3.13vw, 25px);
+  max-width: 100%;
+  padding-left: rem(29);
+}
+
+.m-square-button--about-training-service {
+  gap: clamp(12px, -0.794rem + 2.41vw, 22px);
+  max-width: 100%;
+  padding-left: rem(16);
+}
+
+.m-square-button--about-mystery-shopper {
+  gap: clamp(12px, -0.176rem + 1.45vw, 18px);
+  max-width: 100%;
+  padding-left: rem(36);
+}
+
+.m-square-button--voice-training-service {
+  gap: clamp(12px, -0.107rem + 1.79vw, 24px);
+  max-width: 100%;
+  padding-left: rem(25);
+}
+
+.m-square-button--voice-mystery-shopper {
+  gap: clamp(12px, -1.893rem + 5.51vw, 49px);
+  max-width: 100%;
+  padding-left: rem(31);
+}
+
+.m-square-button__text {
+  position: relative;
+  display: flex;
+  font-size: clamp(22px, 1.066rem + 0.48vw, 24px);
+  font-weight: 700;
+  line-height: calc(35 / 24);
+
+  @include mq('md') {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.m-square-button__text-sub {
+  font-size: rem(15);
+  font-weight: 700;
+  line-height: calc(35 / 15);
+  color: transparent;
+  background: var(--color__gradient-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.m-square-button__icon.m-square-button__icon--training-service img,
+.m-square-button__icon.m-square-button__icon--mystery-shopper img {
+  object-fit: cover;
+}
+
+.m-square-button__icon.m-square-button__icon--training-service img {
+  aspect-ratio: 109 / 61;
+  width: rem(109);
+}
+
+.m-square-button__icon.m-square-button__icon--mystery-shopper img {
+  aspect-ratio: 42 / 63;
+  width: rem(42);
+}

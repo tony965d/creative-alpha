@@ -1,0 +1,101 @@
+@use '../_global' as *;
+
+.m-button {
+  --_color__main-default: var(--color__white);
+  --_color__sub-default: var(--color__blue);
+  --_color__main: var(--_color__main-default);
+  --_color__sub: var(--_color__sub-default);
+  --_max-width: 300;
+  --_duration: 0.3s;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: calc(var(--_max-width) * 1rem / var(--font-size__base));
+  width: 100%;
+  font-size: rem(20);
+  font-weight: 700;
+  color: var(--_color__sub);
+  line-height: calc(24 / 20);
+  background-color: var(--_color__main);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--_color__sub);
+  border-radius: 50px;
+  // border-radius: calc(infinity * 1px);
+  // filter: drop-shadow(0 3px 6px rgb(0, 0, 0, 0.2));
+  transition:
+    color var(--_duration),
+    background-color var(--_duration),
+    border-color var(--_duration),
+    filter var(--_duration);
+  touch-action: manipulation;
+  padding-block: rem(17);
+}
+
+.m-button::before {
+  content: '\f105';
+  font-family: 'Font Awesome 5 Free', sans-serif;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  right: rem(28);
+  transform: translateY(-50%);
+}
+
+@media (any-hover: hover) {
+  .m-button:hover {
+    color: var(--_color__main);
+    background-color: var(--_color__sub);
+    filter: unset;
+  }
+}
+
+.m-button:focus-visible {
+  color: var(--_color__main);
+  background-color: var(--_color__sub);
+  filter: unset;
+}
+
+.m-button--invert {
+  --_color__main: var(--_color__sub-default);
+  --_color__sub: var(--_color__main-default);
+
+  border-color: var(--_color__main);
+}
+
+.m-button--secondary {
+  --_color__main-default: var(--color__secondary);
+  --_color__sub-default: var(--color__white);
+}
+
+.m-button--training-service {
+  --_color__main: var(--_color__sub-default);
+  --_color__sub: var(--_color__main-default);
+
+  font-size: rem(18);
+  width: fit-content;
+  max-width: 100%;
+  border-color: var(--_color__main);
+  padding: rem(18) rem(67);
+
+  @include mq('md') {
+    padding-inline: clamp(2.25rem, 1.176rem + 5.37vw, 3.75rem);
+  }
+}
+
+.m-button--training-service-menu {
+  --_color__main: var(--_color__sub-default);
+  --_color__sub: var(--_color__main-default);
+
+  font-size: rem(18);
+  width: fit-content;
+  max-width: 100%;
+  border-color: var(--_color__main);
+  padding: rem(18) rem(67);
+}
+
+.m-button--training-service-menu::before {
+  content: '\f078';
+}

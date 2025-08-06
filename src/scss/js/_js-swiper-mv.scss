@@ -1,0 +1,5 @@
+@use '../_global' as *;
+
+.js-swiper-mv .swiper-wrapper {
+  transition-timing-function: linear;
+}

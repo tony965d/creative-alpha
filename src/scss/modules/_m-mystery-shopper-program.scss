@@ -1,0 +1,36 @@
+@use '../_global' as *;
+
+.m-mystery-shopper-program {
+  position: relative;
+  padding-top: rem(80);
+  padding-bottom: rem(80);
+}
+
+.m-mystery-shopper-program::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fffcf3;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  z-index: -1;
+}
+
+.m-mystery-shopper-program__subtitle {
+  font-size: rem(20);
+  font-weight: 700;
+  color: transparent;
+  background: var(--color__gradient-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  line-height: calc(24 / 20);
+  text-align: center;
+  margin-top: rem(31);
+}
+
+.m-mystery-shopper-program__step-wrapper {
+  margin-top: rem(24);
+  margin-right: rem(10);
+}

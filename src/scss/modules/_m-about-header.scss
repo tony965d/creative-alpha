@@ -1,0 +1,38 @@
+@use '../_global' as *;
+
+.m-about-header__contents {
+  --_width__left: 651;
+  --_width__right: 429;
+  --_column-gap: 44;
+  margin-top: rem(30);
+
+  @include mq('md') {
+    --_row-gap: 40;
+  }
+}
+
+.m-about-header__item {
+  align-items: center;
+}
+
+.m-about-header__body {
+  display: grid;
+  gap: rem(12);
+}
+
+.m-about-header__text {
+  font-size: rem(18);
+  font-weight: 500;
+  line-height: calc(29 / 18);
+}
+
+.m-about-header__image img {
+  object-fit: cover;
+  aspect-ratio: 429 / 310;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.m-about-header__button-wrapper {
+  margin-top: rem(48);
+}

@@ -1,0 +1,48 @@
+@use '../_global' as *;
+
+.m-sp-nav {
+  display: none;
+
+  @include mq('lg') {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color__white);
+    z-index: 10;
+    overflow-y: auto;
+  }
+}
+
+.m-sp-nav__inner {
+  --_max-width: 1130;
+
+  @include mq('md') {
+    --_max-width: 600;
+  }
+}
+
+.m-sp-nav__wrapper {
+  margin-top: rem(40);
+}
+
+.m-sp-nav__item {
+  text-align: center;
+  margin-top: rem(24);
+}
+
+.m-sp-nav__item:first-child {
+  margin-top: 0;
+}
+
+.m-sp-nav__menu {
+  text-transform: uppercase;
+}
+
+.m-sp-nav__contact {
+  display: grid;
+  justify-items: center;
+  gap: rem(24);
+  margin-top: rem(40);
+}

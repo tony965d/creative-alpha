@@ -1,0 +1,102 @@
+@use '../_global' as *;
+
+.m-voice-block {
+  position: relative;
+}
+
+.m-voice-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color__white);
+  width: 100%;
+  height: 100%;
+  box-shadow: 4px 4px 19px 0 rgba(0, 0, 0, 0.11);
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.m-voice-block__content {
+  display: flex;
+  align-items: center;
+  gap: clamp(40px, -4.071rem + 13.69vw, 132px);
+  padding-top: rem(77);
+  padding-bottom: rem(76);
+  padding-left: clamp(40px, -7.071rem + 19.94vw, 174px);
+
+  @include mq('lg') {
+    flex-direction: column;
+    gap: rem(40);
+    padding-inline: rem(20);
+  }
+}
+
+.m-voice-block__content--mystery-shopper {
+  gap: clamp(150px, 6.304rem + 6.4vw, 193px);
+  padding-top: rem(47);
+  padding-bottom: rem(56);
+
+  @include mq('lg') {
+    gap: rem(40);
+  }
+}
+
+.m-voice-block__body {
+  width: min(100%, rem(300));
+}
+
+.m-voice-block__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.m-voice-block__title-sub {
+  font-size: rem(24);
+  font-weight: 700;
+  background: var(--color__gradient-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: calc(34 / 24);
+}
+
+.m-voice-block__title-main {
+  font-size: rem(42);
+  font-weight: 700;
+  background: var(--color__gradient-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: calc(59 / 42);
+
+  @include mq('md') {
+    font-size: rem(32);
+    line-height: calc(48 / 32);
+  }
+}
+
+.m-voice-block__button {
+  margin-top: rem(7);
+}
+
+.m-voice-block__button--mystery-shopper {
+  margin-top: rem(7);
+}
+
+.m-voice-block__image--service-training,
+.m-voice-block__image--mystery-shopper {
+  object-fit: cover;
+  height: 100%;
+}
+
+.m-voice-block__image--service-training img {
+  aspect-ratio: 272 / 152;
+  width: rem(272);
+}
+
+.m-voice-block__image--mystery-shopper img {
+  aspect-ratio: 138 / 209;
+  width: rem(138);
+}

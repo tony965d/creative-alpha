@@ -1,0 +1,11 @@
+@use '../_global' as *;
+
+.m-mystery-shopper-fee {
+  padding-top: rem(83);
+  padding-bottom: rem(78);
+}
+
+.m-mystery-shopper-fee__box-wrapper {
+  --_column-gap: 40;
+  margin-top: rem(41);
+}

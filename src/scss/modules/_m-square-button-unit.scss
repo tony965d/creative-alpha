@@ -1,0 +1,26 @@
+@use '../_global' as *;
+
+.m-square-button-unit {
+  --_max-width: 880;
+
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(24);
+  width: 100%;
+  max-width: calc(var(--_max-width) * 1rem / var(--font-size__base));
+  margin-inline: auto;
+
+  @include mq('lg') {
+    grid-template-columns: auto;
+  }
+}
+
+.m-square-button-unit--wide {
+  --_max-width: 1054;
+}
+
+.m-square-button-unit--max {
+  gap: rem(45);
+  max-width: 100%;
+}

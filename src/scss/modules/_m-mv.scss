@@ -1,0 +1,130 @@
+@use '../_global' as *;
+
+.m-mv__wrapper {
+  position: relative;
+}
+
+.m-mv__image img {
+  object-fit: cover;
+  aspect-ratio: 1440 / 700;
+  height: 100%;
+
+  @include mq('md') {
+    aspect-ratio: 375 / 535;
+  }
+}
+
+.m-mv__body {
+  position: absolute;
+  top: 17.6%;
+  left: 11%;
+  z-index: 1;
+
+  @include mq('lg') {
+    top: 16%;
+  }
+
+  @include mq('md') {
+    top: 28%;
+    left: 5.1%;
+    max-width: 346px;
+  }
+}
+
+.m-mv__title {
+  margin-top: rem(40);
+
+  @include mq('lg') {
+    margin-top: clamp(20px, -2.5rem + 7.8vw, 2.4px);
+  }
+
+  @include mq('md') {
+    margin-top: clamp(2rem, -0.909rem + 14.55vw, 2.5rem);
+  }
+}
+
+.m-mv__title-main {
+  display: flex;
+  flex-direction: column;
+  gap: rem(6);
+  font-size: clamp(2.75rem, 1.8rem + 1.5vw, 50px);
+  font-weight: 500;
+  line-height: calc(79 / 50);
+  background: var(--color__gradient-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  @include mq('lg') {
+    font-size: clamp(1.875rem, 3.91vw, 2.5rem);
+  }
+
+  @include mq('md') {
+    font-size: clamp(1.625rem, 0.17rem + 7.27vw, 1.875rem);
+    font-weight: 700;
+    line-height: calc(30 / 30);
+  }
+}
+
+.m-mv__title-main-accent {
+  font-weight: 700;
+  border: 1px solid #1e3379;
+  padding-inline: rem(12);
+
+  @include mq('md') {
+    display: inline-block;
+    padding: rem(3);
+  }
+}
+
+.m-mv__title-sub {
+  font-size: rem(18);
+  font-weight: 700;
+  line-height: calc(29 / 18);
+  margin-top: clamp(30px, 1.26rem + 0.96vw, 34px);
+
+  @include mq('lg') {
+    font-size: clamp(1rem, 0.625rem + 0.78vw, 1.125rem);
+    margin-top: rem(20);
+  }
+
+  @include mq('md') {
+    font-size: clamp(0.875rem, 0.148rem + 3.64vw, 1rem);
+    font-weight: 500;
+    line-height: calc(23 / 16);
+    text-shadow: 0 0 2px var(--color__white);
+    padding-right: rem(51);
+    margin-top: rem(24);
+  }
+}
+
+.m-mv__subtitle {
+  font-size: rem(26);
+  font-weight: 700;
+  color: var(--color__white);
+  line-height: calc(41 / 26);
+  width: fit-content;
+  background: var(--color__gradient-blue);
+  padding-top: rem(3);
+  padding-bottom: rem(4);
+  padding-inline: rem(8);
+
+  @include mq('md') {
+    font-size: clamp(1.125rem, 0.398rem + 3.64vw, 1.25rem);
+  }
+}
+
+.m-mv__body-button {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(2.25rem, 1.6rem + 0.96vw, 2.5rem);
+
+  @include mq('lg') {
+    margin-top: rem(24);
+  }
+
+  @include mq('md') {
+    justify-content: flex-start;
+    margin-top: rem(20);
+  }
+}

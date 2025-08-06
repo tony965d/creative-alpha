@@ -1,0 +1,19 @@
+@use '../_global' as *;
+
+.m-arrow--right {
+  position: relative;
+}
+
+.m-arrow--right::before {
+  content: '';
+  position: absolute;
+  top: 55%;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border: 0;
+  border-top: solid 2px var(--color__blue);
+  border-right: solid 2px var(--color__blue);
+  margin-top: -4px;
+  transform: rotate(45deg);
+}

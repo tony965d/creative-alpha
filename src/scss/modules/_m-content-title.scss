@@ -1,0 +1,18 @@
+@use '../_global' as *;
+
+.m-content-title {
+  position: relative;
+  padding-left: rem(24);
+}
+
+.m-content-title::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background-color: var(--color__black);
+  width: rem(8);
+  height: 100%;
+  z-index: -1;
+}

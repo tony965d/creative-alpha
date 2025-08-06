@@ -1,0 +1,16 @@
+@use '../_global' as *;
+
+.m-divider-title__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: rem(20);
+}
+
+.m-divider-title__text::before,
+.m-divider-title__text::after {
+  content: '';
+  height: 1px;
+  flex-grow: 1;
+  background-color: var(--color__black);
+}

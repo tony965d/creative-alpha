@@ -1,0 +1,21 @@
+@use '../_global' as *;
+
+.m-archive-training-service {
+  padding-bottom: rem(80);
+}
+
+.m-archive-training-service__text-wrapper {
+  margin-top: rem(54);
+}
+
+.m-archive-training-service__contents {
+  margin-top: rem(40);
+
+  @include mq('md') {
+    row-gap: rem(30);
+  }
+}
+
+.m-archive-training-service__title-wrapper {
+  margin-top: rem(60);
+}

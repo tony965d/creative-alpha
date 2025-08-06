@@ -1,0 +1,114 @@
+@use '../_global' as *;
+
+.m-contact-button {
+  --_color__main-default: var(--color__orange);
+  --_color__sub-default: var(--color__white);
+  --_color__main: var(--_color__main-default);
+  --_color__sub: var(--_color__sub-default);
+  --_max-width: 245;
+  --_duration: 0.3s;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(10);
+  max-width: calc(var(--_max-width) * 1rem / var(--font-size__base));
+  width: 100%;
+  color: var(--_color__sub);
+  font-size: rem(20);
+  font-weight: 700;
+  line-height: calc(24 / 20);
+  letter-spacing: 0.03em;
+  background-color: var(--_color__main);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--_color__sub);
+  border-radius: 30px;
+  // box-shadow: 1px 1px 3px rgba(74, 74, 72, 0.3);
+
+  // border-radius: calc(infinity * 1px);
+  // filter: drop-shadow(0 3px 6px rgb(0, 0, 0, 0.2));
+  transition:
+    color var(--_duration),
+    background-color var(--_duration),
+    border-color var(--_duration),
+    filter var(--_duration);
+  touch-action: manipulation;
+  padding-block: rem(11);
+}
+
+@media (any-hover: hover) {
+  .m-contact-button:hover {
+    color: var(--_color__main);
+    background-color: var(--_color__sub);
+    border-color: var(--_color__main);
+    filter: unset;
+  }
+}
+
+.m-contact-button:focus-visible {
+  color: var(--_color__main);
+  background-color: var(--_color__sub);
+  filter: unset;
+}
+
+.m-contact-button--invert {
+  --_color__main: var(--_color__sub-default);
+  --_color__sub: var(--_color__main-default);
+
+  border-color: var(--_color__main);
+}
+
+.m-contact-button--secondary {
+  --_color__main-default: var(--color__secondary);
+  --_color__sub-default: var(--color__white);
+}
+
+.m-contact-button.m-contact-button--header {
+  font-size: rem(18);
+  line-height: calc(22 / 18);
+  --_max-width: 240;
+  margin-bottom: rem(3);
+}
+
+.m-contact-button__icon {
+  display: flex;
+  width: rem(16);
+  height: rem(16);
+}
+
+.m-contact-button.m-contact-button--mv {
+  --_max-width: 270;
+
+  @include mq('md') {
+    font-size: rem(18);
+    line-height: calc(26 / 18);
+    --_max-width: 220;
+  }
+}
+
+.m-contact-button.m-contact-button--contact {
+  font-size: rem(28);
+  line-height: calc(33 / 28);
+  --_max-width: 360;
+  padding-block: rem(16);
+  border-radius: 41px;
+
+  @include mq('md') {
+    font-size: rem(20);
+  }
+}
+
+.m-contact-button--submit {
+  --_max-width: 245;
+
+  position: relative;
+  display: inline-block;
+  font-size: rem(14);
+  font-family: var(--font-family__inter);
+  font-weight: 500;
+  line-height: calc(22 / 14);
+  width: min(100%, rem(160));
+  border: 1px solid var(--color__black);
+}

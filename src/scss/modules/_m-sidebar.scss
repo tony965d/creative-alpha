@@ -1,0 +1,72 @@
+@use '../_global' as *;
+
+.m-sidebar {
+  display: grid;
+  gap: rem(28);
+}
+
+.m-sidebar__block--monthly-archive {
+  margin-top: rem(18);
+}
+
+.m-sidebar__title {
+  font-size: rem(18);
+  font-weight: 500;
+  line-height: 1;
+  padding-bottom: rem(6);
+  border-bottom: 1px solid #4e64ad;
+}
+
+.m-sidebar__title--recent-article {
+  padding-bottom: rem(9);
+}
+
+.m-sidebar__category {
+  margin-left: rem(7);
+}
+
+.m-sidebar__category-link {
+  display: block;
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: 1;
+  padding-top: rem(12);
+  padding-left: rem(6);
+  padding-bottom: rem(5);
+  border-bottom: 1px dashed #a8b3d7;
+}
+
+.m-sidebar__recent-article {
+  margin-left: rem(7);
+}
+
+.m-sidebar__recent-article-link {
+  display: grid;
+  gap: rem(11);
+  font-size: rem(16);
+  line-height: calc(19 / 16);
+  padding-top: rem(10);
+  padding-left: rem(6);
+  padding-bottom: rem(14);
+  border-bottom: 1px dashed #a8b3d7;
+}
+
+.m-sidebar__recent-article-date {
+  font-size: rem(14);
+  line-height: 1;
+  letter-spacing: 0.08em;
+}
+
+.m-sidebar__monthly-archive {
+  margin-left: rem(7);
+}
+
+.m-sidebar__monthly-archive-link {
+  display: block;
+  font-size: rem(16);
+  line-height: 1;
+  padding-top: rem(10);
+  padding-bottom: rem(9);
+  padding-left: rem(6);
+  border-bottom: 1px dashed #a8b3d7;
+}

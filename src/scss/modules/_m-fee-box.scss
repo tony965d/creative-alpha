@@ -1,0 +1,138 @@
+@use '../_global' as *;
+
+.m-fee-box {
+  position: relative;
+  display: grid;
+  grid-row: span 2;
+  grid-template-rows: subgrid;
+  gap: rem(14);
+}
+
+.m-fee-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fffcf3;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.m-fee-box__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: rem(21);
+  padding-bottom: rem(22);
+}
+
+.m-fee-box__header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #4e64ad;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  z-index: -1;
+}
+
+.m-fee-box__header-icon img {
+  object-fit: cover;
+  aspect-ratio: 29 / 25;
+  width: rem(29);
+  height: 100%;
+}
+
+.m-fee-box__header-title {
+  font-size: rem(20);
+  font-weight: 700;
+  color: var(--color__white);
+  line-height: 1;
+}
+
+.m-fee-box__body {
+  // padding-top: rem(14);
+  padding-left: rem(26);
+  padding-right: rem(20);
+  padding-bottom: rem(31);
+
+  @include mq('md') {
+    padding-left: rem(20);
+    padding-bottom: rem(20);
+  }
+}
+
+.m-fee-box__item {
+  display: flex;
+  align-items: center;
+  gap: rem(32);
+  padding-top: rem(13);
+  padding-bottom: rem(14);
+
+  @include mq('md') {
+    flex-direction: column;
+    gap: rem(16);
+  }
+}
+
+.m-fee-box__item--first {
+  border-bottom: 2px solid var(--color__orange);
+}
+
+.m-fee-box__item-title {
+  display: flex;
+  align-items: center;
+  gap: rem(6);
+  font-size: rem(18);
+  font-weight: 700;
+  color: var(--color__black);
+  line-height: 1;
+}
+
+.m-fee-box__item-icon img {
+  object-fit: cover;
+  aspect-ratio: 18 / 16;
+  width: rem(18);
+  height: 100%;
+}
+
+.m-fee-box__price {
+  font-size: rem(30);
+  font-weight: 700;
+  color: var(--color__orange);
+  line-height: 1;
+}
+
+.m-fee-box__price-small {
+  font-size: rem(18);
+  font-weight: 700;
+  color: var(--color__orange);
+  line-height: calc(30 / 18);
+}
+
+.m-fee-box__note-wrapper {
+  display: grid;
+  gap: rem(4);
+  margin-top: rem(17);
+}
+
+.m-fee-box__note {
+  display: flex;
+  align-items: flex-start;
+  gap: rem(2);
+  font-size: rem(16);
+  font-weight: 500;
+  line-height: calc(22 / 16);
+}
+
+.m-fee-box__note-text {
+  font-size: rem(14);
+  line-height: calc(19 / 14);
+  padding-top: rem(2);
+}

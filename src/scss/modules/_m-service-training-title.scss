@@ -1,0 +1,33 @@
+@use '../_global' as *;
+
+.m-service-training-title {
+  display: flex;
+  align-items: center;
+  gap: rem(22);
+}
+
+.m-service-training-title__icon {
+  padding-bottom: rem(2);
+}
+
+.m-service-training-title__icon img {
+  object-fit: cover;
+  aspect-ratio: 57 / 50;
+  width: rem(57);
+  height: 100%;
+}
+
+.m-service-training-title__text {
+  font-size: rem(30);
+  font-weight: 700;
+  background: var(--color__gradient-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: calc(43 / 30);
+
+  @include mq('md') {
+    font-size: rem(24);
+    line-height: calc(32 / 24);
+  }
+}

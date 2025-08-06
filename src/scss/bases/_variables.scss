@@ -1,0 +1,101 @@
+@use '../_global' as *;
+
+// =========================================
+// _variables.scssはプロジェクト全体で使用される変数を定義するファイルです。
+// ブレークポイント、カラー、フォントサイズなどのグローバル変数が含まれています。
+// 他のSCSSファイルからは「@use '../_global' as *;」でインポートして使用します。
+// =========================================
+
+// =========================================
+// グローバルカスタムプロパティの定義
+// =========================================
+:root {
+  // =========================================
+  // フォント関連
+  // =========================================
+  // ベースのフォントサイズ
+  --font-size__base: 16;
+
+  // フォントファミリー
+  --font-family__base: 'Noto Sans JP', sans-serif;
+  --font-family__roboto: 'Roboto', sans-serif;
+  --font-family__inter: 'Inter', sans-serif;
+  --font-family__montserrat: 'Montserrat', sans-serif;
+  --font-family__outfit: 'Outfit', sans-serif;
+  --font-family__sawarabi-gothic: 'Sawarabi Gothic', sans-serif;
+  --font-family__noto-rashi-hebrew: 'Noto Rashi Hebrew', sans-serif;
+
+  // =========================================
+  // レイアウト関連
+  // =========================================
+  // 最大幅
+  --max-width__base: 1920;
+
+  // PCで１番多いコンテンツの横幅
+  --width__contents: #{$width__base--pc};
+
+  // 左右の余白
+  --space-inline__base: #{$space-inline__base--pc};
+
+  // セクション間の上下の余白
+  --padding-block__base: 30;
+
+  // PCで１番多いコンテンツの横幅 + 左右の余白
+  --width__breakpoint: calc(
+    var(--width__contents) + (var(--space-inline__base) * 2)
+  );
+
+  // =========================================
+  // カラー関連
+  // =========================================
+  // テーマカラー
+  --color__brown: #754c24;
+  --color__green: #c6d9ab;
+  --color__beige: #f2eecd;
+  --color__light-beige: #fcfaf5;
+  --color__blue: #779fbd;
+  --color__light-blue: #eaf5ff;
+  --color__pink: #eda4cb;
+  --color__light-pink: #fff2f3;
+
+  // 機能的なカラー
+  --color__error: #fc506e;
+  --color__error-light: #ffeef1;
+  --color__warning: #986522;
+  --color__warning-light: #fefcea;
+  --color__success: #1fc8c2;
+  --color__success-light: #f1fdf9;
+
+  // 一般カラー
+  --color__gray-900: #1a222c;
+  --color__gray-600: #757a80;
+  --color__gray-300: #b9bcbf;
+  --color__gray-200: #e3e3e3;
+  --color__gray-100: #f5f5f5;
+
+  --color__primary: #000;
+  --color__white: #fff;
+  --color__black: #1c1f27;
+  --color__orange: #e9b628;
+  --color__blue: #4e64ad;
+  --color__red: #ff0000;
+  --color__bg: #f6f8ff;
+  --color__gradient-blue: linear-gradient(to right, #4e64ad, #2f4db1);
+  // =========================================
+  // スタイル関連
+  // =========================================
+  // ホバー時の透明度
+  --opacity__hover: 0.7;
+
+  // 角の丸み
+  --radius__base: 20;
+
+  @include mq('md') {
+    // スマホのデザイン関連
+    --width__breakpoint: #{$width__base--sp};
+    --space-inline__base: #{$space-inline__base--sp};
+    --max-width__base: 600;
+    --padding-block__base: 15;
+    --radius__base: 13;
+  }
+}

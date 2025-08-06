@@ -1,0 +1,120 @@
+@use '../_global' as *;
+
+.m-mystery-shopper-problems {
+  position: relative;
+  padding-top: rem(80);
+}
+
+.m-mystery-shopper-problems::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f7f9ff;
+  width: 100%;
+  height: 110%;
+  z-index: -1;
+}
+
+.m-mystery-shopper-problems__speech-bubble-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(23);
+  margin-top: rem(39);
+
+  @include mq('md') {
+    flex-direction: column;
+  }
+}
+
+.m-mystery-shopper-problems__speech-bubble {
+  display: flex;
+}
+
+.m-mystery-shopper-problems__speech-bubble--fourth {
+  position: absolute;
+  // bottom: rem(-212);
+  bottom: calc(clamp(6.25rem, -10.981rem + 26.92vw, 13.25rem) * -1);
+  left: calc(clamp(0rem, -15.385rem + 24.04vw, 6.25rem) * -1);
+  // left: rem(-100);
+
+  @include mq('lg') {
+    bottom: -150px;
+    left: -10px;
+  }
+
+  @include mq('md') {
+    position: unset;
+  }
+}
+
+.m-mystery-shopper-problems__speech-bubble--fifth {
+  position: absolute;
+  // bottom: rem(-252);
+  bottom: calc(clamp(8.25rem, -10.212rem + 28.85vw, 15.75rem) * -1);
+  right: calc(clamp(0rem, -7.385rem + 11.54vw, 3rem) * -1);
+  // right: rem(-48);
+
+  @include mq('md') {
+    position: unset;
+  }
+}
+
+.m-mystery-shopper-problems__speech-bubble img {
+  object-fit: cover;
+  height: 100%;
+
+  @include mq('lg') {
+    width: rem(160);
+  }
+
+  @include mq('md') {
+    width: rem(250);
+  }
+}
+
+.m-mystery-shopper-problems__speech-bubble--first img {
+  aspect-ratio: 311 / 252;
+  // width: rem(311);
+  width: clamp(12.5rem, -4.577rem + 26.68vw, 19.438rem);
+}
+
+.m-mystery-shopper-problems__speech-bubble--second img {
+  aspect-ratio: 283 / 230;
+  // width: rem(283);
+  width: clamp(12.5rem, -0.269rem + 19.95vw, 17.688rem);
+}
+
+.m-mystery-shopper-problems__speech-bubble--three img {
+  aspect-ratio: 283 / 230;
+  // width: rem(283);
+  width: clamp(12.5rem, -0.269rem + 19.95vw, 17.688rem);
+}
+
+.m-mystery-shopper-problems__speech-bubble--fourth img {
+  aspect-ratio: 311 / 252;
+  // width: rem(311);
+  width: clamp(12.5rem, -4.577rem + 26.68vw, 19.438rem);
+}
+
+.m-mystery-shopper-problems__speech-bubble--fifth img {
+  aspect-ratio: 324 / 263;
+  // width: rem(324);
+  width: clamp(12.5rem, -6.577rem + 29.81vw, 20.25rem);
+}
+
+.m-mystery-shopper-problems__image {
+  display: flex;
+  justify-content: center;
+  margin-top: rem(7);
+}
+
+.m-mystery-shopper-problems__image img {
+  object-fit: cover;
+  aspect-ratio: 506 / 305;
+  // width: rem(506);
+  width: clamp(25rem, 17.429rem + 15.77vw, 31.625rem);
+  height: 100%;
+}

@@ -1,0 +1,17 @@
+@use '../_global' as *;
+
+.l-container {
+  @include mq('md') {
+  }
+}
+
+.l-container--sidebar {
+  display: grid;
+  grid-template-columns: 1fr calc(300rem / var(--font-size__base));
+  column-gap: calc(32rem / var(--font-size__base));
+
+  @include mq('md') {
+    grid-template-columns: unset;
+    row-gap: calc(32rem / var(--font-size__base));
+  }
+}

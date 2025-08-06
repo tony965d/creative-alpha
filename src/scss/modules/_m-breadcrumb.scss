@@ -1,0 +1,18 @@
+@use '../_global' as *;
+
+.m-breadcrumb {
+  padding-top: rem(20);
+}
+
+.m-breadcrumb .wp-breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: rem(11);
+}
+
+.m-breadcrumb .wp-breadcrumb span {
+  font-size: rem(12);
+  color: var(--color__black);
+  line-height: 1;
+}

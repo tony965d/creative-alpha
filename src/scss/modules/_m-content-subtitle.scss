@@ -1,0 +1,11 @@
+@use '../_global' as *;
+
+.m-content-subtitle {
+  font-size: rem(24);
+  font-weight: 700;
+  background: var(--color__gradient-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  line-height: calc(34 / 24);
+}

@@ -1,0 +1,6 @@
+@use '../_global' as *;
+
+.m-accordion-group {
+  display: grid;
+  gap: rem(20);
+}

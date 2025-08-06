@@ -1,0 +1,15 @@
+@use '../_global' as *;
+
+.m-error {
+  padding-bottom: rem(80);
+}
+
+.m-error__text {
+  text-align: center;
+}
+
+.m-error__button {
+  display: flex;
+  justify-content: center;
+  margin-top: rem(60);
+}

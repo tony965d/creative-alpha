@@ -1,0 +1,14 @@
+@use '../_global' as *;
+
+.m-contact {
+  padding-top: rem(59);
+  padding-bottom: rem(128);
+
+  @include mq('md') {
+    padding-bottom: rem(80);
+  }
+}
+
+.m-contact__form {
+  margin-top: rem(87);
+}

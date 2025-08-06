@@ -1,0 +1,42 @@
+@use '../_global' as *;
+
+.m-home-column {
+  padding-block: rem(100);
+}
+
+.m-home-column__cards {
+  --_min-width__column: 360;
+  --_column-gap: 22;
+  margin-top: rem(39);
+
+  @include mq('md') {
+    --_min-width__column: 300;
+  }
+}
+
+.m-home-column__button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: rem(64);
+}
+
+.m-home-column__button::before {
+  content: '';
+  position: absolute;
+  top: rem(-29);
+  left: rem(157);
+  background-image: url(../images/front-page/home-pickup-column-icon.webp);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: rem(156);
+  height: rem(133);
+  aspect-ratio: 156 / 133;
+  z-index: -1;
+
+  @include mq('md') {
+    top: 0;
+    left: 0;
+  }
+}

@@ -1,0 +1,29 @@
+@use '../_global' as *;
+
+.m-about-contents {
+  --_width__left: 527;
+  --_width__right: 549;
+  --_column-gap: 48;
+  margin-top: rem(41);
+
+  @include mq('md') {
+    --_row-gap: 60;
+    --_row-gap__grid: 60;
+  }
+}
+
+.m-about-contents__item {
+  align-items: center;
+}
+
+.m-about-contents__body {
+  display: grid;
+  gap: rem(24);
+}
+
+.m-about-contents__image img {
+  object-fit: cover;
+  aspect-ratio: 527 / 381;
+  height: 100%;
+  border-radius: 20px;
+}

@@ -1,0 +1,47 @@
+@use '../_global' as *;
+
+.m-pc-nav__items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: rem(40);
+
+  @include mq('lg') {
+    row-gap: rem(20);
+  }
+}
+
+.m-pc-nav__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(9);
+  font-size: clamp(0.75rem, 0.442rem + 0.48vw, 14px);
+  font-weight: 500;
+  line-height: calc(22 / 14);
+}
+
+.m-pc-nav__link-arrow {
+  position: relative;
+  width: rem(7);
+  height: rem(7);
+}
+
+.m-pc-nav__link-arrow::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(45deg);
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-bottom: solid 1px var(--color__black);
+  border-right: solid 1px var(--color__black);
+}
+
+.m-pc-nav__link-icon {
+  display: flex;
+  width: rem(8);
+  height: rem(4);
+}

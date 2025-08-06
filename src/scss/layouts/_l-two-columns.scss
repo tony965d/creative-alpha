@@ -1,0 +1,60 @@
+@use '../_global' as *;
+
+.l-two-columns {
+  --_row-gap__grid: 60; // 2カラム間の行間
+  --_width__left: 400; // 左の幅
+  --_width__right: 830; // 右の幅
+  --_column-gap: 40; // 列間
+  --_width__total: calc(
+    var(--_width__left) + var(--_column-gap) + var(--_width__right)
+  ); // 合計の幅
+
+  display: grid;
+  row-gap: min(
+    calc((var(--_row-gap__grid) / var(--_width__total)) * 100vw),
+    calc(var(--_row-gap__grid) * 1px)
+  );
+}
+
+.l-two-columns__item {
+  display: flex;
+  column-gap: calc((var(--_column-gap) / var(--_width__total)) * 100%);
+}
+
+.l-two-columns__left {
+  width: calc(var(--_width__left) / var(--_width__total) * 100%);
+}
+
+.l-two-columns__right {
+  width: calc(var(--_width__right) / var(--_width__total) * 100%);
+}
+
+@include mq('md') {
+  .l-two-columns {
+    --_row-gap__grid: 40; // 2カラム間の行間
+    --_row-gap: 20; // カラム内の行間
+    --_width__total: var(--width__contents); // 合計の幅
+  }
+
+  .l-two-columns__item {
+    --_width__left: 100%;
+    --_width__right: 100%;
+
+    flex-direction: column;
+    row-gap: min(
+      calc((var(--_row-gap) / var(--_width__total)) * 100vw),
+      calc(var(--_row-gap) * 1px)
+    );
+  }
+}
+
+// ジグザグ
+.l-two-columns--zigzag .l-two-columns__item:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+@include mq('md') {
+  .l-two-columns--zigzag .l-two-columns__item:nth-of-type(even) {
+    flex-direction: column;
+  }
+}

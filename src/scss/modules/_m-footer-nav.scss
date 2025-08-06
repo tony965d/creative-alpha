@@ -1,0 +1,54 @@
+@use '../_global' as *;
+
+.m-footer-nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: rem(20);
+
+  @include mq('lg') {
+    justify-content: center;
+    gap: rem(60);
+  }
+
+  @include mq('md') {
+    flex-direction: column;
+    gap: rem(24);
+  }
+}
+
+.m-footer-nav__block.m-footer-nav__block---right {
+  margin-right: rem(-10);
+}
+
+.m-footer-nav__items {
+  display: grid;
+  justify-items: start;
+  gap: rem(16);
+}
+
+.m-footer-nav__menu {
+  font-size: rem(18);
+  font-weight: 700;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.04em;
+}
+
+.m-footer-nav__sub-items {
+  display: grid;
+  justify-items: start;
+  gap: rem(12);
+  margin-top: rem(16);
+}
+
+.m-footer-nav__sub-menu {
+  display: flex;
+  font-size: rem(14);
+  font-weight: 500;
+  line-height: calc(17 / 14);
+  letter-spacing: 0.04em;
+}
+
+.m-footer-nav__button {
+  margin-top: rem(16);
+}

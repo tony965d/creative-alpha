@@ -1,0 +1,51 @@
+@use '../_global' as *;
+
+/* ページネーション全体 */
+.page-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(24);
+  // list-style: none;
+  // margin: 0;
+}
+
+/* 各ページ番号（通常） */
+.page-numbers li a {
+  display: inline-block;
+  font-size: rem(15);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  color: transparent;
+  background: var(--color__gradient-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  border-radius: 4px;
+  // text-decoration: none;
+  // transition: all 0.3s;
+}
+
+/* 現在のページ番号 */
+.page-numbers li span.current {
+  display: inline-block;
+  color: var(--color__white);
+  background: var(--color__gradient-blue);
+  border-radius: 4px;
+  padding-top: rem(7);
+  padding-bottom: rem(8);
+  padding-right: rem(10);
+  padding-left: rem(11);
+}
+
+/* 前へ・次へ */
+.page-numbers li a.prev,
+.page-numbers li a.next {
+  font-weight: bold;
+}
+
+/* 無効リンク（前へ／次へ がないとき） */
+// .page-numbers li span.dots {
+//   padding: 8px 14px;
+//   color: #999;
+// }

@@ -1,0 +1,86 @@
+@use '../_global' as *;
+
+// リキッドレイアウト対応
+html {
+  --_font-size: var(--font-size__base);
+  --_width: var(--width--breakpoint);
+
+  // --_width ~
+  font-size: calc(var(--_font-size) * 1px);
+
+  // 787px ~ --_width
+  @include mq('lg') {
+    font-size: calc((var(--_font-size) / var(--_width)) * 100vw);
+  }
+
+  // 375px ~ 767px
+  @include mq('md') {
+    font-size: calc(var(--_font-size) * 1px);
+  }
+
+  // ~ 375px
+  @include mq('sm') {
+    font-size: calc((var(--_font-size) / var(--_width)) * 100vw);
+  }
+}
+
+// スクロール
+html {
+  scroll-padding-top: 100px;
+}
+
+// フォントの指定
+body {
+  font-family: var(--font-family__base);
+  color: var(--color__black);
+  font-size: calc(16rem / var(--font-size__base));
+  font-weight: 400;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* 透明度の変化を0.5秒かけて */
+}
+
+body.loaded {
+  opacity: 1;
+}
+
+// 画像
+img,
+svg {
+  width: 100%;
+  height: auto;
+}
+
+// リンク
+a {
+  display: inline-block;
+}
+
+// フォーカス時の枠線
+:focus-visible {
+  outline: 2px solid var(--color__primary);
+}
+
+// 管理バーの調整
+@media (max-width: 600px) {
+  #wpadminbar {
+    position: fixed;
+  }
+}
+
+:root {
+  --height__wp-admin-bar: 0px;
+}
+
+body.admin-bar {
+  --height__wp-admin-bar: 32px;
+}
+
+@media (max-width: 782px) {
+  body.admin-bar {
+    --height__wp-admin-bar: 46px;
+  }
+}
+
+header {
+  margin-top: var(--height__wp-admin-bar);
+}

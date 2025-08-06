@@ -1,0 +1,12 @@
+@use '../_global' as *;
+
+.m-voice-mystery-shopper {
+  padding-bottom: rem(69);
+  scroll-margin-top: 80px;
+}
+
+.m-voice-mystery-shopper__wrapper {
+  display: grid;
+  gap: rem(48);
+  margin-top: rem(40);
+}

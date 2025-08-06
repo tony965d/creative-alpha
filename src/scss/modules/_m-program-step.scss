@@ -1,0 +1,128 @@
+@use '../_global' as *;
+
+.m-program-step {
+  display: grid;
+  grid-row: span 2;
+  grid-template-rows: subgrid;
+  gap: rem(23);
+}
+
+.m-program-step__header-shadow {
+  display: inline-block;
+  filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
+}
+
+.m-program-step__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 20px) 0,
+    100% 50%,
+    calc(100% - 20px) 100%,
+    0 100%,
+    20px 50%
+  );
+  padding-top: rem(24);
+  padding-bottom: rem(25);
+  padding-left: rem(41);
+  border-radius: 4px;
+}
+
+.m-program-step__header--first {
+  background: #b3bfe8;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 20px) 0,
+    100% 50%,
+    calc(100% - 20px) 100%,
+    0 100%,
+    0 50%
+  );
+  padding-left: rem(26);
+  margin-left: 0;
+  margin-right: rem(-18);
+}
+
+.m-program-step__header--second {
+  background: #7787bf;
+  // margin-left: rem(-22);
+  margin-left: rem(-4);
+  margin-right: rem(-16);
+}
+
+.m-program-step__header--third {
+  background: #4e64ad;
+  // margin-left: rem(-22);
+  margin-left: rem(-6);
+  margin-right: rem(-14);
+}
+
+.m-program-step__header--fourth {
+  background: #2e4caf;
+  // margin-left: rem(-22);
+  margin-left: rem(-8);
+  margin-right: rem(-12);
+}
+
+.m-program-step__header--fifth {
+  background: #17379e;
+  margin-left: rem(-10);
+  margin-right: rem(-10);
+}
+
+.m-program-step__number {
+  display: flex;
+  gap: rem(4);
+  font-size: rem(28);
+  font-weight: 900;
+  color: var(--color__white);
+  line-height: 1;
+}
+
+.m-program-step__number-text {
+  font-size: rem(18);
+  font-weight: 900;
+  color: var(--color__white);
+  line-height: calc(28 / 18);
+}
+
+.m-program-step__body {
+  position: relative;
+  padding: rem(24);
+
+  @include mq('lg') {
+    padding: rem(12);
+  }
+}
+
+.m-program-step__body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color__white);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.m-program-step__title {
+  font-size: rem(16);
+  font-weight: 700;
+  color: transparent;
+  background: var(--color__gradient-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  line-height: calc(26 / 16);
+}
+
+.m-program-step__text {
+  font-size: rem(15);
+  font-weight: 500;
+  color: #444444;
+  line-height: calc(24 / 15);
+  letter-spacing: 0.03em;
+  margin-top: rem(10);
+}

@@ -1,0 +1,132 @@
+@use '../_global' as *;
+
+.m-contact-form {
+  --_width__left: 234;
+  --_width__right: 650;
+  --_column-gap: 16;
+  --_row-gap__grid: 14;
+  max-width: 900px;
+  margin-inline: auto;
+
+  @include mq('md') {
+    max-width: 100%;
+  }
+}
+
+.m-contact-form__group {
+  align-items: flex-start;
+
+  @include mq('lg') {
+    flex-direction: column;
+    gap: rem(10);
+  }
+}
+
+.m-contact-form__label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: rem(16);
+  font-size: rem(18);
+  font-weight: 700;
+  color: #1c1f27;
+  line-height: calc(32 / 18);
+  padding-top: rem(14);
+
+  @include mq('lg') {
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+.m-contact-form__field {
+  @include mq('lg') {
+    width: 100%;
+  }
+}
+
+.m-contact-form__field span.wpcf7-form-control-wrap {
+  display: flex;
+}
+
+.m-contact-form__input {
+  font-size: rem(16);
+  font-weight: 500;
+  color: #1c1f27;
+  line-height: calc(22 / 16);
+  width: 100%;
+  padding-top: rem(16);
+  padding-bottom: rem(15);
+  padding-inline: rem(23);
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+}
+
+.m-contact-form__required {
+  display: inline-flex;
+  align-items: center;
+  font-size: rem(12);
+  font-weight: 700;
+  color: var(--color__white);
+  line-height: calc(16 / 12);
+  border-radius: 4px;
+  padding: rem(3) rem(10);
+  background-color: var(--color__orange);
+}
+
+.m-contact-form__acceptance {
+  text-align: center;
+}
+
+.m-contact-form__acceptance .wpcf7-list-item input[type='checkbox'] {
+  position: relative;
+  display: inline-block;
+  width: rem(15);
+  height: rem(15);
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+
+.m-contact-form__acceptance
+  .wpcf7-list-item
+  input[type='checkbox']:checked:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: rem(-3);
+  left: rem(5);
+  transform: rotate(50deg);
+  width: rem(6);
+  height: rem(13);
+  border-right: 2px solid #1c1f27;
+  border-bottom: 2px solid #1c1f27;
+}
+
+.m-contact-form__button {
+  display: flex;
+  justify-content: center;
+  margin-top: rem(48);
+}
+
+.m-contact-form__textarea {
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding-block: rem(17);
+  padding-inline: rem(20);
+}
+
+.m-contact-form__acceptance-text {
+  display: flex;
+  align-items: center;
+  font-size: rem(16);
+  font-weight: 500;
+  color: #1c1f27;
+  line-height: calc(22 / 16);
+}
+
+.m-contact-form__acceptance-link {
+  text-decoration: underline;
+}

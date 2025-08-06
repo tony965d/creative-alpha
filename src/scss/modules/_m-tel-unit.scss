@@ -1,0 +1,74 @@
+@use '../_global' as *;
+
+.m-tel-unit {
+  @include mq('md') {
+    display: grid;
+    justify-items: center;
+    gap: rem(20);
+  }
+}
+
+.m-tel-unit.m-tel-unit--sp-nav {
+  justify-items: end;
+  gap: rem(6);
+}
+
+.m-tel-unit__link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: rem(12);
+  pointer-events: none;
+  font-size: clamp(40px, 1.731rem + 1.2vw, 45px);
+  font-family: var(--font-family__roboto);
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.05em;
+  white-space: nowrap;
+
+  @include mq('md') {
+    font-size: rem(32);
+    pointer-events: auto;
+  }
+}
+
+.m-tel-unit__text {
+  font-size: rem(20);
+  line-height: 1;
+  text-align: right;
+  padding-right: rem(10);
+  margin-top: rem(2);
+}
+
+// .m-tel-unit__text.m-tel-unit__text--contact {
+//   text-align: left;
+// }
+
+.m-tel-unit__link.m-tel-unit__link--header {
+  gap: rem(7);
+  font-size: rem(28);
+}
+
+.m-tel-unit__icon {
+  display: flex;
+  width: rem(36);
+  height: rem(36);
+
+  @include mq('md') {
+    width: rem(32);
+    height: rem(32);
+  }
+}
+
+.m-tel-unit__icon.m-tel-unit__icon--header {
+  width: rem(21);
+  height: rem(21);
+}
+
+.m-tel-unit__text.m-tel-unit__text--header {
+  font-size: rem(13);
+  line-height: calc(21 / 13);
+  padding-right: 0;
+  margin-top: 0;
+  margin-right: rem(4);
+}
